@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>MOD_ITPSUBSCRIBE</name>
+	<author>Todor Iliev</author>
+	<copyright>Copyright (C) 2013 Todor Iliev ( ITPrism.com )</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>todor@itprism.com</authorEmail>
+	<authorUrl>http://itprism.com</authorUrl>
+	<version>1.10</version>
+	<creationDate>22 October, 2013</creationDate>
+	<description><![CDATA[
+    <p><a href='http://itprism.com/free-joomla-extensions/social-marketing-seo/profile-newsletter-subscription' target="_blank">ITPSubscribe</a> adds subscription form and links to your social profiles on your website. The links can be icons or general in plain text.</p>
+    <p><a href='http://itprism.com/help/33-subscribe-documentation-faq' target='_blank'>Read documentation</a> that will help you to setup the extensions.</p>
+    <p>Invest in the extension and help for its improvement. You can <a href="http://itprism.com/sponsorship" target="_blank">sponsor the extension via SMS, PayPal or Bitcoin</a>.</p>
+    <p><a href='http://itprism.com/' target='_blank'>Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, <a href='http://extensions.joomla.org/extensions/social-web/social-presence/social-profiles/14095' target='_blank'>vote for this module</a> on Joomla! Extensions Directory!</p>
+    ]]></description>
+	
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_itpsubscribe.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_itpsubscribe.sys.ini</language>
+    </languages>    
+    
+	<files>
+		<filename module="mod_itpsubscribe">mod_itpsubscribe.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>README.md</filename>
+		<folder>tmpl</folder>
+		<folder>images</folder>
+	</files>
+
+    <help url="MOD_ITPSUBSCRIBE_HELP_URL"/>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="icons_set" type="list" default="small" label="MOD_ITPSUBSCRIBE_ICONS_SET" description="MOD_ITPSUBSCRIBE_ICONS_SET_DESC" >
+				   <option value="small">Small</option>
+				   <option value="big1">Big1 - 64px</option>
+				   <option value="big2">Big2 - 62px</option>
+				   <option value="big3">Big3 - 48px</option>
+				   <option value="big4">Big4 - 60px</option>
+				   <option value="big5">Big5 - 48px</option>
+				   <option value="big6">Big6 - 48px</option>
+				   <option value="big7">Big7 - 48px</option>
+				   <option value="big8">Big8 - 48px</option>
+				   <option value="big9">Big9 - 60px</option>
+				   <option value="big10">Big10 - 60px</option>
+				   <option value="big11">Big11 - 64px</option>
+				   <option value="big12">Big12 - 60px</option>
+				   <option value="big13">Big13 - 64px</option>
+				   <option value="big14">Big14 - 46px</option>
+				   <option value="big15">Big15 - 48px</option>
+				   <option value="big16">Big16 - 64px</option>
+				   <option value="big17">Big17 - 64px</option>
+				   <option value="big18">Big18 - 50px</option>
+				   <option value="big19">Big19 - 48px</option>
+		           <option value="big20">Big20 - 64px</option>
+		           <option value="big21">Big21 - 64px</option>
+		           <option value="big22">Big22 - 62px</option>
+		           <option value="big23">Big23 - 64px</option>
+		           <option value="big24">Big24 - 60px</option>
+		           <option value="big25">Big25 - 64px</option>
+		           <option value="big26">Big26 - 56px</option>
+		           <option value="big27">Big27 - 56px</option>
+		           <option value="big28">Big28 - 94px</option>
+		           <option value="big29">Big29 - 60px</option>
+		           <option value="big30">Big30 - 64px</option>
+		           <option value="big31">Big31 - 32px</option>
+		           <option value="big32">Big32 - 64px</option>
+		           <option value="big33">Big33 - 56px</option>
+		           <option value="big34">Big34 - 56px</option>
+				</field>
+			</fieldset>
+            
+			<fieldset name="rss_options" label="MOD_ITPSUBSCRIBE_RSS_ICON_LABEL" description="MOD_ITPSUBSCRIBE_RSS_ICON_DESC">
+				<field name="show_rss" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_RSS" description="MOD_ITPSUBSCRIBE_SHOW_RSS_DESC" class="btn-group">
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
+				</field>
+				<field name="rss_title" type="text" default="Subscribe in a reader" size="80" label="MOD_ITPSUBSCRIBE_RSS_TITLE" description="MOD_ITPSUBSCRIBE_RSS_TITLE_DESC" />
+				<field name="rss_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_RSS_LINK" description="MOD_ITPSUBSCRIBE_RSS_LINK_DESC" />
+				<field name="rss_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
+		           <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+		           <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
+		        </field>
+	        </fieldset>
+            
+            <fieldset name="facebook_options" label="MOD_ITPSUBSCRIBE_FACEBOOK_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_FACEBOOK_OPTIONS_DESC">
+						
+				<field name="show_facebook" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_FACEBOOK" description="MOD_ITPSUBSCRIBE_SHOW_FACEBOOK_DESC" class="btn-group">
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
+				</field>
+				
+				<field name="facebook_title" type="text" default="Facebook page" size="80" label="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE" description="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE_DESC" />
+				<field name="facebook_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_FACEBOOK_ADDRESS" description="MOD_ITPSUBSCRIBE_FACEBOOK_ADDRESS_DESC" />
+				<field name="facebook_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
+                </field>
+            </fieldset>
+            
+            <fieldset name="twitter_options" label="MOD_ITPSUBSCRIBE_TWITTER_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_TWITTER_OPTIONS_DESC">
+				
+				<field name="show_twitter" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_TWITTER" description="MOD_ITPSUBSCRIBE_SHOW_TWITTER_DESC" class="btn-group">
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
+				</field>
+				
+				<field name="twitter_title" type="text" default="Follow me" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_TITLE_DESC" />
+				<field name="twitter_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_URL" description="MOD_ITPSUBSCRIBE_TWITTER_URL_DESC" />
+				<field name="twitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
+                </field>
+            </fieldset>
+            
+            <fieldset name="email_options" label="MOD_ITPSUBSCRIBE_EMAIL_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_EMAIL_OPTIONS_DESC">
+				<field name="show_email" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_EMAIL" description="MOD_ITPSUBSCRIBE_SHOW_EMAIL_DESC" class="btn-group">
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
+				</field>
+				
+				<field name="email_title" type="text" default="Subscribe by E-Mail" size="80" label="MOD_ITPSUBSCRIBE_EMAIL_TITLE" description="MOD_ITPSUBSCRIBE_EMAIL_TITLE_DESC" />
+				<field name="email_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_EMAIL_ADDRESS" description="MOD_ITPSUBSCRIBE_EMAIL_ADDRESS_DESC" />
+				<field name="email_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
+                </field>
+            </fieldset>
+            
+            <fieldset name="google_options" label="MOD_ITPSUBSCRIBE_GOOGLE_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_GOOGLE_OPTIONS_DESC">
+                <field name="show_google" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_GOOGLE" description="MOD_ITPSUBSCRIBE_SHOW_GOOGLE_DESC" class="btn-group">
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                
+                <field name="google_title" type="text" default="Google+ page" size="80" label="MOD_ITPSUBSCRIBE_GOOGLE_TITLE" description="MOD_ITPSUBSCRIBE_GOOGLE_TITLE_DESC" />
+                <field name="google_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_GOOGLE_ADDRESS" description="MOD_ITPSUBSCRIBE_GOOGLE_ADDRESS_DESC" />
+                <field name="google_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
+                </field>
+             </fieldset>
+             
+             <fieldset name="extra_twitter_options" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_OPTIONS_DESC">
+				<field name="show_extra_twitter" type="radio" default="0" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER" description="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_DESC" class="btn-group">
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
+				</field>
+				
+				<field name="extra_twitter_title" type="text" default="Follow me" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_EXTRA_TITLE_DESC" />
+				<field name="extra_twitter_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_URL" description="MOD_ITPSUBSCRIBE_TWITTER_URL_DESC" />
+				
+				<field name="extra_twitter_icon" type="list" default="twitter28.png" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_ICONS" description="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_ICONS_DESC" >
+					<option value="twitter01.png">Twitter 01</option>
+					<option value="twitter02.png">Twitter 02</option>
+					<option value="twitter03.png">Twitter 03</option>
+					<option value="twitter04.png">Twitter 04</option>
+					<option value="twitter05.png">Twitter 05</option>
+					<option value="twitter06.png">Twitter 06</option>
+					<option value="twitter07.png">Twitter 07</option>
+					<option value="twitter08.png">Twitter 08</option>
+					<option value="twitter09.png">Twitter 09</option>
+					<option value="twitter10.png">Twitter 10</option>
+					<option value="twitter11.png">Twitter 11</option>
+					<option value="twitter12.png">Twitter 12</option>
+					<option value="twitter13.png">Twitter 13</option>
+					<option value="twitter14.png">Twitter 14</option>
+					<option value="twitter15.png">Twitter 15</option>
+					<option value="twitter16.png">Twitter 16</option>
+					<option value="twitter17.png">Twitter 17</option>
+					<option value="twitter18.png">Twitter 18</option>
+					<option value="twitter19.png">Twitter 19</option>
+					<option value="twitter20.png">Twitter 20</option>
+					<option value="twitter21.png">Twitter 21</option>
+					<option value="twitter22.png">Twitter 22</option>
+					<option value="twitter23.png">Twitter 23</option>
+					<option value="twitter24.png">Twitter 24</option>
+					<option value="twitter25.png">Twitter 25</option>
+					<option value="twitter26.png">Twitter 26</option>
+					<option value="twitter27.png">Twitter 27</option>
+					<option value="twitter28.png">Twitter 28</option>
+					<option value="twitter29.png">Twitter 29</option>
+					<option value="twitter30.png">Twitter 30</option>
+					<option value="twitter31.png">Twitter 31</option>
+					<option value="twitter32.png">Twitter 32</option>
+					<option value="twitter33.png">Twitter 33</option>
+					<option value="twitter34.png">Twitter 34</option>
+					<option value="twitter35.png">Twitter 35</option>
+					<option value="twitter36.png">Twitter 36</option>
+					<option value="twitter37.png">Twitter 37</option>
+					<option value="twitter38.png">Twitter 38</option>
+					<option value="twitter39.png">Twitter 39</option>
+					<option value="twitter40.png">Twitter 40</option>
+					<option value="twitter41.png">Twitter 41</option>
+					<option value="twitter42.png">Twitter 42</option>
+					<option value="twitter43.png">Twitter 43</option>
+					<option value="twitter44.png">Twitter 44</option>
+					<option value="twitter45.png">Twitter 45</option>
+					<option value="twitter46.png">Twitter 46</option>
+					<option value="twitter47.png">Twitter 47</option>
+					<option value="twitter48.png">Twitter 48</option>
+					<option value="twitter49.png">Twitter 49</option>
+					<option value="twitter50.png">Twitter 50</option>
+					<option value="twitter51.png">Twitter 51</option>
+					<option value="twitter52.png">Twitter 52</option>
+					<option value="twitter53.png">Twitter 53</option>
+					<option value="twitter54.png">Twitter 54</option>
+					<option value="twitter55.png">Twitter 55</option>
+					<option value="twitter56.png">Twitter 56</option>
+					<option value="twitter57.png">Twitter 57</option>
+					<option value="twitter58.png">Twitter 58</option>
+					<option value="twitter59.png">Twitter 59</option>
+					<option value="twitter60.png">Twitter 60</option>
+					<option value="twitter61.png">Twitter 61</option>
+					<option value="twitter62.png">Twitter 62</option>
+					<option value="twitter63.png">Twitter 63</option>
+					<option value="twitter64.png">Twitter 64</option>
+					<option value="twitter65.png">Twitter 65</option>
+					<option value="twitter66.png">Twitter 66</option>
+					<option value="twitter67.png">Twitter 67</option>
+					<option value="twitter68.png">Twitter 68</option>
+					<option value="twitter69.png">Twitter 69</option>
+					<option value="twitter70.png">Twitter 70</option>
+					<option value="twitter71.png">Twitter 71</option>
+					<option value="twitter72.png">Twitter 72</option>
+					<option value="twitter73.png">Twitter 73</option>
+					<option value="twitter74.png">Twitter 74</option>
+					<option value="twitter75.png">Twitter 75</option>
+					<option value="twitter76.png">Twitter 76</option>
+					<option value="twitter77.png">Twitter 77</option>
+					<option value="twitter78.png">Twitter 78</option>
+					<option value="twitter79.png">Twitter 79</option>
+					<option value="twitter80.png">Twitter 80</option>
+					<option value="twitter81.png">Twitter 81</option>
+					<option value="twitter82.png">Twitter 82</option>
+					<option value="twitter83.png">Twitter 83</option>
+					<option value="twitter84.png">Twitter 84</option>
+					<option value="twitter85.gif">Twitter 85</option>
+					<option value="twitter86.gif">Twitter 86</option>
+					<option value="twitter87.gif">Twitter 87</option>
+					<option value="twitter88.gif">Twitter 88</option>
+					<option value="twitter89.gif">Twitter 89</option>
+					<option value="twitter90.gif">Twitter 90</option>
+					<option value="twitter91.gif">Twitter 91</option>
+					<option value="twitter92.png">Twitter 92</option>
+					<option value="twitter93.png">Twitter 93</option>
+					<option value="twitter94.png">Twitter 94</option>
+					<option value="twitter95.png">Twitter 95</option>
+					<option value="twitter96.png">Twitter 96</option>
+					<option value="twitter97.png">Twitter 97</option>
+					<option value="twitter98.jpg">Twitter 98</option>
+					<option value="twitter99.jpg">Twitter 99</option>
+					<option value="twitter100.png">Twitter 100</option>
+					<option value="twitter101.jpg">Twitter 101</option>
+					<option value="twitter102.png">Twitter 102</option>
+					<option value="twitter103.png">Twitter 103</option>
+					<option value="twitter104.png">Twitter 104</option>
+					<option value="twitter105.png">Twitter 105</option>
+					<option value="twitter106.png">Twitter 106</option>
+					<option value="twitter107.png">Twitter 107</option>
+					<option value="twitter108.png">Twitter 108</option>
+					<option value="twitter109.png">Twitter 109</option>
+					<option value="twitter110.png">Twitter 110</option>
+					<option value="twitter111.png">Twitter 111</option>
+					<option value="twitter112.png">Twitter 112</option>
+					<option value="twitter113.png">Twitter 113</option>
+					<option value="twitter114.png">Twitter 114</option>
+					<option value="twitter115.png">Twitter 115</option>
+					<option value="twitter116.png">Twitter 116</option>
+					<option value="twitter117.png">Twitter 117</option>
+					<option value="twitter118.png">Twitter 118</option>
+					<option value="twitter119.png">Twitter 119</option>
+					<option value="twitter120.png">Twitter 120</option>
+					<option value="twitter121.png">Twitter 121</option>
+					<option value="twitter122.png">Twitter 122</option>
+					<option value="twitter123.png">Twitter 123</option>
+					<option value="twitter124.png">Twitter 124</option>
+					<option value="twitter125.png">Twitter 125</option>
+					<option value="twitter126.png">Twitter 126</option>
+					<option value="twitter127.png">Twitter 127</option>
+					<option value="twitter128.png">Twitter 128</option>
+					<option value="twitter129.png">Twitter 129</option>
+					<option value="twitter130.png">Twitter 130</option>
+					<option value="twitter131.png">Twitter 131</option>
+					<option value="twitter132.png">Twitter 132</option>
+					<option value="twitter133.png">Twitter 133</option>
+					<option value="twitter134.png">Twitter 134</option>
+					<option value="twitter135.png">Twitter 135</option>
+					<option value="twitter136.png">Twitter 136</option>
+					<option value="twitter137.png">Twitter 137</option>
+					<option value="twitter138.png">Twitter 138</option>
+					<option value="twitter139.png">Twitter 139</option>
+					<option value="twitter140.png">Twitter 140</option>
+					<option value="twitter141.png">Twitter 141</option>
+					<option value="twitter142.png">Twitter 142</option>
+					<option value="twitter143.png">Twitter 143</option>
+					<option value="twitter144.png">Twitter 144</option>
+					<option value="twitter145.png">Twitter 145</option>
+					<option value="twitter146.png">Twitter 146</option>
+					<option value="twitter147.png">Twitter 147</option>
+					<option value="twitter148.png">Twitter 148</option>
+					<option value="twitter149.png">Twitter 149</option>
+					<option value="twitter150.png">Twitter 150</option>
+					<option value="twitter151.png">Twitter 151</option>
+					<option value="twitter152.png">Twitter 152</option>
+					<option value="twitter153.png">Twitter 153</option>
+					<option value="twitter154.png">Twitter 154</option>
+					<option value="twitter155.png">Twitter 155</option>
+					<option value="twitter156.png">Twitter 156</option>
+		            <option value="twitter157.png">Twitter 157</option>
+		            <option value="twitter158.png">Twitter 158</option>
+		            <option value="twitter159.png">Twitter 159</option>
+		            <option value="twitter160.png">Twitter 160</option>
+		            <option value="twitter161.png">Twitter 161</option>
+		            <option value="twitter162.png">Twitter 162</option>
+		            <option value="twitter163.png">Twitter 163</option>
+		            <option value="twitter164.png">Twitter 164</option>
+		            <option value="twitter165.png">Twitter 165</option>
+				</field>
+			     <field name="extra_twitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
+                </field>
+            </fieldset>
+            
+            <fieldset name="feedburner_options" label="MOD_ITPSUBSCRIBE_FEEDBURNER_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_FEEDBURNER_OPTIONS_DESC">
+				<field name="mail_form" type="radio" default="0" label="MOD_ITPSUBSCRIBE_MAIL_FORM" description="MOD_ITPSUBSCRIBE_MAIL_FORM_DESC" class="btn-group">
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
+				</field>
+				<field name="feedburner_uri" size="80" type="text" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_URI" description="MOD_ITPSUBSCRIBE_FEEDBURNER_URI_DESC" />
+				<field name="feedburner_style" type="textarea" default="border:1px solid #ccc;padding:3px;text-align:center;" label="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE" description="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE_DESC" cols="50" rows="3" filter="raw" class="span3" />
+				<field name="feedburner_iw" size="80" type="text" default="140" label="MOD_ITPSUBSCRIBE_FEEDBURNER_IW" description="MOD_ITPSUBSCRIBE_FEEDBURNER_IW_DESC" />
+				<field name="feedburner_bn" size="80" type="text" default="Subscribe" label="MOD_ITPSUBSCRIBE_FEEDBURNER_BN" description="MOD_ITPSUBSCRIBE_FEEDBURNER_BN_DESC" />
+				<field name="feedburner_l" type="list" default="en_US" label="MOD_ITPSUBSCRIBE_LANGUAGE" description="MOD_ITPSUBSCRIBE_LANGUAGE_DESC">
+					<option value="en_US">MOD_ITPSUBSCRIBE_ENGLISH</option>
+					<option value="es_ES">MOD_ITPSUBSCRIBE_SPANISH</option>
+					<option value="fr_FR">MOD_ITPSUBSCRIBE_FRENCH</option>
+					<option value="de_DE">MOD_ITPSUBSCRIBE_GERMAN</option>
+					<option value="pt_BR">MOD_ITPSUBSCRIBE_PORTUGUESE</option>
+					<option value="ru_RU">MOD_ITPSUBSCRIBE_RUSSIAN</option>
+					<option value="ja_JP">MOD_ITPSUBSCRIBE_JAPANESE</option>
+				</field>
+				<field name="header_text" type="textarea" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_HT" description="MOD_ITPSUBSCRIBE_FEEDBURNER_HT_DESC" rows="3" cols="40"  class="span3"/>
+		</fieldset>
+
+        <fieldset name="additional_buttons_code" label="MOD_ITPSUBSCRIBE_EXTRA_BUTTONS_LABEL">
+        
+            <field name="ebuttons1" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
+            <field name="ebuttons2" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
+            <field name="ebuttons3" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
+            <field name="ebuttons4" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
+            <field name="ebuttons5" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
+               
+        </fieldset>
+        
+        <fieldset name="additional_form_code" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_LABEL">
+            <field name="eform" type="textarea" default="" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_TITLE" description="MOD_ITPSUBSCRIBE_EXTRA_FORM_DESC" cols="50" rows="10" filter="raw" class="span6" />
+        </fieldset>
+        
+		<fieldset name="advanced">
+			<field name="moduleclass_sfx" type="text"
+                   label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                   description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+             <field
+                 name="cache"
+                 type="list"
+                 default="1"
+                 label="COM_MODULES_FIELD_CACHING_LABEL"
+                 description="COM_MODULES_FIELD_CACHING_DESC">
+                 <option
+                     value="1">JGLOBAL_USE_GLOBAL</option>
+                 <option
+                     value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+             </field>
+             <field
+                 name="cache_time"
+                 type="text"
+                 default="900"
+                 label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                 description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                 
+             <field
+                 name="cachemode"
+                 type="hidden"
+                 default="static">
+                 <option
+                     value="static"></option>
+               </field>
+               
+		</fieldset>
+		</fields>
+	</config>
+	
+</extension>

@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='iso-8859-2'?>
+<houses_data>
+    <categories>
+        <category>
+            <category_id>313</category_id>
+            <category_parent_id>0</category_parent_id>
+            <category_name><![CDATA[Rent]]></category_name>
+            <category_title><![CDATA[Rent]]></category_title>
+            <category_section>com_os_cck</category_section>
+            <category_published>1</category_published>
+        </category>
+        <category>
+            <category_id>314</category_id>
+            <category_parent_id>0</category_parent_id>
+            <category_name><![CDATA[Sale]]></category_name>
+            <category_title><![CDATA[Sale]]></category_title>
+            <category_section>com_os_cck</category_section>
+            <category_published>1</category_published>
+        </category>
+        <category>
+            <category_id>316</category_id>
+            <category_parent_id>314</category_parent_id>
+            <category_name><![CDATA[New]]></category_name>
+            <category_title><![CDATA[New]]></category_title>
+            <category_section>com_os_cck</category_section>
+            <category_published>1</category_published>
+        </category>
+        <category>
+            <category_id>315</category_id>
+            <category_parent_id>314</category_parent_id>
+            <category_name><![CDATA[Old]]></category_name>
+            <category_title><![CDATA[Old]]></category_title>
+            <category_section>com_os_cck</category_section>
+            <category_published>1</category_published>
+        </category>
+    </categories>
+    <houses_list>
+        <house>
+            <itemid>8</itemid>
+            <catid>313</catid>
+            <fk_rentid>0</fk_rentid>
+            <sid>0</sid>
+            <description><![CDATA[]]></description>
+            <link><![CDATA[]]></link>
+            <listing_type>house for rent</listing_type>
+            <price>380 uah</price>
+            <htitle><![CDATA[Kharkov rent ]]></htitle>
+            <hlocation><![CDATA[19 Darvina str, 5 floor of 6 story ]]></hlocation>
+            <hlatitude>49.99733571069717</hlatitude>
+            <hlongitude>36.245588064084586</hlongitude>
+            <map_zoom>1</map_zoom>
+            <bathrooms>1</bathrooms>
+            <bedrooms>1</bedrooms>
+            <broker></broker>
+            <contacts></contacts>
+            <image_link><![CDATA[17BACBE1-3D02-0CCE-F12E-B58B8C8137DB_06f1_1.jpg]]></image_link>
+            <listing_status>active</listing_status>
+            <price_type>negotiable</price_type>
+            <property_type>apartment</property_type>
+            <provider_class>agent</provider_class>
+            <year></year>
+            <agent><![CDATA[]]></agent>
+            <area><![CDATA[]]></area>
+            <expiration_date>0000-00-00</expiration_date>
+            <feature><![CDATA[]]></feature>
+            <hoa_dues><![CDATA[]]></hoa_dues>
+            <lot_size></lot_size>
+            <model><![CDATA[]]></model>
+            <property_taxes>0.00</property_taxes>
+            <school><![CDATA[]]></school>
+            <school_district><![CDATA[]]></school_district>
+            <style><![CDATA[Cape Cod]]></style>
+            <zoning><![CDATA[agricultural]]></zoning>
+            <hits>6</hits>
+            <date>2009-09-25 14:30:21</date>
+            <published>1</published>
+            <rents>
+            </rents>
+            <rentrequests>
+            </rentrequests>
+            <buyingrequests>
+            </buyingrequests>
+            <reviews>
+            </reviews>
+            <images>
+                <image>
+                    <thumbnail_img><![CDATA[54BC3511-E626-527D-3DE9-E07BCDB4656A_06f1_2_mini.jpg]]></thumbnail_img>
+                    <main_img><![CDATA[54BC3511-E626-527D-3DE9-E07BCDB4656A_06f1_2.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img><![CDATA[87697233-A1D8-FAFE-BB41-B5CA160394B3_06f1_3_mini.jpg]]></thumbnail_img>
+                    <main_img><![CDATA[87697233-A1D8-FAFE-BB41-B5CA160394B3_06f1_3.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img><![CDATA[37D9A64B-225D-5289-E9E7-EBCE287BC3DD_06f1_4_mini.jpg]]></thumbnail_img>
+                    <main_img><![CDATA[37D9A64B-225D-5289-E9E7-EBCE287BC3DD_06f1_4.jpg]]></main_img>
+                </image>
+            </images>
+        </house>
+        <house>
+            <itemid>5</itemid>
+            <catid>313</catid>
+            <fk_rentid>0</fk_rentid>
+            <sid>0</sid>
+            <description>
+                <![CDATA[<p>A truly unique apartment situated on one of the most prestigious gardens squares in Knightsbridge. Having just undergone a complete renovation throughout the results are simply stunning. Every detail has been painstakingly scrutinised .</p>]]></description>
+            <link><![CDATA[]]></link>
+            <listing_type>house for rent</listing_type>
+            <price>2,500 pw</price>
+            <htitle><![CDATA[ 2,500 pw 3 bedroom apartment to rent Lennox Gardens, London,]]></htitle>
+            <hlocation><![CDATA[ 2,500 pw 3 bedroom apartment to rent Lennox Gardens, London, ]]></hlocation>
+            <hlatitude>51.52869602791014</hlatitude>
+            <hlongitude>-0.14336586085846648</hlongitude>
+            <map_zoom>1</map_zoom>
+            <bathrooms>2</bathrooms>
+            <bedrooms>3</bedrooms>
+            <broker></broker>
+            <contacts></contacts>
+            <image_link><![CDATA[F56C8962-56F6-D459-EEFD-4FBCF5AB7F13_38778_4mill_IMG_00_0000.jpg]]></image_link>
+            <listing_status>active</listing_status>
+            <price_type>negotiable</price_type>
+            <property_type>apartment</property_type>
+            <provider_class>agent</provider_class>
+            <year></year>
+            <agent><![CDATA[]]></agent>
+            <area><![CDATA[]]></area>
+            <expiration_date>0000-00-00</expiration_date>
+            <feature><![CDATA[]]></feature>
+            <hoa_dues><![CDATA[]]></hoa_dues>
+            <lot_size></lot_size>
+            <model><![CDATA[]]></model>
+            <property_taxes>0.00</property_taxes>
+            <school><![CDATA[]]></school>
+            <school_district><![CDATA[]]></school_district>
+            <style><![CDATA[Cape Cod]]></style>
+            <zoning><![CDATA[agricultural]]></zoning>
+            <hits>14</hits>
+            <date>2009-09-25 14:32:16</date>
+            <published>1</published>
+            <rents>
+            </rents>
+            <rentrequests>
+                <rentrequest>
+                    <rent_from>2009-09-22</rent_from>
+                    <rent_until>2009-09-22</rent_until>
+                    <rent_request>2009-09-22 11:03:17</rent_request>
+                    <user_name>sssssss</user_name>
+                    <user_email>sssssss@mail.ru</user_email>
+                    <user_mailing><![CDATA[]]></user_mailing>
+                    <status>0</status>
+                </rentrequest>
+            </rentrequests>
+            <buyingrequests>
+            </buyingrequests>
+            <reviews>
+            </reviews>
+            <images>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[E492E6D2-A40D-043B-E718-4A2465594693_43775_halg3737494_IMG_01_0000_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[E492E6D2-A40D-043B-E718-4A2465594693_43775_halg3737494_IMG_01_0000.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[EFEFBE30-3FFA-B373-256F-0D7CC6F30786_43775_halg3737494_IMG_10_0000_t_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[EFEFBE30-3FFA-B373-256F-0D7CC6F30786_43775_halg3737494_IMG_10_0000_t.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[00E0A4DD-339D-93CA-2A99-429BC87E624B_43775_halg3737494_IMG_08_0000_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[00E0A4DD-339D-93CA-2A99-429BC87E624B_43775_halg3737494_IMG_08_0000.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[7A7EE5FC-F03C-0E97-55EE-25FB69D9EC66_43775_halg3737494_IMG_11_0000_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[7A7EE5FC-F03C-0E97-55EE-25FB69D9EC66_43775_halg3737494_IMG_11_0000.jpg]]></main_img>
+                </image>
+            </images>
+        </house>
+        <house>
+            <itemid>2</itemid>
+            <catid>315</catid>
+            <fk_rentid>0</fk_rentid>
+            <sid>0</sid>
+            <description>
+                <![CDATA[<p>A2 zoning, great potential for re-zoning located across the road from Canadian Tire, Big Bend Crossing Shopping Centre. Item is partially renovated 3 bdrm suite up and 2 bdrm down with long term te</p>]]></description>
+            <link><![CDATA[]]></link>
+            <listing_type>for sale</listing_type>
+            <price>$618,800.00</price>
+            <htitle><![CDATA[ 5924 10TH AV, Big Bend, Burnaby, ]]></htitle>
+            <hlocation><![CDATA[ 5924 10TH AV, Big Bend, Burnaby,  $618,800.00]]></hlocation>
+            <hlatitude>40.38002840251183</hlatitude>
+            <hlongitude>-111.533203125</hlongitude>
+            <map_zoom>1</map_zoom>
+            <bathrooms>1</bathrooms>
+            <bedrooms>5</bedrooms>
+            <broker></broker>
+            <contacts></contacts>
+            <image_link><![CDATA[v703809_1.jpg]]></image_link>
+            <listing_status>active</listing_status>
+            <price_type>negotiable</price_type>
+            <property_type>apartment</property_type>
+            <provider_class>agent</provider_class>
+            <year>1945</year>
+            <agent><![CDATA[Lee, Tim (Chien Hsien)]]></agent>
+            <area><![CDATA[2200.0 sqft.]]></area>
+            <expiration_date>2027-12-31</expiration_date>
+            <feature><![CDATA[]]></feature>
+            <hoa_dues><![CDATA[]]></hoa_dues>
+            <lot_size></lot_size>
+            <model><![CDATA[]]></model>
+            <property_taxes>0.00</property_taxes>
+            <school><![CDATA[]]></school>
+            <school_district><![CDATA[]]></school_district>
+            <style><![CDATA[Cape Cod]]></style>
+            <zoning><![CDATA[agricultural]]></zoning>
+            <hits>11</hits>
+            <date>2009-09-21 16:05:58</date>
+            <published>1</published>
+            <rents>
+            </rents>
+            <rentrequests>
+            </rentrequests>
+            <buyingrequests>
+            </buyingrequests>
+            <reviews>
+            </reviews>
+            <images>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[8E19E9AD-0195-3753-C9C1-95505BF64687_1988108_2_51962_16_12_2008_mini.jpg]]></thumbnail_img>
+                    <main_img><![CDATA[8E19E9AD-0195-3753-C9C1-95505BF64687_1988108_2_51962_16_12_2008.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[36BCB112-98D8-2D0F-F4FA-46DEDA1779B8_1988108_3_51962_16_12_2008_mini.jpg]]></thumbnail_img>
+                    <main_img><![CDATA[36BCB112-98D8-2D0F-F4FA-46DEDA1779B8_1988108_3_51962_16_12_2008.jpg]]></main_img>
+                </image>
+            </images>
+        </house>
+        <house>
+            <itemid>3</itemid>
+            <catid>315</catid>
+            <fk_rentid>0</fk_rentid>
+            <sid>0</sid>
+            <description>
+                <![CDATA[<p>WOW Great price for 21,186 sq ft lot in South Burnaby. The original family home has been well cared for &amp; ready to move in, rent out, or build your dream home! Over 50,000 below assessed value. Sunny south</p>]]></description>
+            <link><![CDATA[]]></link>
+            <listing_type>for sale</listing_type>
+            <price>$629,649.00</price>
+            <htitle><![CDATA[ 4538 MARINE DR, Big Bend, Burnaby,]]></htitle>
+            <hlocation><![CDATA[ 4538 MARINE DR, Big Bend, Burnaby,  $629,649.00]]></hlocation>
+            <hlatitude>49.229468194067294</hlatitude>
+            <hlongitude>-122.94699972864692</hlongitude>
+            <map_zoom>1</map_zoom>
+            <bathrooms>4</bathrooms>
+            <bedrooms>5</bedrooms>
+            <broker>Realty New Call</broker>
+            <contacts></contacts>
+            <image_link><![CDATA[yard_001.van.default.jpg]]></image_link>
+            <listing_status>active</listing_status>
+            <price_type>negotiable</price_type>
+            <property_type>apartment</property_type>
+            <provider_class>agent</provider_class>
+            <year>1900</year>
+            <agent><![CDATA[Berg, Valerie ]]></agent>
+            <area><![CDATA[ 1358.0 sqft.]]></area>
+            <expiration_date>2027-12-31</expiration_date>
+            <feature><![CDATA[Recreation nearby , Fireplaces]]></feature>
+            <hoa_dues><![CDATA[]]></hoa_dues>
+            <lot_size></lot_size>
+            <model><![CDATA[]]></model>
+            <property_taxes>0.00</property_taxes>
+            <school><![CDATA[]]></school>
+            <school_district><![CDATA[]]></school_district>
+            <style><![CDATA[Cape Cod]]></style>
+            <zoning><![CDATA[agricultural]]></zoning>
+            <hits>13</hits>
+            <date>2009-09-25 14:26:19</date>
+            <published>1</published>
+            <rents>
+            </rents>
+            <rentrequests>
+            </rentrequests>
+            <buyingrequests>
+            </buyingrequests>
+            <reviews>
+            </reviews>
+            <images>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[01874F65-262E-F33F-188E-C494F08B8E4A_206054228.105_mini.jpg]]></thumbnail_img>
+                    <main_img><![CDATA[01874F65-262E-F33F-188E-C494F08B8E4A_206054228.105.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[83D5ABC3-98FA-E53C-2AB1-567A063AAE50_206054228.106_mini.jpg]]></thumbnail_img>
+                    <main_img><![CDATA[83D5ABC3-98FA-E53C-2AB1-567A063AAE50_206054228.106.jpg]]></main_img>
+                </image>
+            </images>
+        </house>
+        <house>
+            <itemid>6</itemid>
+            <catid>316</catid>
+            <fk_rentid>0</fk_rentid>
+            <sid>0</sid>
+            <description>
+                <![CDATA[<p>- 10,000sq ft freehold building plots with planning for a residence <br />- Beachfront plots available <br />- Land plots are in UK territory <br />- No taxes / no time limit on building / no restrictions on foreign ownership <br />- 112% capital&]]></description>
+            <link><![CDATA[]]></link>
+            <listing_type>for sale</listing_type>
+            <price>$57,090</price>
+            <htitle><![CDATA[Spot Bay ,Greater Antilles]]></htitle>
+            <hlocation><![CDATA[Spot Bay ,Greater Antilles]]></hlocation>
+            <hlatitude>19.752002128703865</hlatitude>
+            <hlongitude>-79.73539352591615</hlongitude>
+            <map_zoom>1</map_zoom>
+            <bathrooms>0</bathrooms>
+            <bedrooms>0</bedrooms>
+            <broker></broker>
+            <contacts></contacts>
+            <image_link><![CDATA[0AAEB744-A404-194B-3163-8997D41AF8B3_14761_Caymans1Brac_IMG_00_0000.jpg]]></image_link>
+            <listing_status>active</listing_status>
+            <price_type>negotiable</price_type>
+            <property_type>apartment</property_type>
+            <provider_class>agent</provider_class>
+            <year></year>
+            <agent><![CDATA[]]></agent>
+            <area><![CDATA[]]></area>
+            <expiration_date>0000-00-00</expiration_date>
+            <feature><![CDATA[]]></feature>
+            <hoa_dues><![CDATA[]]></hoa_dues>
+            <lot_size></lot_size>
+            <model><![CDATA[]]></model>
+            <property_taxes>0.00</property_taxes>
+            <school><![CDATA[]]></school>
+            <school_district><![CDATA[]]></school_district>
+            <style><![CDATA[Cape Cod]]></style>
+            <zoning><![CDATA[agricultural]]></zoning>
+            <hits>18</hits>
+            <date>2009-09-25 14:37:52</date>
+            <published>1</published>
+            <rents>
+            </rents>
+            <rentrequests>
+            </rentrequests>
+            <buyingrequests>
+            </buyingrequests>
+            <reviews>
+            </reviews>
+            <images>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[5E66F200-C064-247C-7534-DF6A223D33D4_14761_Caymans1Brac_IMG_01_0000_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[5E66F200-C064-247C-7534-DF6A223D33D4_14761_Caymans1Brac_IMG_01_0000.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[E08E7360-750B-B3FF-3F43-5F0E573E90AB_14761_Caymans1Brac_IMG_02_0000_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[E08E7360-750B-B3FF-3F43-5F0E573E90AB_14761_Caymans1Brac_IMG_02_0000.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[2D227A61-4368-32AE-F69E-5943CC7ABA2F_14761_Caymans1Brac_IMG_04_0000_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[2D227A61-4368-32AE-F69E-5943CC7ABA2F_14761_Caymans1Brac_IMG_04_0000.jpg]]></main_img>
+                </image>
+            </images>
+        </house>
+        <house>
+            <itemid>7</itemid>
+            <catid>316</catid>
+            <fk_rentid>0</fk_rentid>
+            <sid>0</sid>
+            <description>
+                <![CDATA[<p>This modern building is located on Berliner Allee; the main street of Weiensee where there are many shops that accommodate daily needs. About 500 m away are many parks and recreation areas. Transport link is excellent with the tram passing directl]]></description>
+            <link><![CDATA[]]></link>
+            <listing_type>foreclosure</listing_type>
+            <price>3,300,000 euro</price>
+            <htitle><![CDATA[ Commercial property for sale  Berlin]]></htitle>
+            <hlocation><![CDATA[ Commercial property for sale  Berlin]]></hlocation>
+            <hlatitude>52.5162574255489</hlatitude>
+            <hlongitude>13.39223384813522</hlongitude>
+            <map_zoom>1</map_zoom>
+            <bathrooms>0</bathrooms>
+            <bedrooms>0</bedrooms>
+            <broker></broker>
+            <contacts></contacts>
+            <image_link>
+                <![CDATA[B4063096-99A6-B607-9C95-2F7698D021F0_11797_11797_BerlinerAllee_IMG_00_0001.jpg]]></image_link>
+            <listing_status>active</listing_status>
+            <price_type>negotiable</price_type>
+            <property_type>apartment</property_type>
+            <provider_class>agent</provider_class>
+            <year>1994</year>
+            <agent><![CDATA[]]></agent>
+            <area><![CDATA[]]></area>
+            <expiration_date>0000-00-00</expiration_date>
+            <feature><![CDATA[]]></feature>
+            <hoa_dues><![CDATA[]]></hoa_dues>
+            <lot_size></lot_size>
+            <model><![CDATA[]]></model>
+            <property_taxes>0.00</property_taxes>
+            <school><![CDATA[]]></school>
+            <school_district><![CDATA[]]></school_district>
+            <style><![CDATA[Cape Cod]]></style>
+            <zoning><![CDATA[agricultural]]></zoning>
+            <hits>6</hits>
+            <date>2009-09-25 14:40:25</date>
+            <published>1</published>
+            <rents>
+            </rents>
+            <rentrequests>
+            </rentrequests>
+            <buyingrequests>
+            </buyingrequests>
+            <reviews>
+            </reviews>
+            <images>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[44D7FA92-D80A-A42C-E0FE-F786D995DF9A_11797_11797_BerlinerAllee_IMG_01_0001_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[44D7FA92-D80A-A42C-E0FE-F786D995DF9A_11797_11797_BerlinerAllee_IMG_01_0001.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[3D838282-E6F6-E767-D2E4-00238D02F748_11797_11797_BerlinerAllee_IMG_03_0001_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[3D838282-E6F6-E767-D2E4-00238D02F748_11797_11797_BerlinerAllee_IMG_03_0001.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[9B635E72-7BEB-1C8E-A0FA-90A6E270E374_11797_11797_BerlinerAllee_IMG_04_0001_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[9B635E72-7BEB-1C8E-A0FA-90A6E270E374_11797_11797_BerlinerAllee_IMG_04_0001.jpg]]></main_img>
+                </image>
+                <image>
+                    <thumbnail_img>
+                        <![CDATA[037EF87C-5F23-51D1-E0DD-6C40998AF812_11797_11797_BerlinerAllee_IMG_05_0001_mini.jpg]]></thumbnail_img>
+                    <main_img>
+                        <![CDATA[037EF87C-5F23-51D1-E0DD-6C40998AF812_11797_11797_BerlinerAllee_IMG_05_0001.jpg]]></main_img>
+                </image>
+            </images>
+        </house>
+    </houses_list>
+</houses_data>

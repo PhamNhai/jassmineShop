@@ -1,0 +1,1021 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
+/*------------------install------------------------------*/
+.com_installer .cck-check-database {
+    text-align: center;
+    margin: 0 0 35px 0;
+}
+.com_installer .cck-install-block {
+    border: 2px solid #1CB09A;
+    background: rgba(0, 167, 142, 0.35);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+.com_installer .cck-install-block .cck-logo {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    padding: 37px 0;
+}
+.com_installer .cck-install-block .cck-text-install {
+    width: 80%;
+    display: inline-block;
+}
+.com_installer .cck-install-block .cck-text-install p a {
+    text-decoration: underline;
+}
+.com_installer .cck-install-block .cck-text-install h2 {
+    color: #34404C;
+    text-transform: uppercase;
+}
+/*--------------------menu----------------------------*/
+#content #sidebar #submenu {
+  padding: 0 !important;
+}
+#content #sidebar #submenu li a {
+  margin: 0 !important;
+}
+input[type="checkbox"] {
+  margin: 0 !important;
+}
+
+div[id*=module-sliders] h1 {
+    font-family: 'Quicksand', Arial;
+    color: #111111;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-align: center;
+}
+
+div[id*=module-sliders] h3 {
+    font-family: 'Oswald', Arial !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 4px 0;
+}
+
+div[id*=module-sliders] input.required {
+    background-color: #D5EEFF;
+    border-radius: 3px 3px 3px 3px;
+    padding: 6px 7px;
+}
+
+div[id*=module-sliders] h3.btl-pane-toggler, div[id*=module-sliders] .btl-pane-toggler-down {
+    cursor: pointer;
+    padding: 15px 0 0 10px;
+    -webkit-transition: all 0.1s ease-out 0s;
+    -moz-transition: all 0.1s ease-out 0s;
+    transition: all 0.1s ease-out 0s;
+    height: 30px;
+}
+
+div[id*=module-sliders] h3.title.pane-toggler-down {
+    background: #FFF2F5;
+    background: -moz-linear-gradient(top, #F4F5F7 0%, #EAEBED 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F4F5F7), color-stop(100%, #EAEBED));
+    background: -o-linear-gradient(top, #F4F5F7, #EAEBED);
+    background: linear-gradient(to bottom, #F4F5F7, #EAEBED);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4F5F7', endColorstr='#EAEBED', GradientType=0);
+    -webkit-box-shadow: 0 2px 1px rgba(134, 134, 134, 0.12);
+    -moz-box-shadow: 0 2px 1px rgba(134, 134, 134, 0.12);
+    box-shadow: 0 2px 1px rgba(134, 134, 134, 0.12);
+    border: 1px solid #dedede;
+    color: #3c3c3d !important;
+    padding: 15px 0px !important;
+    margin: 0px !important;
+}
+
+div[id*=module-sliders] h3.pane-toggler.title {
+    background: #00A5E4 !important;
+    background: -moz-linear-gradient(top, #58A8F4 0%, #348DDF 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #58A8F4), color-stop(100%, #348DDF)) !important;
+    background: -o-linear-gradient(top, #58A8F4, #348DDF) !important;
+    background: linear-gradient(to bottom, #58A8F4, #348DDF) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58A8F4', endColorstr='#348DDF', GradientType=0) !important;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid #1f6db6 !important;
+    padding: 15px 0px !important;
+    margin: 0px !important;
+}
+
+div[id*=module-sliders] h3.pane-toggler.title a span {
+    color: #FFFFFF !important;
+    padding-left: 30px;
+    background: url('../../images/passive_arrow.png') 0% 50% no-repeat !important;
+}
+
+div[id*=module-sliders] h3.title.pane-toggler-down a span {
+    color: #3C3C3D !important;
+    padding-left: 30px;
+    background: url('../../images/active_arrow.png') 0% 50% no-repeat !important;
+}
+
+div[id*=module-sliders] .text_propery {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+div[id*=module-sliders] .mod-desc a {
+    outline: none !important;
+}
+
+div[id*=module-sliders] #down_pictures {
+    overflow: hidden;
+}
+
+div[id*=module-sliders] .sepp_div {
+    border-bottom: 1px solid #d9d9d9;
+    clear: both;
+    margin: 40px 0;
+}
+
+div[id*=module-sliders] .toggle-arrow {
+    width: 100%;
+}
+
+div[id*=module-sliders] .btl-panel input[type="text"], div[id*=module-sliders] .btl-panel select,
+div[id*=module-sliders] .adminformlist select, div[id*=module-sliders] .btl-panel textarea,
+div[id*=module-sliders] button.jform-rightbtn, div[id*=module-sliders] .hasTipPreview,
+div[id*=module-sliders] .blank a {
+    border-radius: 4px 4px 4px 4px;
+}
+
+div[id*=module-sliders] .btl-panel input[type="text"], div[id*=module-sliders] .btl-panel select,
+div[id*=module-sliders] .adminformlist select, div[id*=module-sliders] .btl-panel textarea,
+div[id*=module-sliders] .blank a {
+    border: 1px solid #D3D3D3;
+    font-size: 11px;
+    padding: 7px;
+}
+
+
+div[id*=module-sliders] .btl-panel input[type="text"], .btl-panel select {
+    width: 125px;
+}
+
+div[id*=module-sliders] input:focus, select:focus, textarea:focus {
+    -/*webkit-background-color: rgba(0, 132, 255, 0.33) !important;
+    -moz-background-color: rgba(0, 132, 255, 0.33) !important;
+    background-color: rgba(0, 132, 255, 0.33) !important;
+    border: 1px solid #1f6db6 !important;*/
+}
+
+div[id*=module-sliders] .btl-panel textarea {
+    width: 345px !important;
+    min-height: 120px;
+}
+
+div[id*=module-sliders] .button2-left, div[id*=module-sliders] .button2-left .blank {
+    background: none !important;
+}
+
+div[id*=module-sliders] button.jform-rightbtn {
+    padding: 5px 14px;
+}
+
+div[id*=module-sliders] .blank a, div[id*=module-sliders] .blank a:hover {
+    padding: 2px 10px !important;
+}
+
+div[id*=module-sliders] span.hasTipPreview {
+    cursor: pointer;
+    display: block;
+    padding: 7px;
+}
+
+div[id*=module-sliders] .blank a, div[id*=module-sliders] .hasTipPreview,
+div[id*=module-sliders] button.jform-rightbtn {
+    background: #FFF2F5;
+    background: -moz-linear-gradient(top, #F4F5F7 0%, #EAEBED 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F4F5F7), color-stop(100%, #EAEBED));
+    background: -o-linear-gradient(top, #F4F5F7, #EAEBED);
+    background: linear-gradient(to bottom, #F4F5F7, #EAEBED);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4F5F7', endColorstr='#EAEBED', GradientType=0);
+    -webkit-box-shadow: 0 2px 1px rgba(134, 134, 134, 0.12);
+    -moz-box-shadow: 0 2px 1px rgba(134, 134, 134, 0.12);
+    box-shadow: 0 2px 1px rgba(134, 134, 134, 0.12);
+    border: 1px solid #dedede;
+    color: #3c3c3d !important;
+    margin: 5px 0 0 0;
+}
+
+div[id*=module-sliders] .blank a:hover,
+div[id*=module-sliders] button.jform-rightbtn:hover {
+    background: #00A5E4;
+    background: -moz-linear-gradient(top, #58A8F4 0%, #348DDF 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #58A8F4), color-stop(100%, #348DDF));
+    background: -o-linear-gradient(top, #58A8F4, #348DDF);
+    background: linear-gradient(to bottom, #58A8F4, #348DDF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58A8F4', endColorstr='#348DDF', GradientType=0);
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid #1f6db6;
+    color: #FFF !important;
+}
+
+div[id*=module-sliders] .btl-panel select, div[id*=module-sliders] .adminformlist select {
+    width: 137px !important;
+    cursor: pointer;
+}
+
+div[id*=module-sliders] .btl-panel fieldset {
+    padding: 0 !important;
+}
+
+div[id*=module-sliders] #jform_params_wrapper_position0, #jform_params_wrapper_position0,
+div[id*=module-sliders] #jform_params_underline0, #jform_params_underline1,
+div[id*=module-sliders] #jform_params_hover_underline0, #jform_params_hover_underline1 {
+    width: 16px;
+    height: 16px;
+}
+
+div[id*=module-sliders] #separator {
+    margin: 0 10px;
+}
+
+div[id*=module-sliders] fieldset.panelform input {
+    text-align: center;
+}
+
+div[id*=module-sliders] ul[id*=images] {
+    list-style: none;
+}
+
+div[id*=module-sliders] ul[id*=images] li {
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+    margin: 0px 14px 10px 0px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0px 0px 5px #000;
+    border: 4px solid white;
+}
+
+/* div[id*=module-sliders] ul[id*=images] li:nth-child(3n) {
+    margin-right: 0px !important;
+} */
+
+div[id*=module-sliders] ul[id*=images] li img {
+    margin: 0px;
+    opacity: 0.85;
+}
+
+div[id*=module-sliders] ul[id*=images] li.active {
+    background: #4c96d8;
+}
+
+div[id*=module-sliders] ul[id*=images] li span {
+    font-weight: bold;
+}
+
+div[id*=module-sliders] ul[id*=images] li a:hover {
+    text-decoration: none;
+}
+
+
+
+div[id*=fine-uploader_galleryfield_] .qq-uploader-selector {
+  min-height: 100px !important;
+  position: relative;
+  background: #ccc;
+}
+div[id*=fine-uploader_galleryfield_] .qq-uploader-selector:before {
+    top: 65%;
+    opacity: 0.8;
+}
+
+
+
+div[id*=module-sliders] div.qq-upload-drop-area p {
+    color: #3c3c3d;
+    text-transform: uppercase;
+    font: normal 400 14px 'Oswald', Arial !important;
+    margin: 40px 0px 25px 0px;
+}
+
+div[id*=fine-uploader_galleryfield_] .qq-uploader-selector .qq-upload-button-selector {
+    background: #00A5E4 !important;
+    text-transform: uppercase;
+    margin: 0px !important;
+    padding: 7px 14px !important;
+    background: -moz-linear-gradient(top, #58A8F4 0%, #348DDF 100%) !important;
+    border: 1px solid #1F6DB6 !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #58A8F4), color-stop(100%, #348DDF)) !important;
+    background: -o-linear-gradient(top, #58A8F4, #348DDF) !important;
+    background: linear-gradient(to bottom, #58A8F4, #348DDF) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58A8F4', endColorstr='#348DDF', GradientType=0) !important;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4) !important;
+    position: relative;
+    color: #fff;
+    -moz-border-radius: 3px;
+    font: normal 400 14px 'Oswald', Arial !important;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+        width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+div[id*=module-sliders] div#file-area div.qq-upload-button {
+    margin-bottom: 0px;
+}
+
+div[id*=module-sliders] div.qq-upload-button p {
+    color: #3c3c3d;
+    text-transform: uppercase;
+    font: normal 400 14px 'Oswald', Arial !important;
+    margin: 55px 0px 25px 0px;
+}
+
+div[id*=module-sliders] div.qq-upload-button span.pseudo_button {
+    background: #00A5E4 !important;
+    text-transform: uppercase;
+    margin: 0px !important;
+    padding: 7px 14px !important;
+    background: -moz-linear-gradient(top, #58A8F4 0%, #348DDF 100%) !important;
+    border: 1px solid #1F6DB6 !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #58A8F4), color-stop(100%, #348DDF)) !important;
+    background: -o-linear-gradient(top, #58A8F4, #348DDF) !important;
+    background: linear-gradient(to bottom, #58A8F4, #348DDF) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58A8F4', endColorstr='#348DDF', GradientType=0) !important;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4) !important;
+    position: relative;
+    color: #fff;
+    -moz-border-radius: 3px;
+    font: normal 400 14px 'Oswald', Arial !important;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+
+
+
+div[id*=module-sliders] ul[id*=images] li a[class*=rem_item] {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background: url(../../images/btn_delete.png) top left no-repeat;
+    position: absolute;
+    top: 35%;
+    left: -30%;
+    transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+}
+
+div[id*=module-sliders] ul[id*=images] li a[class*=edit_item] {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background: url(../../images/btn_edit.png) top left no-repeat;
+    position: absolute;
+    top: 35%;
+    right: -30%;
+    transition: right 0.5s;
+    -webkit-transition: right 0.5s;
+    -moz-transition: right 0.5s;
+}
+
+div[id*=module-sliders] ul[id*=images] li:hover a[class*=rem_item] {
+    left: 22%;
+}
+
+div[id*=module-sliders] ul[id*=images] li:hover a[class*=edit_item] {
+    right: 19%;
+}
+
+div[id*=module-sliders] ul[id*=images] li:hover img {
+    opacity: 0.5;
+}
+
+div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
+    text-align: center;
+}
+
+div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix div.ui-dialog-buttonset {
+    float: none;
+}
+
+div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix span.ui-button-text{
+    background: #00A5E4 !important;
+    text-transform: uppercase;
+    margin: 0px !important;
+    padding: 7px 40px !important;
+    background: -moz-linear-gradient(top, #58A8F4 0%, #348DDF 100%) !important;
+    border: 1px solid #1F6DB6 !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #58A8F4), color-stop(100%, #348DDF)) !important;
+    background: -o-linear-gradient(top, #58A8F4, #348DDF) !important;
+    background: linear-gradient(to bottom, #58A8F4, #348DDF) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58A8F4', endColorstr='#348DDF', GradientType=0) !important;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.19), 0 2px 1px rgba(255, 255, 255, 0.2) inset !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4) !important;
+    position: relative;
+    color: #fff;
+    -moz-border-radius: 3px;
+    font: normal 400 14px 'Oswald', Arial !important;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+
+div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix button,
+div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix button.ui-state-hover {
+    border: none;
+}
+
+div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix button.ui-state-hover span {
+    color: #333;
+}
+
+div#dialog-form fieldset, div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
+    border: none;
+}
+
+div.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix span.ui-dialog-title {
+    display: none;
+}
+
+div.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+    background: none;
+    border: none;
+}
+
+div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+    border: 1px solid lightGrey;
+    background: #fff;
+}
+
+div.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix button {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: -1px 1px 4px #b9b9b9;
+    -webkit-box-shadow: -1px 1px 4px #b9b9b9;
+    -moz-box-shadow: -1px 1px 4px #b9b9b9;
+    top: 0%;
+    right: -1%;
+    z-index: 9999;
+    background: #333;
+}
+
+div.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix button span {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    /*background: #333 url(../images/close.png) 45% 50% no-repeat;*/
+}
+
+div#dialog-form fieldset label {
+    display: inline-block;
+    width: 118px;
+    line-height: 24px;
+    margin: 13px 0px 0px 8px;
+}
+
+div#dialog-form fieldset input {
+    border: 1px solid #c0c0c0;
+    height: 25px;
+    margin: 12px 0px 1px 0px;
+    width: 335px;
+    padding-left: 5px;
+}
+
+div#dialog-form fieldset {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+div[id*=module-sliders] ul.qq-upload-list span {
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+    font: normal normal 12px Arial, Helvetica, sans-serif;
+}
+
+div[id*=module-sliders] fieldset.panelform {
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+}
+
+div[id*=module-sliders] ul.qq-upload-list li.qq-upload-success span.qq-upload-failed-text {
+    display: inline-block;
+    color: transparent;
+}
+
+div[id*=module-sliders] ul.qq-upload-list li.qq-upload-success span.qq-upload-failed-text:after {
+    content: '';
+    position: relative;
+    background: url(../../images/btn_s.png) center no-repeat;
+    top: 3px;
+    left: 10px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+div[id*=module-sliders] ul.qq-upload-list li.qq-upload-fail span.qq-upload-failed-text:after {
+    content: '';
+    position: relative;
+    background: url(../../images/btn_d.png) center no-repeat;
+    top: 3px;
+    left: 10px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+#add_form label{
+    display: block;
+}
+body.admin.com_os_cck.task-edit_layout{
+    padding:0;
+}
+.task-edit_category .adminform {
+    width: 100%;
+    font-size: 1em;
+}
+.task-edit_category .adminform input.text_area {
+    width: 220px;
+}
+.os_cck_caption {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 36px;
+    margin: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+.os_cck_caption img {
+    margin-right: 10px;
+    height: 40px;
+}
+
+.header{
+  background: #34404C !important;
+  padding: 0 !important;
+}
+.container-logo {
+    margin: 5px;
+}
+#sidebar .nav-list li.active a{
+    color: white;
+    margin-right: 15px;
+    background: #34404C;
+}
+
+#sidebar .nav-list a:hover{
+    color: white;
+    margin-right: 15px;
+    background: #34404C;
+    text-shadow:none;
+}
+
+.edit_instance{
+    margin: 5px 50px 15px;
+}
+
+.edit_instance>.row{
+    margin-left: 0px;
+}
+
+.edit_instance span:first-child{
+    display: block;
+}
+
+#manageLayoutModal,#manageInstanceModal,#manageCategoryModal{
+  padding: 0 10px 20px;
+}
+
+.manageLayoutModalTable,.manageInstanceModalTable,.manageCategoryModalTable{
+  margin-top: 20px;
+  cursor: default;
+  color: #333333;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.manageLayoutModalTable td,.manageLayoutModalTable th,.manageInstanceModalTable td,.manageInstanceModalTable th,
+.manageCategoryModalTable td,.manageCategoryModalTable th{
+  padding-left: 5px;
+}
+
+#manageLayoutModal tr.modalRow0:hover,
+#manageLayoutModal tr.modalRow1:hover,
+#manageInstanceModal tr.modalRow0:hover,
+#manageInstanceModal tr.modalRow1:hover,
+#manageCategoryModal tr.modalRow1:hover,
+#manageCategoryModal tr.modalRow0:hover{
+  cursor: pointer;
+  color: white;
+  background: #1CB09A !important;
+}
+#sbox-window {
+    padding: 35px 10px 10px 10px
+}
+#attached-layout-modal-Label,
+.modal-title {
+  cursor: default;
+  padding: 5px;
+  color: #fff;
+  background: #34404C;
+}
+#sbox-btn-close{
+  background: rgba(0, 0, 0, 0) url("../../images/delete-row.png") no-repeat scroll center center;
+  right: 12px;
+  top: 5px;
+}
+#sbox-btn-close:hover{
+  background: rgba(0, 0, 0, 0) url("../../images/delete-row.png") no-repeat scroll center center;
+}
+.com_os_cck #content .adminlist tr:nth-child(2n) {
+    background: #f5f5f5 !important;
+}
+.com_os_cck #content .adminlist tr{
+    height: 40px;
+}
+.layout-name,
+.module-name,
+.field-name {
+  display: block;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 5px;
+}
+#attached-block .module-name,
+#attached-block .layout-name,
+#fields-block .field-name {
+  display: block;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0px 3px;
+    border: 1px solid #34404C;
+    word-wrap:break-word;
+}
+.ui-draggable-dragging {
+    /*width: 185px !important;*/
+}
+.activeSortable .ui-sortable-helper {
+    /*width: 165px !important;*/
+}
+/*----------------------elements---------------------*/
+/*.qq-upload-button {
+    padding: 20px 0 !important;
+}*/
+.qq-upload-button {
+    padding: 35px !important;
+}
+.qq-upload-button  p {
+    display: none !important;
+}
+.qq-upload-button input {
+    top: 0;
+    bottom: 0;
+    height: 100% !important;
+}
+#adminForm .edit_instance .content-row {
+  z-index: 0 !important;
+}
+
+#adminForm .edit_instance .content-row .items {
+  z-index: 0 !important;
+}
+
+#adminForm .edit_instance .content-row .items .drop-item {
+  z-index: 0 !important;
+}
+
+.parent_instance_block #instance_block .content-row {
+  z-index: 0 !important;
+}
+
+.parent_instance_block #instance_block .content-row .items {
+  z-index: 0 !important;
+}
+
+.parent_instance_block #instance_block .content-row .items .drop-item {
+  z-index: 0 !important;
+}
+
+/*-----------------------------------cck_search_button--------------------------------*/
+.search_block {
+    position: relative;
+    width: 240px;
+}
+.cck_search_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px !important;
+    height: 28px !important;
+    background: #F1F1F1;
+    border: 1px solid #ccc;
+    boreder-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+/*----------------------------------------------about tab-----------------------------------------------*/
+.task-about #aboutPane,
+ #instance-tab  {
+  margin-bottom: 0 !important;
+}
+.task-about .current,
+.task-new_instance .current,
+.task-edit_instance .current{
+  padding: 20px 10px;
+  background: rgba(0, 167, 142, 0.35);
+}
+.task-about #aboutPane .tabs ,
+ #instance-tab .tabs{
+  display: inline-block;
+    padding: 5px 30px;
+  color: #fff;
+}
+.task-about #aboutPane .tabs a,
+ #instance-tab .tabs a {
+  color: #fff;
+}
+.task-about #aboutPane .closed,
+ #instance-tab .closed{
+  background: #34404C;
+}
+.task-about #aboutPane .closed a ,
+ #instance-tab .closed a{
+  font-weight: 400;
+}
+.task-about #aboutPane .open ,
+ #instance-tab .open{
+  background: #1CB09A;
+}
+.task-about #aboutPane .open a,
+ #instance-tab  .open a {
+  font-weight: 400;
+}
+
+/*------------------------------------------------*/
+.fixedform {
+    display: inline-block;
+}
+/*---------------------task-edit_buy_request_instance-----------------------*/
+.task-edit_buy_request_instance #child_instance,
+.task-edit_rent_request_instance #child_instance,
+.task-show_request_item #psubmission {
+    background: rgba(0, 167, 142, 0.35);
+    padding: 10px;
+}
+
+.task-show_request_item #instance,
+.task-edit_rent_request_instance #parent_instance,
+.task-edit_buy_request_instance #parent_instance {
+    padding: 10px;
+}
+.task-show_request_item #psubmission .col_inline,
+.task-show_request_item #instance .col_inline,
+.task-edit_rent_request_instance #child_instance .col_inline,
+.task-edit_rent_request_instance #parent_instance .col_inline,
+.task-edit_buy_request_instance #child_instance .col_inline,
+.task-edit_buy_request_instance #parent_instance .col_inline {
+    display: inline-block;
+    width: 20%;
+    float:left;
+    line-height: 25px;
+}
+.task-show_request_item #psubmission .col_box,
+.task-show_request_item #instance .col_box,
+.task-edit_rent_request_instance #child_instance .col_box,
+.task-edit_rent_request_instance #parent_instance .col_box,
+.task-edit_buy_request_instance #child_instance .col_box,
+.task-edit_buy_request_instance #parent_instance .col_box {
+    display: inline-block;
+    width: 80%;
+    float: none;
+    line-height: 25px;
+}
+/*-------------------------owner_id-----------------------------*/
+.task-users_rent_history #owner_id {
+  margin: 0 0 0 5px;
+}
+/*------------------------intance rent page-----------------------------*/
+.task-edit_instance #ui-datepicker-div,
+.task-new_instance #ui-datepicker-div,
+.task-edit_rent #ui-datepicker-div,
+.task-rent #ui-datepicker-div,
+.task-add_rent #ui-datepicker-div,
+.task-edit_review #ui-datepicker-div
+{
+    background: #34404C;
+}
+.task-edit_instance #ui-datepicker-div .ui-datepicker-header,
+.task-new_instance #ui-datepicker-div .ui-datepicker-header,
+.task-edit_rent #ui-datepicker-div .ui-datepicker-header,
+.task-add_rent #ui-datepicker-div .ui-datepicker-header,
+.task-rent #ui-datepicker-div .ui-datepicker-header,
+.task-edit_review #ui-datepicker-div .ui-datepicker-header
+{
+    background: #1CB09A;
+}
+.task-edit_instance #ui-datepicker-div .ui-datepicker-calendar thead span,
+.task-new_instance #ui-datepicker-div .ui-datepicker-calendar thead span,
+.task-edit_rent #ui-datepicker-div .ui-datepicker-calendar thead span,
+.task-add_rent #ui-datepicker-div .ui-datepicker-calendar thead span,
+.task-rent #ui-datepicker-div .ui-datepicker-calendar thead span,
+.task-edit_review #ui-datepicker-div .ui-datepicker-calendar thead span
+{
+    color: #fff;
+}
+.task-edit_instance #ui-datepicker-div .ui-datepicker-calendar tbody span.ui-state-default,
+.task-new_instance #ui-datepicker-div .ui-datepicker-calendar tbody span.ui-state-default,
+.task-edit_rent #ui-datepicker-div .ui-datepicker-calendar tbody span.ui-state-default,
+.task-add_rent #ui-datepicker-div .ui-datepicker-calendar tbody span.ui-state-default,
+.task-rent #ui-datepicker-div .ui-datepicker-calendar tbody span.ui-state-default,
+.task-edit_review #ui-datepicker-div .ui-datepicker-calendar tbody span.ui-state-default
+{
+    color: #eee;
+}
+.task-edit_instance #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default,
+.task-new_instance #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default,
+.task-edit_rent #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default,
+.task-add_rent #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default,
+.task-rent #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default,
+.task-edit_review #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default
+{
+    color: #00BCD8;
+}
+.task-edit_instance #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default:hover,
+.task-new_instance #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default:hover,
+.task-edit_rent #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default:hover,
+.task-add_rent #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default:hover,
+.task-rent #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default:hover,
+.task-edit_review #ui-datepicker-div .ui-datepicker-calendar tbody a.ui-state-default:hover
+{
+    color: #fff;
+}
+.task-edit_instance #ui-datepicker-div .ui-datepicker-calendar tbody .ui-datepicker-today a,
+.task-new_instance #ui-datepicker-div .ui-datepicker-calendar tbody .ui-datepicker-today a,
+.task-edit_rent #ui-datepicker-div .ui-datepicker-calendar tbody .ui-datepicker-today a,
+.task-add_rent #ui-datepicker-div .ui-datepicker-calendar tbody .ui-datepicker-today a,
+.task-rent #ui-datepicker-div .ui-datepicker-calendar tbody .ui-datepicker-today a,
+.task-edit_review #ui-datepicker-div .ui-datepicker-calendar tbody .ui-datepicker-today a
+{
+    background: #1CB09A;
+    background-image: none !important;
+    color: #fff;
+}
+
+/*-------------------------Gallery----------------------*/
+.task-edit_instance .col_box {
+    display: block;
+}
+.task-edit_instance .col_box #wrapper_Gallery_field {
+    min-height: 250px;
+}
+.task-edit_instance #wrapper_More_photos img {
+    width: 128px;
+}
+/*--------------------------------------------*/
+.task-edit_review .rev_rating {
+    margin-bottom: 10px;
+}
+.task-edit_review .parent_instance_block {
+    padding: 20px 0 0 0;
+    border-top: 1px solid #ccc;
+}
+
+
+.com_os_cck #content .adminlist tr:nth-child(2n).not-readed{
+    background-color: rgba(114, 184, 49, 0.65)!important;
+}
+tr.not-readed{
+    background-color: rgba(114, 184, 49, 0.35)!important;
+}
+
+span.cck-not-readed{
+    background-color: rgba(114, 184, 49, 0.65)!important;
+    border-radius: 100%;
+    display: inline-block;
+    float: right;
+    width: 19px;
+    text-align: center;
+}
+
+.cck-new-version{
+    background-color: rgba(114, 184, 49, 0.65)!important;
+    font-weight: bold;
+}
+/*------------------editor----------------------*/
+.editor-button {
+    padding: 5px 8px;
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 1px solid white;
+    background-color: #1CB09A;
+    float: right;
+    cursor: pointer;
+}
+.editor-button:hover {
+    background-color: #34404C;
+}
+.cck-help-string{
+    display: none!important;
+}
+.edit_instance .content-row .drop-item .field-name[class$="label-hidden"],
+.edit_instance .content-row .drop-item .layout-name[class$="label-hidden"]{
+    display: none!important;
+}
+.cck-help-string{
+    display: none!important;
+}
+.drop-item:hover .cck-help-string{
+    display: inline-block!important;
+}
+
+.task-edit_instance section[id*=wrapper_galleryfield_] {
+    height: auto;
+}
+
+.task-edit_instance div[id*=file-area_galleryfield] {
+   margin-bottom: 20px;
+}
+
+.task-edit_instance section[id*=wrapper_galleryfield_] ul li img {
+    height: 100%;
+}
+.task-edit_instance .admin_aria_hidden input[type="button"] {
+    margin: 0 0 10px 0;
+}
+.instances_list select{
+    max-width: 145px !important;
+}
+
+.search_block input[name='search']{
+    width: 184px;
+}
+
+.glyphicon.date_tooltip{
+    color: #0574B4;
+}
+
+/*-------------------uplouder-------------------*/
+
+/*=====  End of Calendar  ======*/
+
+
+/*==============================
+=            Galery            =
+==============================*/
+[id*=images_galleryfield]{
+    margin-left: 0;
+}
+
+
+[id*=images_galleryfield]:after,
+[id*=images_galleryfield]:before
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+/*=====  End of Galery  ======*/
+

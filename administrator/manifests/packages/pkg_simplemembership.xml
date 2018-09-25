@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.3" method="upgrade">
+<name>Simple Membership Package</name>
+<author>Andrey Kvasnevskiy</author>
+<creationDate>Junuary 2018</creationDate>
+<packagename>simplemembership</packagename>
+<packagename>simplemembership</packagename>
+<version>4.1.7 FREE</version>
+<url>http://www.ordasoft.com</url>
+<description>Simple Membership Package</description>
+<files folder="pkg">
+  <folder type="component" id="com_simplemembership" >com_simplemembership_FREE</folder>
+  <folder type="module" id="mod_simplemembership_login" client="site">mod_login_free</folder>
+  <folder type="module" id="mod_simplemembership_user_online" client="site">mod_user_online_free</folder>
+  <folder type="module" id="mod_simplemembership_user_profile" client="site">mod_user_profile_free</folder>
+  <folder type="plugin" id="plg_simplemembership_authentication" group="authentication">plg_authentication</folder>
+  <folder type="plugin" id="plg_simplemembership_get_books" group="simplemembership">plg_get_books</folder>
+  <folder type="plugin" id="plg_simplemembership_get_houses" group="simplemembership">plg_get_houses</folder>
+  <folder type="plugin" id="plg_simplemembership_get_media" group="simplemembership">plg_get_media</folder>
+  <folder type="plugin" id="plg_simplemembership_get_vehicles" group="simplemembership">plg_get_vehicles</folder>
+  <folder type="plugin" id="plg_simplemembership_get_ads" group="simplemembership">plg_get_ads</folder>
+  <folder type="plugin" id="plg_simplemembership_user_profile" group="user">plg_user_profile</folder>
+</files>
+</extension>

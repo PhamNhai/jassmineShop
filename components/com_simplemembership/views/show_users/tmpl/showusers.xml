@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <layout title="Show Users">
+    <message><![CDATA[Displays a users]]></message>
+  </layout>
+   <fields name="params">
+      <fieldset name="params" addfieldpath="/administrator/components/com_simplemembership/elements" label="Params"
+                description="">
+        <field name="show_users_group" type="showuserslayout" default="" class="inputbox" label="Groups to show"
+                extension="com_simplemembership" multiple="true" size="1"
+                description="Choose group of users to show (Default show all)"/>
+      </fieldset>
+  </fields>
+</metadata>

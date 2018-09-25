@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.3" method="upgrade">
+    <name>SimpleMembership</name>
+    <creationDate>March 2018</creationDate>
+    <author>Andrey Kvasnevskiy, Anton Getman</author>
+    <copyright>This component is released under License from included LICENSE.txt file</copyright>
+    <authorEmail>akbet@mail.ru;</authorEmail>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <version>4.1.5 Free</version>
+    <description>SimpleMembership</description>
+    <scriptfile>install.uninstall.script.php</scriptfile>
+    <install folder="admin"> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update folder="admin"> <!-- Runs on update-->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+    <uninstall folder="admin">
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall> 
+    <params>
+        <param name="back_button" type="list" default="" label="Back Button" description="Show/Hide a Back Button, that returns you to the previously view page">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+    </params>
+            //SITE FILES
+    <files folder="../site">
+        <folder>openinviter</folder>
+        <folder>TABS</folder> 
+        <folder>images</folder>
+        <folder>forms</folder>
+        <folder>views</folder>
+        <folder>includes</folder>
+        <folder>images</folder>
+        <filename>index.html</filename>
+        <filename>simplemembership.php</filename>
+        <filename>simplemembership.html.php</filename>
+        <filename>simplemembership.class.php</filename>
+        <filename>router.php</filename>
+        <filename>functions.php</filename>
+        <filename>compat.joomla1.5.php</filename>
+        <filename>syncexpire.php</filename>
+    </files>
+    <languages folder="../language/site">
+        <language tag="en-GB">en-GB/en-GB.com_simplemembership.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.com_simplemembership.ini</language>
+    </languages>
+    <administration>
+        <menu>Simple Membership </menu>
+        <submenu>
+            <menu>COM_SIMPLEMEMBERSHIP_USERS</menu>
+            <menu link="option=com_simplemembership&amp;section=group">COM_SIMPLEMEMBERSHIP_GROUPS</menu>
+            <menu task="config">COM_SIMPLEMEMBERSHIP_SETTINGS</menu>
+            <menu link="option=com_plugins&amp;view=plugins&amp;filter_folder=simplemembership"
+                    >COM_SIMPLEMEMBERSHIP_EXTENSIONS</menu>
+            <menu task="override">COM_SIMPLEMEMBERSHIP_OVERRIDE</menu>
+            <menu task="about">COM_SIMPLEMEMBERSHIP_ABOUT</menu>
+        </submenu>
+        //ADMIN FILES
+        <files folder="../admin">
+            <folder>images</folder>
+            <folder>doc</folder>
+            <folder>elements</folder>
+            <folder>sql</folder>	
+            <filename>toolbar_ext.php</filename>
+            <filename>menubar_ext.php</filename>
+            <filename>index.html</filename>
+            <filename>simplemembership.php</filename>
+            <filename>admin.simplemembership.html.php</filename>
+            <filename>admin.simplemembership.class.others.php</filename>
+            <filename>admin.simplemembership.class.conf.php</filename>
+            <filename>toolbar.simplemembership.php</filename>
+            <filename>toolbar.simplemembership.html.php</filename>  
+            <filename>sync_ajax.php</filename>
+            <filename>install.simplemembership.helper.php</filename>
+            <filename>uninstall.simplemembership.php</filename>
+        </files>
+        <languages folder="../language/admin" >
+            <language tag="en-GB">en-GB/en-GB.com_simplemembership.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_simplemembership.sys.ini</language>
+            <language tag="ru-RU">ru-RU/ru-RU.com_simplemembership.ini</language>
+            <language tag="ru-RU">ru-RU/ru-RU.com_simplemembership.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

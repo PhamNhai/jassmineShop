@@ -1,0 +1,171 @@
+#com-form-login{
+    .userdata{
+        .width30.floatleft{
+            float: none;
+            display: block;
+            margin: 15px 0 0;
+        }
+    }
+    .width30.floatleft{
+        float: none;
+        display: block;
+        margin: 0;
+    }
+    input[type="text"], input[type="password"] {
+        padding: 10px 5px;
+        font-size: 14px;
+        color:@textColor;
+        .border(1px @colorBorder);
+        .borderRadius(0);
+    }
+}
+form#form-login {
+    padding: 1.0em 1.0em 0;
+
+}
+.account_form_validate{
+    color: @colorTitle;
+    font-size: 14px;
+    input:-webkit-autofill {
+        -webkit-box-shadow: inset 0 0 0 50px @colorWhite !important;
+        -webkit-text-fill-color: @textColor !important;
+        color: @textColor!important;
+    }
+    label{
+        font-size: 14px;
+    }
+    .buttonBar-right{
+        text-align: left;
+        float: none;
+        margin: 20px 0;
+
+    }
+    table.user-details {
+        @media (max-width: 767px){
+            width: 100%;
+        }
+        input{
+            padding: 10px 5px;
+            font-size: 14px;
+            color:@textColor;
+            .border(1px @colorBorder);
+            .borderRadius(0);
+            background: #fff;
+        }
+        div#title_chzn, div.chzn-drop,
+        div#virtuemart_state_id_chzn,
+        div#virtuemart_country_id_chzn, .vm-chzn-select{
+            width: 200px !important;
+            background: @colorWhite;
+            a.chzn-single{
+                .border(1px @colorBorder);
+                padding:10px 5px;
+                background: transparent;
+                .borderRadius(3px);
+                height: 35px;
+                span{
+                    color: @textColor;
+                }
+            }
+        }
+        .chzn-container .chzn-results .highlighted{
+            //background: @mainColor;
+        }
+    }
+}
+form.form-validate{
+        .buttonBar-right{
+        text-align: left;
+        float: none;
+        margin: 20px 0;
+
+
+    }
+    a[title="Access Administration Interface"] {
+        margin-right: 10px;
+        margin-left: 16px;
+    }
+    #title, #virtuemart_country_id, #virtuemart_state_id{
+        width: 200px !important;
+    }
+    table.user-details {
+        @media (max-width: 767px){
+            width: 100%;
+        }
+    }
+    input[type="text"], input[type="password"]{
+        padding: 10px 5px;
+        font-size: 14px;
+        color:@textColor;
+        .border(1px @colorBorder);
+        .borderRadius(0);
+        background: #fff;
+        &:hover {
+            background-image: none;
+            background: #fff;
+        }
+    }
+    input.invalid {
+        padding: 10px 5px;
+        background: #fff;
+        .borderRadius(0);
+    }
+    label.invalid {
+        background: transparent;
+    }
+    input:-webkit-autofill {
+        -webkit-box-shadow: inset 0 0 0 50px @colorWhite !important;
+        -webkit-text-fill-color: @textColor !important;
+        color: @textColor!important;
+    }
+    div#title_chzn, div.chzn-drop,
+    div#virtuemart_state_id_chzn,
+    div#virtuemart_country_id_chzn, .vm-chzn-select{
+        width: 200px !important;
+        background: @colorWhite;
+        a.chzn-single{
+            .border(1px @colorBorder);
+            padding:10px 5px;
+            background: transparent;
+            .borderRadius(0);
+            height: 35px;
+            box-shadow: none;
+            span{
+                color: @textColor;
+            }
+        }
+    }
+    ul.chzn-choices {
+        background: #fff;
+        box-shadow: none;
+        border: 1px solid #eaeaea;
+        li.search-field {
+            input{
+                width: auto !important;
+                background: #fff !important;
+                height: auto !important;
+                padding: 10px 5px;
+                font-size: 14px;
+                color:@textColor;
+                .border(1px @colorBorder);
+            }
+        }
+    }
+    .chzn-drop {
+        .border(1px @colorBorder);
+        .chzn-search {
+            input {
+                width: 100% !important;
+            }
+        }
+    }
+    .chzn-results {
+        max-height: 200px;
+    }
+}
+.control-buttons{
+    button.default, button.button{
+
+            background-image: none;
+        }
+}

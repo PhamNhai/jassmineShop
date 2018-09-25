@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" method="upgrade" group="system">
+    <name>OS Gallery System</name>
+    <author>www.ordasoft.com /Roman Akoev(akoevroman@gmail.com)</author>
+    <creationDate>June 2017</creationDate>
+    <copyright>Copyright © 2017 ordasoft.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@ordasoft.com</authorEmail>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <version>3.2.0 Light</version>
+    <description>System plugin for OS Gallery.</description>
+    <files>
+        <filename plugin="osgallery_system">osgallery_system.php</filename>
+        <filename >index.html</filename>
+    </files>
+    <scriptfile>publish.php</scriptfile>
+</extension>

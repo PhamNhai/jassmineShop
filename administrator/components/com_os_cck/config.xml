@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="os_cck_options" label="COM_OS_CCK_PARAMS" description="COM_OS_CCK_PARAMS_DESCRIPTION" addfieldpath="/administrator/components/com_os_cck/elements">
+
+        <field name="by_time" type="radio" label="COM_OS_CCK_PARAMS_RENT_TYPE_WITH_TIME"
+                        description="COM_OS_CCK_PARAMS_RENT_TYPE_WITH_TIME_DESCPIPTION" default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field name="rent_type" type="radio" label="COM_OS_CCK_PARAMS_RENT_TYPE"
+                        description="COM_OS_CCK_PARAMS_RENT_TYPE_DESCPIPTION" default="0" showon="by_time:0">
+            <option value="1">By day</option>
+            <option value="0">By night</option>
+        </field>
+        <field name="crop_image" type="radio" label="COM_OS_CCK_PARAMS_CROP"
+                        description="COM_OS_CCK_PARAMS_CROP_DESCPIPTION" default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="save_database" type="radio" label="COM_OS_CCK_PARAMS_SAVE_DATABASE"
+                        description="COM_OS_CCK_PARAMS_SAVE_DATABASE_DESCPIPTION" default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="back_button" type="list" label="Back Button"
+                        description="Show/Hide a Back Button, that returns you to the previously view page" default="0">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+        </field>
+        <field name="google_map_key" type="text" label="Google map Key"
+                description="Enter your google map API Key here." default="AIzaSyD4ZY-54e-nzN0-KejXHkUh-D7bbexDMKk">
+        </field>
+        <field name="paypal_currency" type="text" label="COM_OS_CCK_PAYPAL_CURRENCY"
+                        description="COM_OS_CCK_PARAMS_PAYPAL_CURRENCY_DESCPIPTION" default="USD=1;">
+        </field>
+        <field name="currency_position" type="list" label="Currency Position"
+                        description="Position of currency" default="0">
+                <option value="0">After price</option>
+                <option value="1">Before price</option>
+        </field>
+        <field name="use_paypal" type="radio" label="COM_OS_CCK_USE_PAYPAL"
+                        description="COM_OS_CCK_PARAMS_USE_PAYPAL_DESCPIPTION" default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="paypal_status" type="paypalstatus" label="COM_OS_CCK_PLUGIN_STATUS">
+        </field>
+    </fieldset>
+
+    <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+        <field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" validate="rules"
+                filter="rules" component="com_os_cck" section="component">
+        </field>
+    </fieldset>
+</config>

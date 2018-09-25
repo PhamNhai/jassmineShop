@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+.vehicle_button{
+	padding:5px;
+	padding-left:2px;
+	background:#eee  no-repeat;
+	border:1px solid #CCC;
+	-moz-border-radius:4px;
+}
+
+.edit_button{
+	padding:5px;
+	padding-left:2px;
+	background:#eee  3px 3px no-repeat;
+	border:1px solid #CCC;
+	-moz-border-radius:4px;
+}
+
+.button_margin{
+	text-align:right;
+	margin-bottom:10px;
+}
+.edit_button a:hover {
+    -moz-transition: background-position 0.1s linear 0s !important;
+    background-color: #0044CC !important;
+    background-position: 0 -15px !important;
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+.edit_button a {
+    background: -moz-linear-gradient(center top , #0088CC, #0044CC) repeat-x scroll 0 0 #006DCC !important;
+    border: 1px solid !important;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    color: #FFFFFF !important;
+    cursor: pointer !important;
+    font-family: arial !important;
+    font-size: 13px;
+    font-weight: normal !important;
+    letter-spacing: 1px;
+    padding: 7px 14px !important;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+}
+
+.button_margin .vehicle_button {
+    margin: 0;
+}
+.button_margin .vehicle_button, .button_margin .edit_button {
+border:none;
+background:none;
+display:block;
+float:left;
+}
+#cb_tabid_24 .box_rent_vm {
+width: 96%;  
+}

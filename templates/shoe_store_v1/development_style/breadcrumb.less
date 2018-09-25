@@ -1,0 +1,27 @@
+.breadcrumb{
+    padding: 8px 15px 8px 0px;
+    li{
+        a{
+            padding:0 5px;
+        }
+        .divider{
+            padding: 0 5px 0 0;
+            border-style: solid;
+            border-width: 4.5px 0 4.5px 6px;
+            border-color: transparent transparent transparent @mainColor;
+            line-height: 0px;
+            display: inline-block;
+            _border-color: @colorBlack @colorBlack @colorBlack @mainColor;
+            _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+        }
+    }
+    .active{
+        .divider{
+            display: none;
+        }
+    }
+    li + li:before {
+        padding: 0;
+        content: none;
+    } 
+}

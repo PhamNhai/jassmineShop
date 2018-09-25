@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" method="upgrade">
+<name>OS Touch Slider</name>
+  <author>www.ordasoft.com /Roman Akoev(akoevroman@gmail.com),Andrey Kvasnevskiy(akbet@mail.ru),Buchastiy Sergey(buchastiy1989@gmail.com)</author>
+  <creationDate>March 2017</creationDate>
+  <copyright>OrdaSoft 2017</copyright>
+  <authorEmail>support@ordasoft.com</authorEmail>
+  <authorUrl>http://ordasoft.com</authorUrl>
+  <version>3.3.10 Light</version>
+  <license>GNU General Public License version 2 or later</license>
+  <description><![CDATA[<img style="width:515px; display: block; margin: 0 auto;" src="../modules/mod_os_touchslider/assets/images/os_touch_installation_image.png">]]></description>
+
+  <scriptfile>script.php</scriptfile>
+
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8">sql/mysql/install.mysql.utf8.sql</file>
+    </sql>
+  </install>
+
+  <update>
+    <schemas>
+      <schemapath type="mysql">sql/mysql/updates</schemapath>
+    </schemas>
+  </update>
+
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">sql/mysql/uninstall.mysql.utf8.sql</file>
+    </sql>
+  </uninstall>
+  <scriptfile>script.php</scriptfile>
+  <files>
+    <folder>assets</folder>
+    <folder>sql</folder>
+    <folder>tmpl</folder>
+    <filename module="mod_os_touchslider">mod_os_touchslider.php</filename>
+    <filename>helper.php</filename>
+    <filename>mod_os_touchslider.xml</filename>
+    <filename>index.html</filename>
+  </files>
+
+  <config>
+    <fields name="params" addfieldpath="/modules/mod_os_touchslider/fields">
+      <fieldset name="advanced" label="Advanced">
+        <field name="moduleclass_sfx" type="text" size="9" label="Module class sufix" description="Module class sufix" />
+
+      </fieldset>
+    </fields>
+  </config>
+</extension>

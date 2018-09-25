@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_os_cck">
+  <section name="component">
+  <action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+  <action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+  <action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+  <action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+  <action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+      <!--  <action name="access_to_component" title="Access to component" description="Can user access to this admin section." />
+
+        <action name="new_instance" title="Create / Delete instance" description="JACTION_CREATE_COMPONENT_DESC" />
+        <action name="publish_instances" title="Publish instances" description="JACTION_ADMIN_COMPONENT_DESC" />
+        <action name="unpublish_instances" title="Unpublish instances" description="JACTION_MANAGE_COMPONENT_DESC" />
+
+        <action name="add_category" title="Create / Delete category" description="JACTION_CREATE_COMPONENT_DESC" />
+        <action name="publish_categories" title="Publish categories" description="JACTION_ADMIN_COMPONENT_DESC" />
+        <action name="unpublish_categories" title="Unpublish categories" description="JACTION_MANAGE_COMPONENT_DESC" />
+        <action name="access_to_categories" title="Access to admin categories" description="Can user access to this admin section." />
+
+        <action name="add_entity" title="Create / Delete entity" description="JACTION_CREATE_COMPONENT_DESC" />
+        <action name="publish_entities" title="Publish entities" description="JACTION_ADMIN_COMPONENT_DESC" />
+        <action name="unpublish_entities" title="Unpublish entities" description="JACTION_MANAGE_COMPONENT_DESC" />
+        <action name="access_to_entities" title="Access to admin entities" description="Can user access to this admin section." />
+
+        <action name="edit_field" title="Create / Delete field" description="JACTION_CREATE_COMPONENT_DESC" />
+        <action name="publish_fields" title="Publish fields" description="JACTION_ADMIN_COMPONENT_DESC" />
+        <action name="unpublish_fields" title="Unpublish fields" description="JACTION_MANAGE_COMPONENT_DESC" />
+        <action name="access_to_fields" title="Access to admin fields" description="Can user access to this admin section." />
+
+        <action name="edit_review" title="Create / Delete review" description="JACTION_CREATE_COMPONENT_DESC" />
+        <action name="publish_reviews" title="Publish reviews" description="JACTION_ADMIN_COMPONENT_DESC" />
+        <action name="unpublish_reviews" title="Unpublish reviews" description="JACTION_MANAGE_COMPONENT_DESC" />
+        <action name="access_to_reviews" title="Access to admin reviews" description="Can user access to this admin section." />
+
+        <action name="access_to_rent_requests" title="Manage rent requests" description="Can user access to this admin section." />
+        <action name="access_to_buy_requests" title="Manage buy requests" description="Can user access to this admin section." />-->
+
+  </section>
+</access>

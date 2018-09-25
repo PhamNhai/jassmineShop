@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>COM_OS_CCK</name>
+    <creationDate>February 2018</creationDate>
+    <copyright>Ordasoft - Andrey Kvasnevskiy</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <author>Andrey Kvasnevskiy, Roman Akoev, Buchastiy Sergey</author>
+    <authorEmail>akbet@mail.ru;akoevroman@gmail.com,buchastiy1989@gmail.com</authorEmail>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <version>3.3.9 Light</version>
+
+    <scriptfile>install.script.php</scriptfile>
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update-->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+    <files folder="../site">
+        <filename>index.html</filename>
+        <filename>os_cck.php</filename>
+        <filename>os_cck.html.php</filename>
+        <filename>functions.php</filename>
+        <filename>router.php</filename>
+        <filename>uploader.php</filename>
+        <filename>captcha.php</filename>
+        <folder>images</folder>
+        <folder>assets</folder>
+        <folder>classes</folder>
+        <folder>files</folder>
+        <folder>html</folder>
+        <folder>php</folder>
+        <folder>views</folder>
+    </files>
+    <languages folder="../language">
+        <language tag="en-GB">en-GB/en-GB.com_os_cck.ini</language>
+        <language tag="en-GB">en-GB/en-GB.com_os_cck.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.com_os_cck.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.com_os_cck.sys.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_OS_CCK</menu>
+        <submenu>
+            <menu task="show_instance">COM_OS_CCK_ITEMS</menu>
+            <menu task="show_categories">COM_OS_CCK_CATEGORIES</menu>
+            <menu task="manage_entities">COM_OS_CCK_ENTITIES</menu>
+            <menu task="manage_layout">COM_OS_CCK_LAYOUTS</menu>
+            <menu task="show_requests">COM_OS_CCK_MENU_SUBMISSIONS</menu>
+            <menu task="show_rent_request_instances">COM_OS_CCK_RENT</menu>
+            <menu task="users_rent_history">COM_OS_CCK_MENU_RENT_HISTORY</menu>
+            <menu task="show_buy_request_instances">COM_OS_CCK_BUY</menu>
+            <menu task="manage_review">COM_OS_CCK_REVIEWS</menu>
+            <menu task="orders">COM_OS_CCK_ORDERS</menu>
+            <menu task="import">COM_OS_CCK_IMPORT</menu>
+            <menu task="settings">COM_OS_CCK_MENU_SETTINGS</menu>
+            <menu task="about">COM_OS_CCK_ABOUT</menu>
+        </submenu>
+        <files folder="../admin">
+            <filename>access.xml</filename>
+            <filename>install.os_cck.helper.php</filename>
+            <filename>install.os_cck.php</filename>
+            <filename>install.script.php</filename>
+            <filename>uninstall.os_cck.php</filename>
+            <filename>config.xml</filename>
+            <filename>admin.os_cck.class.impexp.php</filename>
+            <filename>os_cck.html.php</filename>
+            <filename>os_cck.php</filename>
+            <filename>index.html</filename>
+            <filename>menubar_ext.php</filename>
+            <filename>toolbar.os_cck.html.php</filename>
+            <filename>toolbar.os_cck.php</filename>
+            <filename>toolbar_ext.php</filename>
+            <folder>views</folder>
+            <folder>sql</folder>
+            <folder>images</folder>
+            <folder>helpers</folder>
+            <folder>adminhtml</folder>
+            <folder>adminphp</folder>
+            <folder>doc</folder>
+            <folder>elements</folder>
+            <folder>exports</folder>
+        </files>
+        <languages folder="../language" >
+            <language tag="en-GB">en-GB/en-GB.com_os_cck.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_os_cck.sys.ini</language>
+            <language tag="ru-RU">ru-RU/ru-RU.com_os_cck.ini</language>
+            <language tag="ru-RU">ru-RU/ru-RU.com_os_cck.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

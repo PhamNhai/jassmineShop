@@ -1,0 +1,316 @@
+*:hover, 
+*:active,
+*:focus,
+*:visited,
+*:link{outline: none;}
+a:hover {text-decoration:none!important;}
+a{text-decoration:none;}
+#mod_user_profile .tabs li a {
+border:1px solid #d6d6d6;
+}
+
+
+#mod_user_profile .tabs li {
+float:left;
+padding:5px;
+}
+
+#mod_user_profile .tabs .tabNavigation {
+overflow:hidden;
+}
+
+#mod_user_profile .tabs li {
+margin: 0 !important;
+}
+
+/*#main ul {
+padding:0 !important;
+}*/
+
+th.licenses {
+        background:transparent url(../images/dm_licenses_48.png) no-repeat scroll left center !important;
+}
+
+th.logs {
+        background:transparent url(../images/dm_logs_48.png) no-repeat scroll left center !important;
+}
+
+th.stats {
+        background:transparent url(../images/dm_stats_48.png) no-repeat scroll left center !important;
+}
+
+th.files {
+        background:transparent url(../images/dm_files_48.png) no-repeat scroll left center !important;
+}
+
+th.documents {
+        background:transparent url(../images/dm_documents_48.png) no-repeat scroll left center !important;
+}
+
+th.categories {
+        background:transparent url(../images/dm_categories_48.png) no-repeat scroll left center !important;
+}
+
+th.groups {
+        background:transparent url(../../../images/user.png) no-repeat scroll left center !important;
+}
+
+th.cleardata {
+        background:transparent url(../images/dm_cleardata_48.png) no-repeat scroll left center !important;
+}
+
+th.sendemail {
+        background:transparent url(../images/dm_sendemail_48.png) no-repeat scroll left center !important;
+}
+
+.icon-16-dm_credits { background-image: url(../images/dm_credits_16.png); }
+.icon-32-dm_apply { background-image: url(../images/dm_apply_32.png); }
+.icon-32-dm_back { background-image: url(../images/dm_back_32.png); }
+.icon-32-dm_cancel { background-image: url(../images/dm_cancel_32.png); }
+.icon-32-dm_cleardata { background-image: url(../images/dm_cleardata_32.png); }
+.icon-32-dm_copy { background-image: url(../images/dm_copy_32.png); }
+.icon-32-dm_cpanel { background-image: url(../images/dm_cpanel_32.png); }
+.icon-32-dm_delete { background-image: url(../images/dm_delete_32.png); }
+.icon-32-dm_edit { background-image: url(../images/dm_edit_32.png); }
+.icon-32-dm_help { background-image: url(../images/dm_help_32.png); }
+.icon-32-dm_editcss { background-image: url(../images/dm_editcss_32.png); }
+.icon-32-dm_move { background-image: url(../images/dm_move_32.png); }
+.icon-32-dm_newdocument { background-image: url(../images/dm_newdocument_32.png); }
+.icon-32-dm_publish { background-image: url(../images/dm_publish_32.png); }
+.icon-32-dm_save { background-image: url(../images/dm_save.png); }
+.icon-32-dm_save { background-image: url(../images/dm_save_32.png); }
+.icon-32-dm_sendemail { background-image: url(../images/dm_sendemail_32.png); }
+.icon-32-dm_unpublish { background-image: url(../images/dm_unpublish_32.png); }
+.icon-32-dm_upload { background-image: url(../images/dm_upload_32.png); }
+.icon-32-dm_view_button { background-image: url(../images/dm_view_button_32.png); }
+.icon-32-dm_accept { background-image: url(../images/dm_accept_32.png); }
+.icon-32-dm_accept { background-image: url(../images/dm_accept.png); }
+.icon-32-dm_decline { background-image: url(../images/dm_decline_32.png); }
+.icon-32-dm_decline { background-image: url(../images/dm_decline.png); }
+.icon-32-dm_delete { background-image: url(../images/dm_delete_1.png); }
+.icon-48-dm_logo  { background-image: url(../images/dm_logo_small.png); }
+.icon-48-dm_documents  { background-image: url(../images/dm_documents_48.png); }
+.icon-48-dm_files  { background-image: url(../images/dm_files_48.png); }
+.icon-48-dm_categories  { background-image: url(../images/dm_categories_48.png); }
+.icon-48-dm_groups  { background-image: url(../images/dm_groups_48.png); }
+.icon-48-dm_help  { background-image: url(../images/dm_help_48.png); }
+.icon-48-dm_licenses  { background-image: url(../images/dm_licenses_48.png); }
+.icon-48-dm_stats  { background-image: url(../images/dm_stats_48.png); }
+.icon-48-dm_sendemail  { background-image: url(../images/dm_sendemail_48.png); }
+.icon-48-dm_logs  { background-image: url(../images/dm_logs_48.png); }
+.icon-48-dm_config  { background-image: url(../images/dm_config_48.png); }
+.icon-48-dm_templates  { background-image: url(../images/dm_templates_48.png); }
+.icon-48-dm_credits  { background-image: url(../images/dm_credits_48.png); }
+.icon-48-dm_cleardata  { background-image: url(../images/dm_cleardata_48.png); }
+
+.dm_filters {
+        text-align: left;
+        padding-bottom: 5px;
+}
+
+.simplemembership_manager_caption 
+{
+  color : #FF9900;
+  font-family : Arial, Helvetica, sans-serif;
+  font-size : 18px;
+  font-weight: bold;
+}
+
+.sectiontableentry1
+{
+background: #f9f9f9;
+}
+
+.sectiontableentry2
+{
+background: #FFF;
+}
+
+.adminform
+{
+  width: 540px;
+/*  height: 400px;*/
+  font-size: 1em;
+}
+
+table.profileTable, table.profileTable  tr,  table.profileTable  td  {
+    border: 0 !important;
+}
+.profileTable td img {
+margin: 0 15px 15px 0;
+width: 100%;
+}
+table.UserListtable {
+    width: 100%;
+}
+table.UserListtable tr {
+    border: 1px solid #ddd !important;
+}
+table.UserListtable tr:first-child {
+    border: 0 !important;
+}
+table.UserListtable tr:nth-child(even) {
+    background: #333;
+    color: #fff;
+}
+/*table.UserListtable tr:nth-child(even) td a {
+color: #A7E331;
+}
+table.UserListtable tr:nth-child(even) td a:hover {
+color: #fff;
+}*/
+table.UserListtable td b {
+    padding: 5px 0;
+    display: inline-block;
+}
+table.UserListtable td {
+    padding: 10px 5px;
+    width: 25px;
+}
+table.UserListtable td p {
+    margin: 0px;
+}
+p.online{
+        color: #91ca56;
+        font-size:12px;
+}
+p.offline{
+        color:red;
+        font-size:12px;
+}
+p.text{
+        position:relative;
+        left:70px;
+        color:red;
+        font-size:19px;
+}
+a.plugOnlineUserText1{
+        text-decoration: none;
+}
+a.plugOnlineUserText2{
+        text-decoration: none;
+        position:relative;
+        bottom:25px;
+        display: inline-block;
+}
+a.plugOnlineUserText3{
+        text-decoration: none;
+        position:relative;
+        left:20px;
+}
+table.adminform55{
+        width: 100%;
+}
+select#expire_units{
+        width: 58%;
+}select#expire_period_on_change{
+        width: 40%;
+}
+table.profileTable img#profileFoto{
+        max-height: 200px;
+        max-width: 200px;
+}
+.tabs .closed {
+    background: #efefef;
+    border-top:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    margin: 0 10px -1px 0;
+    font-size: 12px;
+    height: 40px;
+    font-weight: normal;
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+}
+.tabs .closed:last-child, .tabs .open:last-child {
+    margin: 0 0 -1px 0;
+}
+.tabs .open {
+    background:  #fff;
+    border-top:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    padding: 0 10px;
+    text-align: center; 
+    margin: 0 10px -1px 0;
+    display: inline-block;
+}
+.tabs .open h3 a {
+    color: #000;
+}
+.tabs .closed span,
+.tabs .open span {
+    display: block;
+}
+.tabs dt.closed a {
+    color: #909090;
+}
+.tabs dt a {
+    text-decoration: none;
+}
+.tabs h3 {
+    font-size: 12px !important;
+    font-weight: normal;
+    margin: 10px 0 0;
+    white-space: nowrap;
+}
+.yesno .controls label.radio:last-child {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-left: 0;
+}
+.yesno .controls label.radio:first-of-type {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.controls label.radio {
+    float: left;
+    margin: 0;
+    padding: 2px 7px !important;
+    text-align: center;
+}
+.controls input {
+    margin: 0 4px 0 0 !important;
+}
+[class^="icon-"], [class*=" icon-"] {
+display: inline-block;
+height: 14px;
+line-height: 14px;
+margin-right: 0.25em;
+width: 14px;
+}
+[class^="icon-"]::before, [class*=" icon-"]::before {
+font-family: "IcoMoon";
+font-style: normal;
+}
+.icon-chevron-left::before, .icon-leftarrow::before, .icon-arrow-left::before {
+content: "";
+}
+.icon-calendar::before {
+content: "C";
+}
+#jform_profile_dob_img, #profile_dob_img {
+  background-color: #fff;
+  background-image: none;
+}
+
+.adminlistorderdetails tr td,
+.adminlistorders tr td,
+.adminlistusers tr td,
+.adminlistgroups tr td {
+  border: 1px solid #DDD;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.adminlistusers tr:last-child td {
+  border: none !important;
+}
+
+.cat-header th{
+  background: #E0FFFF;
+  border: 1px solid #DDD !important;
+}

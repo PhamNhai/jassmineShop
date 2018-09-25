@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" method="upgrade" group="system">
+    <name>Os Blank Tmpl System</name>
+    <author>www.ordasoft.com / Andrey Kvasnevskiy</author>
+    <creationDate>April 2017</creationDate>
+    <copyright>Copyright © 2017 ordasoft.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@ordasoft.com</authorEmail>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <version>1.1.1</version>
+    <description>System plugin for OS Blank template</description>
+    <files>
+        <filename plugin="osblanktmpl_system">osblanktmpl_system.php</filename>
+        <filename>publish.php</filename>
+    </files>
+    <scriptfile>publish.php</scriptfile>
+</extension>

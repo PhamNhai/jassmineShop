@@ -1,0 +1,57 @@
+.vendor-details-view{
+    color: @mainColor;
+    font-size: 16px;
+    .vendor-image{
+        margin: 20px 0;
+    }
+    input{
+        padding: 10px 5px;
+        font-weight: normal;
+        color: @mainColor;
+        .border(1px @mainColor - #222);
+        width: 100%;
+        .borderRadius(3px);
+    }
+    textarea{
+        font-weight: normal;
+        padding:5px;
+        .border(1px @mainColor - #222);
+        width: 100%;
+        .borderRadius(3px);
+    }
+    .submit{
+        input{
+            width: auto;
+            padding: 5px 10px;
+            color:@colorGray;
+            font-weight: bold;
+            font-size: 16px;
+            background: @mainColor;
+            .border(1px @mainColor - #222);
+            margin-bottom: 15px;
+            text-align: center;
+            .borderRadius(3px);
+            .transition;
+            &:hover{
+                background: @mainColor - #222;
+                .transition;
+            }
+        }
+        .paddingtop{
+            input{
+                color:@mainColor;
+                background: transparent;
+                .border(1px @colorNotPrice);
+            }
+        }
+    }
+}
+.vendor-description, .vendor-view-default{
+    color: @mainColor;
+    font-size: 16px;
+}
+.linkdetails{
+    a{
+      font-size: 16px;  
+    }
+}

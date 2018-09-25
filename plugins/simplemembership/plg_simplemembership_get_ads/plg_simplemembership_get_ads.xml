@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="simplemembership" method="upgrade">
+  <name>Simple membership - Advertisement board, get ads</name>
+  <author>OrdaSoft </author>
+  <creationDate>May 2017</creationDate>
+  <copyright>(C) 2017 OrdaSoft</copyright>
+  <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+  <authorEmail>akbet@mail.ru</authorEmail>
+  <authorUrl>www.ordasoft.com</authorUrl>
+  <version>3.7 pro</version>
+  <description>Simple membership and Advertisement board, get ads plugin show user Advertisements in user profile Simple membership component </description>
+  <files>
+    <filename plugin="plg_simplemembership_get_ads">plg_simplemembership_get_ads.php</filename>
+    <filename >plg_simplemembership_get_ads.xml</filename>
+    <filename >buttons.css</filename>
+    <filename >index.html</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="tab_name" type="text"
+               description="Tab name"
+               label="Tab name in simple membership user profile"
+               default="SMS ads"
+               size="37"
+               />
+        </fieldset>
+      </fields>
+    </config>
+</extension>

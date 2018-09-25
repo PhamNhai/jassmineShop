@@ -1,0 +1,194 @@
+a {
+  color: #13fffc;
+}
+.sp-megamenu-parent >li.active>a,
+.sp-megamenu-parent >li:hover>a {
+  color: #13fffc;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item >a:hover {
+  background: #13fffc;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active>a {
+  color: #13fffc;
+}
+#offcanvas-toggler >i:hover {
+  color: #13fffc;
+}
+.btn-primary,
+.sppb-btn-primary {
+  border-color: #0faae4;
+  background-color: #13fffc;
+}
+.btn-primary:hover,
+.sppb-btn-primary:hover {
+  border-color: #0d8ab9;
+  background-color: #0e9cd1;
+}
+ul.social-icons >li a:hover {
+  color: #13fffc;
+}
+.sp-page-title {
+  background: #13fffc;
+}
+.layout-boxed .body-innerwrapper {
+  background: #ffffff;
+}
+.sp-module ul >li >a {
+  color: #000000;
+}
+.sp-module ul >li >a:hover {
+  color: #13fffc;
+}
+.sp-module .letestnews >div >a {
+  color: #000000;
+}
+.sp-module .letestnews >div >a:hover {
+  color: #13fffc;
+}
+.sp-module .tagscloud .tag-name:hover {
+  background: #13fffc;
+}
+.sp-simpleportfolio .sp-simpleportfolio-fieter > ul > li.active > a,
+.sp-simpleportfolio .sp-simpleportfolio-fieter > ul > li > a:hover {
+  background: #13fffc;
+}
+.search .btn-toolbar button {
+  background: #13fffc;
+}
+.post-formet {
+  background: #13fffc;
+}
+.voting-symbol span.star.active:before {
+  color: #13fffc;
+}
+.sp-reting span.star:hover:before,
+.sp-reting span.star:hover ~ span.star:before {
+  color: #0e9cd1;
+}
+.entry-link,
+.entry-quote {
+  background: #13fffc;
+}
+blockquote {
+  border-color: #13fffc;
+}
+.carousel-left:hover,
+.carousel-right:hover {
+  background: #13fffc;
+}
+#sp-footer {
+  background: #13fffc;
+}
+.sp-comingsoon body {
+  background-color: #13fffc;
+}
+.paginetion>li>a,
+.paginetion>li>span {
+  color: #000000;
+}
+.paginetion>li>a:hover,
+.paginetion>li>a:focus,
+.paginetion>li>span:hover,
+.paginetion>li>span:focus {
+  color: #000000;
+}
+.paginetion>.active>a,
+.paginetion>.active>span {
+  border-color: #13fffc;
+  background-color: #13fffc;
+}
+.paginetion>.active>a:hover,
+.paginetion>.active>a:focus,
+.paginetion>.active>span:hover,
+.paginetion>.active>span:focus {
+  border-color: #13fffc;
+  background-color: #13fffc;
+}
+.et-title h6,
+.et-slider .tp-caption a,
+.et-intro-item:hover i,
+.et-about-item,
+.et-feeture-item:hover i,
+.et-portfolio-button:hover,
+.et-action-button:hover,
+.et-table-item:hover button,
+.et-team-item .qx-person-img:before {
+  background: #13fffc;
+}
+.et-intro-item i,
+.et-feeture-item h4,
+.et-table-item h3,
+.et-service-item h4,
+.et-service-item i,
+.et-intro-item h1,
+.et-table-item .table-price .price,
+.et-table-item button:hover a,
+.et-testimonial p.qx-designetion,
+.et-testimonial button,
+.et-team-item h4 {
+  color: #13fffc!important; 
+}
+.et-feeture-item:hover i,
+.et-portfolio-button:hover,
+.et-action-button:hover,
+.et-table-item:hover,
+.et-service-item .button-service,
+.et-table-item button,
+.et-subscribe-content table .button:hover {
+  border-color: #13fffc;
+}
+/* Important */
+ #et-menu a,
+.et-slider .tp-caption  b,
+.et-services-item:hover i,
+.et-title h1,
+.social-links > a,
+.icon-minus,
+.product-title a,
+.et-intro-item-button:hover,
+.et-services-item:hover h4 {
+  color: #13fffc!important; 
+}
+.et-intro-item-time,
+.et-contact #sp-quickcontact-form .button:hover,
+.projects-fieter a.selected,
+.et-why-chose-item i,
+.et-counter,
+.et-pricing-item .table-footer,
+.et-pricing-item .table-heading,
+.et-we-do-item .qx-progress-bar,
+.et-allowing,
+#et-newsletter,
+.btn-success,
+#j2store-slider-range.ui-slider,
+#j2store-slider-range  .ui-slider-handle,
+#j2store-slider-range .ui-slider-range,
+.projects-filter a.selected, 
+.et-contact-form button,
+.et-offer-item .qx-blurb-content,
+.et-subscribe-content table .button:hover {
+  background: #13fffc!important;  
+}
+.et-contact #sp-quickcontact-form .button:hover,
+.social-links > a,
+.et-intro-item-button:hover,
+.et-we-do-item i {
+  border-color: #13fffc!important; 
+}
+.et-service-item:hover {
+  border: 4px solid #13fffc;
+}
+.et-newsletter-content table input {
+    background: #333!important;
+}
+.projects-wrapper .project-img .project-img-extra {
+    background-image: -webkit-linear-gradient(top , rgba(19, 255, 252, 0.56) 0%, rgba(19, 255, 252, 0.56) 100%)!important;
+}
+.pagination>.active>a {
+  background: #13fffc;
+  color: #fff;
+  border-color: #ddd!important;
+}
+.pagination>li>a, .pagination>li>span {
+ color: #13fffc; 
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+<name>OS CCK PKG Light</name>
+<author>www.ordasoft.com /Roman Akoev(akoevroman@gmail.com),Andrey Kvasnevskiy(akbet@mail.ru),Buchastiy Sergey (buchastiy1989@gmail.com)</author>
+<authorEmail>support@ordasoft.com</authorEmail>
+<creationDate>April 2018</creationDate>
+<copyright>OrdaSoft 2018</copyright>
+<packagename>OS CCK PKG</packagename>
+<!-- packagename os_cck without prefix -->
+<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+<version>3.3.11 Light</version>
+<url>http://ordasoft.com/cck-content-construction-kit-for-joomla.html</url>
+<files folder="packages">
+    <folder type="component" id="com_os_cck">com_os_cck_light</folder>
+    <folder type="module" id="mod_os_cck_layout" client="site">mod_os_cck_layout</folder>
+    <folder type="plugin" id="editor_cck_button" group="editors-xtd">plg_editor_cck_button</folder>
+    <folder type="plugin" id="cck_system" group="system">plg_cck_system</folder>
+</files>
+<updateservers>
+    <server type="extension" priority="1" name="CCK`s Update">http://ordasoft.com/xml_update/cck_update.xml</server>
+</updateservers>
+</extension>

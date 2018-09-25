@@ -1,0 +1,28 @@
+.ui-sortable-handle a::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../../images/drag.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+#myTabTabs li.unsortable:nth-child(5n){
+    float: none;
+}
+#myTabTabs li.unsortable:nth-child(5n) a{
+    display: inline-block;
+}
+#preview_modstyle {
+display: inline-block;
+margin-left: 20px;
+vertical-align: top;
+}
+div.chzn-container {
+    vertical-align: top;
+}
+.control-block {
+    display: inline-block;
+}

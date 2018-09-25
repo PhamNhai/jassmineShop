@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Show Instanse Layout">
+        <message><![CDATA[Instance page]]></message>
+    </layout>
+    <fields name="params">
+        <fieldset name="params" addfieldpath="/administrator/components/com_os_cck/elements"  label="Params"
+                  description="">
+
+            <field name="instance_layout" type="instancelayout" default="" class="inputbox" label="Instance Layout"
+                   extension="com_os_cck" multiple="false" size="1" required="true"
+                   description="Choose layout for show Instance"/>
+            <field name="instance" type="instance" default="" class="inputbox" label="Instance"
+                   extension="com_os_cck" multiple="false" size="1" required="true" description="Choose instance for show"/>
+
+            <field name="back_button" type="list" default="" label="Back Button"
+                   description="Show/Hide a Back Button, that returns you to the previously view page">
+                <option value="">Use Global</option>
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

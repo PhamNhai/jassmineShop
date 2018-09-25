@@ -1,0 +1,205 @@
+.browse-view{
+    .orderby-displaynumber{
+        overflow: hidden;
+        .title{
+            font-size: 16px;
+            color: @colorTitle;
+        }
+        .vm-pagination{
+              margin: 14px 0 0px;
+            ul{
+                margin-bottom: 0;
+            }
+            .vm-page-counter{
+                display: block;
+                float: none;
+                margin-top: 10px;
+            }
+        }
+        .display-number{
+            float: right;
+        }
+        .vm-order-list{
+            width: 40%;
+            .vm_order_list_orderby{
+                float: left;
+                margin-right: 40px;
+            }
+        }
+        div.orderlistcontainer{
+            width: 152px;
+            color: @mainColor;
+            margin: 0;
+            .Order{
+                color: @mainColor;
+            }
+            .orderlist{
+                .border(1px @colorNotPrice);
+                width: 152px;
+                margin-top: -2px;
+                div{
+                    padding: 0;
+                    a{
+                        padding: 2px 12px 1px;
+                        &:hover{
+                            color: @colorWhite;
+                            background: @mainColor;
+                        }
+                    }
+                }
+            }
+        }
+        .display-number{
+            color: @colorTitle;
+            font-size: 16px;
+            margin: 0;
+            select{
+                margin-top: 11px;
+                font-size: 12px;
+                height: 22px;
+                .border(1px @colorNotPrice);
+                .borderRadius(3px);
+                background: transparent;
+                option{
+                    color: @mainColor;
+                    &:hover{}
+                }
+            }
+        }
+    }
+    .vm-pagination-bottom{
+        margin-top: 40px;
+        .vm-page-counter {
+            float: left;
+        }
+    }
+    .block_categories{
+        div.product{
+            .border(0);
+            .product_s_desc{
+                text-align: center;
+            }
+            @media (max-width:500px){
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+        .spacer{
+            div[class*=vm-product-descr-container-]{
+                h4{
+                    a{
+                        display: block;
+                        text-align: center;
+                        font-size: 26px;
+                        line-height: 26px;
+                        font-weight: bold;
+                        .transition;
+                        &:hover{
+                            .transition;
+                        }
+                    }
+                }
+            }
+            .vm-product-media-container{}
+            .block_category_product{
+                .vm3pr-2{
+                    .product-price{
+                        float: none;
+                        text-align: center;
+                        margin: 15px 0 0;
+                        color: @mainColor;
+                        font-size: 20px;
+                        height: auto;
+                        .PricebasePrice{
+                            font-size: 16px;
+                            .vm-price-desc{
+                                margin: 0;
+                                color: @colorTitle;
+                            }
+                            span.PricebasePrice{
+                                color: @colorTitle;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .PricesalesPrice{
+                            .vm-price-desc{
+                                margin: 0;
+                                color: @mainColor;
+                            }
+                            span.PricesalesPrice{
+                                font-size: 24px;
+                                color: @mainColor;
+                            }
+                        }
+                    }
+                }
+                .vm3pr-0{
+                        .addtocart-area{
+                            height: auto;
+                            margin: 0;
+                        }
+                    .addtocart-bar{
+                        position: static;
+                        text-align: center;
+                        .quantity-controls{
+                            .quantity-plus, .quantity-minus{
+                                    height: 14px;
+                                    .border(0);
+                                    width: 14px;
+                                    cursor: pointer;
+                                }
+                            .quantity-plus{
+                                    background: url('../images/quan.png') no-repeat 0 0;
+                                    margin: 10px 0 0 0;
+                                }
+                                .quantity-minus{
+                                    background: url('../images/quan.png') no-repeat 50% 0;
+                                }
+                            }
+                            .quantity-box{
+                                input{
+                                    color:@colorPrice; 
+                                    font-size: 20px;
+                                    background: transparent;
+                                    .border(0);
+                                    .box-shadow(none);
+                                }
+                            }
+                        .addtocart-button{
+                            input{
+                        
+                            }
+                        }
+                    }
+                }
+                .vm-details-button{
+                    display: none;
+                    a{
+                        font-size: 19px;
+                        font-weight: bold;
+                        background: @mainColor;
+                        padding: 4px 34px;
+                        margin: 0;
+                        display: inline-block;
+                        width: auto;
+                        color: @colorWhite;
+                        .border(1px @mainColor - #222);
+                        .borderRadius(3px);
+                        .transition;
+                        &:hover{
+                            background: transparent;
+                            background: @mainColor - #222;
+                            .borderRadius(3px);
+                            .transition;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.addtocart-bar{
+    position: static;
+    text-align: center;
+}

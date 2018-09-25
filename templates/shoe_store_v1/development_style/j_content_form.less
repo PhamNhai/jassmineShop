@@ -1,0 +1,300 @@
+ .form-horizontal .control-label {
+      text-align: left;
+}
+.well{
+    box-shadow: none;
+}
+ //Login Form_________________________________________________________________
+ .login{
+    input{
+        // padding: 10px 5px;
+        // font-size: 14px;
+        // // color:@textColor;
+        // // .border(1px @colorBorder);
+        // // .borderRadius(0);
+    }
+    .lab_rem{
+        label{
+            float: left;
+            margin-right: 5px;
+            color: @colorTitle;
+        }
+    }
+    .block_login{
+        label{
+            color: @colorTitle;
+        }
+        // input{
+        //     -webkit-box-shadow: inset 0 0 0 50px @colorWhite !important;
+        //     -webkit-text-fill-color: @textColor !important;
+        //     color: @textColor!important;
+        // }
+    }
+    button{
+         .transition;
+        &:hover{
+            .transition;
+        }
+    }
+ }
+ul.nav_bar_log{
+      border-bottom: 0px solid #ddd;
+    li{
+        a{
+            padding: 0;
+            .border(0);
+        }
+    }
+}
+ //End Login Form______________________________________________________________
+ //User Registration Form_______________________________________________________
+#member-registration{
+    label{
+        margin-top: 5px;
+        margin-bottom: 0px;
+        color: @colorTitle;
+    }
+    // textarea {
+    //     .border(1px @colorBorder);
+    //     .borderRadius(0);
+    // }
+}
+legend{
+    color: @colorTitle;
+}
+.reg{
+    margin: 20px 0 0;
+    a.btn{
+        padding: 6px 5px;
+        font-size: 14px;
+        color:@colorWhite;
+        background: @mainColor;
+        .border(1px @colorBorder);
+        .borderRadius(3px);
+        .transition;
+        &:hover{
+            background: @mainColor - #222;
+            .transition;
+        }
+    }
+    button{
+         .transition;
+        &:hover{
+            .transition;
+        }
+    }
+}
+.recaptchatable {
+    background: #fff;
+}
+.calendar table {width: 100%}
+
+//Buttons -------------------------------------------------
+
+a.btn.btn-primary[data-toggle="modal"], .registration button.btn-primary, .controls a.btn {
+    margin-bottom: 20px;
+
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+
+}
+.input-append #profile_dob_img, #jform_profile_dob_img {
+    vertical-align: top;
+    padding:  10px;
+    .border(1px @colorBorder); 
+    // .borderRadius(0px);
+}
+#jform_profile_dob_img, #profile_dob_img {
+background-image: none;
+font-size: 14px !important;
+font-weight: normal !important;
+}
+#jform_profile_tos0 {
+    margin-left: 0;
+}
+//Inputs -------------------------------------------------
+// .remind input, .reset input, .contact-form input, .filters input, .contact-form textarea, 
+// fieldset dd input:not([type="file"]), fieldset dd textarea, .profile-edit input, .login input, .registration input,  .registration textarea  {
+//         padding: 10px 5px;
+//     font-size: 14px;
+//     color:@textColor;
+//   .border(1px @colorBorder);
+//   margin-bottom: 10px;
+//           .borderRadius(0px);
+// }
+
+form.well {
+  border: 1px solid #ddd;
+  box-shadow: none; 
+  border-radius: 0;
+}
+
+//End User Registration Form___________________________________________________
+//User Reminder Form, Password reset__________________________________________
+.remind, .reset{
+    label{
+         color: @colorTitle;
+    }
+    // input{
+    //     padding: 10px 5px;
+    //     font-size: 14px;
+    //     color:@textColor;
+    //     .border(1px @colorBorder);
+    //     .borderRadius(3px);
+    //     @media (max-width: 767px){
+    //          margin-bottom: 10px;
+    //     }
+    // }
+    button{
+         .transition;
+        &:hover{
+            .transition;
+        }
+    }
+}
+//End User Reminder Form, End Password reset______________________________
+.chzn-results{
+    li.highlighted{
+        background: @mainColor !important;
+    }
+}
+.page-header {
+  margin: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+#limit{
+    option{
+        &:hover{
+            background: @mainColor !important;
+        }
+    }
+}
+//End User Reminder Form, End Password reset______________________________
+//Category contact 1_______________________________________________________
+.contact-category{
+    .pull-right{
+        float: none !important;
+        text-align: left !important;
+    }
+    .label-warning{
+        background: @mainColor;
+        .border(@mainColor - #2220);
+    }
+    label{
+        display: block;
+    }
+    // input{
+    //     padding: 10px 5px;
+    //     margin: 0 0 10px 0;
+    //     font-size: 14px;
+    //     color:@textColor;
+    //     .border(1px @colorBorder);
+    //     .borderRadius(3px);
+    // }
+    span.label-warning{
+          display: inline-block;
+          padding: 10px 5px;
+          color: @colorWhite;
+         .borderRadius(3px);
+          margin: 0 15px 15px 0;
+    }
+    ul{
+        list-style:none;
+    }
+}
+.categories-list .badge {
+    margin-bottom: 3px;
+    vertical-align: middle;
+}
+.chzn-container-single a.chzn-single{
+    border: 1px #eaeaea solid;
+    padding: 10px 5px;
+    line-height: 16px;
+    background: @colorWhite;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    height: 35px;
+    box-shadow: none;
+}
+//End Category contact 1____________________________________________________
+.map{
+    width: 100%  !important;
+}
+//End Category contact 1____________________________________________________
+//Single contact 1___________________________________________________________
+.contact-form{
+    // input, #jform_contact_message{
+    //     width: 50%;
+    //     padding: 10px 5px;
+    //     margin: 0 0 10px 0;
+    //     font-size: 14px;
+    //     color:@textColor;
+    //     .border(1px @colorBorder);
+    //     .borderRadius(3px);
+    // }
+    legend, label{
+        color: @colorTitle;
+    }
+    .send_co{
+        margin: 0 0 15px 0;
+        label{
+          margin: 0px 7px 0 0;
+        }
+    }
+    #jform_contact_email_copy{
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    button{
+         .transition;
+        &:hover{
+            .transition;
+        }
+    }
+}
+.contact-address{
+        dt{
+            width: auto;
+        }
+        dd{
+            margin-left: 0px;
+        }
+}
+.snd_m{
+    label{
+        float: left;
+        padding: 0 5px 0 0;
+    }
+    .controls{
+        input#jform_contact_email_copy{
+            margin-top: 4px;
+        }
+    }
+}
+//End Single contact 1_______________________________________________________
+//Archived Content__________________________________________________________
+.archive{
+    button{
+        padding: 1px 12px;
+    }
+}
+//Archived Content__________________________________________________________
+.moduletable_form {
+    background: #eee2db;
+    // .border (1px @colorBorder);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#modules-form{
+
+    .radio input[type="radio"]{
+        margin-left: 0px;
+    }
+
+}
+

@@ -1,0 +1,2225 @@
+/* Copyright @ Balbooa, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/* ========================================================================
+    New / Edit form page
+ ========================================================================== */
+
+body {
+    background: #fafafa;
+}
+
+p {
+    margin: 0;
+}
+
+.content,
+.forms-table {
+    background: #fff;
+    border: 1px solid #f3f3f3;
+    padding: 20px 0;
+}
+
+.subhead.subhead-fixed {
+    z-index: 1000 !important;
+}
+
+.subhead-collapse.collapse {
+    z-index: 1000!important;
+}
+
+.droppad_item label {
+    margin-bottom:15px ;
+}
+
+/* Button options */
+#toolbar-language,
+#toolbar-integration,
+#toolbar-about {
+    float: right;
+}
+
+/* Update notofication icon */
+img.notification {
+    margin-right: 20px;
+    opacity: .3;
+}
+
+img.notification.active {
+    opacity: 1;
+}
+
+/* General styles for icons*/
+i {
+    font-weight: normal;
+}
+
+/* Custom scroll */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1; 
+
+}
+
+/*
+ * Buttons, general styles
+ */
+
+.clear-image-field,
+.modal-trigger,
+.ba-btn {
+    font-weight: bold;
+    background-color: #f1f1f1;
+    border-radius: 2px;
+    border: 1px solid #e3e3e3;
+    padding: 10px 15px;
+    text-decoration: none !important;
+}
+
+
+.clear-image-field {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    display: inline-block;
+    line-height: 14px;
+    margin-left: -5px;
+}
+
+.clear-image-field:hover,
+.modal-trigger:hover,
+.ba-btn:hover {
+    background-color: #eaeaea;
+}
+
+.ba-btn-primary {
+    border: 1px solid #01A0D8;
+    font-weight: bold;
+    background-color: #02adea;
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.ba-btn-primary:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #069bde;
+}
+
+#icons-select .icon-remove.ba-btn {
+    height: inherit;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+/* Submit button */
+.ba-btn-submit:hover {
+    opacity: .9;
+}
+
+.ba-total-price,
+.ba-save-continue,
+.btn-align {
+    border: 1px dashed #e3e3e3 !important;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.ba-save-continue {
+    border: none !important;
+    padding: 0;
+}
+
+.ba-save-continue a {
+    text-decoration: none !important; 
+}
+
+/* Total Price */
+.ba-total-price {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+}
+
+.ba-total-price p {
+    display: inline-block;
+}
+
+/* Settings button */
+.btn-settings {
+    display: block;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.btn-settings-cell {
+    float: right !important;
+    margin: 0 !important;
+    width: auto !important;
+}
+
+/* Tooltip */
+.ba-tooltip {
+    display: none;
+}
+
+body > .ba-tooltip {
+    background: rgba(34,34,34,0.95);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, .5);
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    max-width: 200px;
+    opacity: 1;
+    padding: 15px;
+    position: fixed;
+    text-align: center;
+    transition: margin-top .25s ease-out, opacity .25s ease-out;
+    -webkit-transition: margin-top .25s ease-out, opacity .25s ease-out;
+    visibility: visible;
+    z-index: 1060;
+}
+
+body > .ba-tooltip:before {
+    content: "";
+    height: 5px;
+    position: absolute;
+    bottom: -14px;
+    left: 50% !important;
+    margin-left: -5px;
+    border: 5px solid transparent;
+    border-top: 5px solid #2c2c2c;
+}
+
+@keyframes ba-tooltip-top {
+    from { opacity: 0; margin-top: -30px;}
+    to { opacity: 1; margin-top: -10px;}
+}
+
+@-webkit-keyframes ba-tooltip-top  {
+    from { opacity: 0; margin-top: -30px;}
+    to { opacity: 1; margin-top: -10px;}
+}
+
+body > .ba-tooltip {
+    -webkit-animation: ba-tooltip-top .3s both;
+    animation: ba-tooltip-top .3s both;
+    -webkit-transform: translateY(-100%) translateX(-50%);
+    transform: translateY(-100%) translateX(-50%);
+}
+
+.ba-total-price p:hover + .ba-tooltip,
+.ba-next:hover .ba-tooltip,
+.ba-prev:hover .ba-tooltip,
+.ba-save-continue a:hover + .ba-tooltip,
+#maxlength .option-label:hover .ba-tooltip,
+.ba-btn-submit:hover + .ba-tooltip,
+.title-form h1 span:hover +.ba-tooltip,
+label:hover> .ba-tooltip {
+    margin-top: -15px;
+    opacity: 1;
+    visibility: visible;
+}
+
+label.ba-btn {
+    position: relative;
+}
+
+/*
+ * Inputs
+ */
+
+.com_baforms input:focus,
+.com_baforms textarea:focus,
+.com_baforms select:focus {
+    border-color: #03ADEB !important;
+    box-shadow: none !important;
+    outline: none;
+}
+
+.com_baforms textarea:focus {
+    box-sizing: border-box;
+}
+
+.com_baforms input:invalid {
+    border-color: #e94b35 !important;
+}
+
+/* Form title */
+input.form-title {
+    height: 40px !important;
+    margin: 10px 0 20px 0;
+    padding: 5px 20px;
+    width: 97%;
+}
+
+/* Disabled fields */
+input[disabled], 
+select[disabled], 
+textarea[disabled], 
+input[readonly], 
+select[readonly], 
+textarea[readonly] {
+    background-color: #fafafa;
+}
+
+#bg-color,
+#form-bgcolor,
+#form-borcolor,
+#jform_button_bg,
+#jform_button_color,
+#input-bgcolor,
+#input-borcolor,
+#input-color,
+#label-color,
+#text-color,
+#title-color,
+input#font-size,
+input[type="email"],
+input[type="number"],
+input[type="text"],
+select,
+textarea {
+    border-radius: 2px;
+    border: 1px solid #f3f3f3;
+    box-shadow: none;
+    height: 30px;
+}
+
+#bg-color,
+#form-bgcolor,
+#form-borcolor,
+#jform_button_bg,
+#jform_button_color,
+#input-bgcolor,
+#input-borcolor,
+#input-color,
+#label-color,
+#text-color,
+#title-color {
+    height: 40px;
+}
+
+/* Input error */
+.ba-alert {
+    border: 1px solid #e9322d !important;
+    box-shadow: 0 0 6px #f8b9b7 !important;
+        -webkit-box-shadow: 0 0 6px #f8b9b7 !important;
+        -moz-box-shadow: 0 0 6px #f8b9b7 !important;
+}
+
+/* Input Icon */
+.container-icon {
+    position: relative;
+}
+
+.editor .container-icon textarea,
+.editor .container-icon select,
+.editor .container-icon input {
+    padding-left: 50px !important;
+}
+.editor .container-icon textarea {
+    padding-top: 13px !important;
+}
+
+.icons-cell {
+    display: flex;
+    display:-webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: -webkit-calc(100% - 11px);
+    height: calc(100% - 11px);
+    justify-content: center;
+    -webkit-justify-content: center;
+    left: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 1px;
+    width: 45px;
+}
+
+.icons-cell i {
+    margin: 0 auto;
+}
+
+.container-icon .ba-textarea + .icons-cell {
+    height: 45px;
+}
+
+/* Terms Conditions*/
+.terms-content {
+    display: inline-block;
+}
+
+/* Radio and checkbox styles*/
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 5px 0 0;
+}
+
+.droppad_item input[type="radio"],
+.droppad_item input[type="checkbox"] {
+    display:inline-block;
+    margin: 0 20px 0 0;
+    position: relative;
+}
+
+.ba-radioMultiple span ,
+.ba-checkMultiple span {
+    display: block;
+    margin: 15px 0 15px 30px;
+    position: relative;    
+    word-wrap: break-word;
+}
+
+.ba-radioMultiple span input[type="radio"],
+.ba-checkMultiple span input[type="checkbox"] {
+    left: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.droppad_item input[type="radio"]:before {
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #cfd9db;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -50%;
+    width: 20px;
+}
+
+.droppad_item input[type="checkbox"]:before {
+    background: #fff;
+    border-radius: .25em;
+    border: 1px solid #cfd9db;
+    content: '';
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -50%;
+    width: 20px;
+}
+
+.droppad_item input.checked-checkbox:before {
+    border-radius: .25em;
+    border: 1px solid;
+    box-sizing: border-box;
+    color: #fff;
+    content: '\f26b';
+    display: block;
+    font: normal normal normal 16px/1 'Material-Design-Iconic-Font';
+    height: 20px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    width: 20px;
+}
+
+.droppad_item input.checked-radio:before {
+    border-radius: 50%;
+    border: 1px solid;
+    box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,1);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    width: 20px;
+}
+
+/* Radio/Checkbox with image */
+.ba-input-image {
+    border-radius: 4px;
+    border: 1px solid #f3f3f3;
+    box-sizing: border-box;
+    display: inline-block ;
+    margin: 0 10px 10px 0 !important;
+    padding: 0 ;
+    vertical-align: top;
+    position: relative;
+}
+
+.ba-input-image img {
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
+}
+
+.ba-input-image .image-title {
+    box-sizing: border-box;
+    display: block;
+    line-height: 150% !important;
+    margin: 0 !important;
+    padding: 10px 10px 45px 10px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.ba-input-image .image-title span {
+    display: block ;
+    text-align: center;
+    width: 100%;
+}
+
+.droppad_item .ba-input-image input {
+    bottom: 15px;
+    position: absolute;
+    box-sizing: border-box;
+    left: calc(50% - 10px);
+}
+
+/* Condition Area styles */
+.droppad_area.condition-area {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: none;
+    border-left: 4px solid rgb(2, 173, 234);
+    min-height: 150px !important;
+}
+
+.condition-cell .ba-btn.active {
+    background-color: rgb(2, 173, 234);
+    border-color: #01A0D8;
+    color: #fff;
+}
+
+p.conditional-header {
+    background: #02ADEA;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.droppad_area {
+    z-index: 1 !important;
+}
+
+/* Condition Area animation */
+.conditional-field {
+    position: relative;
+}
+
+.condition-area {
+    display: none;
+    overflow: hidden;
+    position: static !important;
+}
+
+.condition-area.selected {
+    display: block;
+}
+
+.condition-area.selected .droppad_item:last-child {
+    margin-bottom: 0;
+}
+
+.condition-area.close-condition {
+    display: block;
+    opacity: 0;
+    position: absolute !important;
+    top: 100%;
+    width: 100%;
+}
+
+/*
+ * Tools panel - left sidebar
+ */
+
+.model,
+.button-alignment .input-append,
+.button-alignment .input-prepend {
+    display: none;
+}
+
+.page-break,
+.tool {
+    cursor: all-scroll;
+    padding: 15px 20px;
+}
+
+.tool.disabled {
+    cursor: not-allowed;
+}
+
+.page-break:hover,
+.tool:hover {
+    background-color: #02adea;
+    color: #fff;
+}
+
+.text-items,
+.box-fields {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.view-email .text-items:not(:first-child) {
+    border: none;
+}
+
+/* Styles for dragging tool*/
+.page-break.ui-draggable-dragging,
+.tool.ui-draggable-dragging {
+    background-color: #02adea;
+    color: #fff;
+    height: 18px;
+    width: 190px;
+    z-index: 500 !important;
+}
+
+/*
+ * Editor - dropped area
+ */
+
+/* Drop placeholder */
+.break.ui-sortable-placeholder,
+.ui-sortable-placeholder {
+    border: 3px dashed #02adea;
+    visibility: visible !important;
+    height: 100px;
+}
+
+.ui-sortable-helper {
+    background: #02adea !important;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: move;
+    height: 75px !important;
+    padding: 15px;
+    width: 250px !important;
+}
+
+.break.ui-sortable-helper {
+    border: none;
+}
+
+.ui-sortable-helper > * {
+    display: none !important;
+}
+
+#content-section {
+    margin-left: 0;
+}
+
+.editor input[type="text"],
+.editor select[size],
+.editor select,
+.editor input[type="email"],
+.editor textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.editor textarea {
+    max-width: 100%;
+    min-height: 120px;
+    padding: 20px;
+}
+
+.content.editor,
+.content.options {
+    height: 907px;
+    overflow-y: auto;
+    z-index: initial !important;
+}
+
+.clear-image-field i,
+.content i {
+    font-size: 16px;
+    vertical-align: text-bottom;
+}
+
+.ba-content-editor {
+    padding: 0 20px;
+}
+
+.droppad_area {
+    border: 1px dashed #e3e3e3;
+    box-sizing: border-box;
+    margin: 10px 0;
+    min-height: 60px !important;
+    padding: 20px;
+    position: relative;
+}
+
+.confirm-email,
+.droppad_item {
+    cursor: all-scroll ;
+    margin: 20px 0;
+}
+
+.droppad_item *:not(label) {
+    cursor: all-scroll !important;
+}
+
+.content.editor .ba-btn-primary {
+    display: block;
+    margin: 20px auto 0;
+}
+
+.editor .ba-radioInline > span,
+.editor .ba-chekInline  > span {
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 30px;
+    margin-right: 15px;
+    padding-left: 30px; 
+    position: relative;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.editor .ba-radioInline > span.ba-input-image,
+.editor .ba-chekInline  > span.ba-input-image {
+    padding-left: 0;
+    vertical-align: top;
+}
+
+.editor .ba-radioInline > span:not(.ba-input-image) input,
+.editor .ba-chekInline  > span:not(.ba-input-image) input {
+    position: absolute;
+    top: calc(50% - 5px);
+    top: -webkit-calc(50% - 5px);
+    left: 0;
+}
+
+/* Resize */
+.ba-right-resize,
+.ba-left-resize {
+    background: transparent;
+    cursor: col-resize;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+
+.ba-right-resize {
+    right: -15px;
+}
+
+.ba-left-resize {
+    left: -15px;
+}
+
+/* Edit icons */
+.com_baforms .ba-edit-row a {
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.com_baforms .ba-edit-row {
+    background-color: #fff;
+    border: 1px solid #f3f3f3;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    z-index: 10;
+}
+
+.com_baforms .ba-edit-row a:hover {
+    background: #fafafa;
+}
+
+/* Page Break */
+.break {
+    border: 1px dashed #e3e3e3;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.ba-next input[type="button"],
+.ba-prev input[type="button"] {
+    border: none;
+    margin: 30px 0 20px;
+}
+
+.ba-next {
+    float: right;
+    text-align: right;
+}
+
+.ba-prev {
+    float: left;
+}
+
+/* Calendar icon */
+button#cal_field_id_img {
+    background-color: #f1f1f1;
+    background-image: none;
+    border-radius: 0 2px 2px 0;
+    border: 1px solid #e3e3e3;
+    box-shadow: none;
+    height: 50px;
+}
+
+button#cal_field_id_img span {
+    font-size: 13px;
+}
+
+/* Calendar field */
+.ba-date input[type="text"] {
+    height: 50px;
+}
+
+/*Form style*/
+.form-style {
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Form title */
+.title-form h1 > .title {
+    cursor: pointer;
+}
+
+/* Google map */
+.ba-map {
+    z-index: 2 !important;
+}
+
+/* Image */
+
+.input-append .add-on.field-media-preview,
+.image-options .input-prepend input.hasTipImgpath,
+.image-options .input-prepend > a + a.btn,
+#options .input-prepend .hasTipImgpath,
+#jform_stripe_image,
+#jform_select_image {
+    display: none;
+}
+
+/*
+ * Cart
+*/
+
+.baforms-cart {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.ba-cart-headline {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* Layout */
+.baforms-cart .product-cell {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+}
+
+.baforms-cart .product-cell > * {
+    display: block;
+    float: left;
+}
+
+.baforms-cart .product {
+    width: 35%;
+}
+
+.baforms-cart .price,
+.baforms-cart .quantity,
+.baforms-cart .total {
+    width: 20%;
+}
+
+.baforms-cart .quantity input[type="number"] {
+    color: inherit;
+    font-size: inherit;
+    width: 60px;    
+}
+
+/*
+ * Options general styles
+ */
+ 
+#options,
+#element-options {
+    padding: 20px;
+}
+
+.save-continue-options > div label,
+.option-label {
+    cursor: default;
+    display: inline-block;
+    margin: 15px 10px 15px 0;
+    vertical-align: middle;
+    width: 40%;
+}
+
+input#font-size,
+select,
+.options textarea,
+.options input[type="text"],
+.options input[type="number"] {
+    width: 40%;
+    margin: 0;
+}
+
+.options textarea {
+    min-height: 120px;
+}
+
+#options > div textarea {
+    box-sizing: border-box;
+    min-height: 120px;
+    width: -webkit-calc(80% + 25px) !important;
+    width: calc(80% + 25px) !important;
+}
+
+#html-options textarea {
+    padding: 10px;
+    width: 95%;
+}
+
+#options select {
+    box-sizing: content-box;
+}
+
+.weight_radio {
+    display: inline-block;
+    white-space: nowrap;
+    width: 50%;
+}
+
+.weight_radio input[type="radio"] {
+    margin: 5px;
+}
+
+.clear-image-field i,
+#options .zmdi {
+    font-size: 24px;
+    line-height: 18px;
+}
+
+.clear-image-field i {
+    line-height: 15px !important;
+}
+
+#options .zmdi.ba-btn {
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+/* Add / Delete new field buttons */
+.empty-price .price-cell input {
+    visibility: hidden;
+}
+
+label.button-alignment {
+    border-radius: 0;
+    display: table-cell;
+}
+
+.items-control-options label:not(:first-child) {
+    border-left: 0;
+}
+
+.items-control-options {
+    margin: 20px 0;
+}
+
+.condition-cell label.ba-btn,
+.items-control-options label.ba-btn {
+    padding: 0; 
+}
+
+.condition-cell label.ba-btn i,
+.items-control-options label.ba-btn i {
+    padding: 11px 15px;
+    vertical-align: sub;
+}
+
+#check-options table {
+    margin: 20px 0;
+}
+
+tbody.items-list tr:hover {
+    background: #fafafa;
+    cursor: all-scroll;
+}
+
+tbody.items-list td {
+    padding: 10px;
+}
+
+tbody.items-list td.price-cell input[type="number"],
+tbody.items-list td.label-cell input[type="text"] {
+    width: 100%;
+    margin: 0;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+tbody.items-list td.price-cell ,
+tbody.items-list td.label-cell {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+tbody.items-list td.default-value {
+    padding: 0 10px 0 0;
+    text-align: center;
+}
+
+#options tbody.items-list td.default-value i {
+    font-size: 16px;
+}
+
+#check-options .items-control-options,
+#delete-item {
+    margin-top: 10px;
+}
+
+/* Map marker upload button */
+.media-preview.add-on,
+#jform_marker_image,
+#map-options .field-media-preview {
+    display: none;
+}
+
+.modal-trigger {
+    text-shadow: none;
+    background-image: none;
+}
+
+.modal-trigger,
+.modal-trigger:active {
+    box-shadow: none;
+}
+
+.option-label + .field-media-wrapper {
+    display: inline-block;
+}
+
+.select-image-modal .modal-body {
+    max-height: none;
+    height: 500px;
+}
+
+.select-image-modal .modal-body iframe {
+    height: 100%;
+}
+
+/* Slider */
+.ba-slider.ui-widget {
+    background: transparent!important;
+}
+
+.ba-slider .ui-slider-range {
+    cursor: pointer;
+    height: 2px;
+    margin-top: 8px;
+    outline: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.ba-slider .ui-slider-handle {
+    border-radius: 10px;
+    cursor: pointer;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    margin-left: 0;
+    transition: transform .1s linear, box-shadow .2s linear;
+    -webkit-transition: -webkit-transform .1s linear, box-shadow .2s linear;
+    width: 18px;
+}
+
+.ba-slider .ui-slider-handle + .ui-slider-handle {
+    margin-left: -18px;
+}
+
+.ba-slider .ui-slider-handle:active,
+.ba-slider .ui-slider-handle:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+/* jQuery UI styles reset */
+.ui-widget * {
+    outline: none !important;
+}​
+
+.ui-widget-header,
+.ui-state-active,
+.ui-state-default, 
+.ui-widget-content,
+.ui-widget-header {
+    background: #fff !important;
+    border: none !important;
+}
+
+.ui-widget textarea,
+.ui-widget select,
+.ui-widget,
+.ui-widget input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: inherit;
+}
+
+.ui-tabs .ui-tabs-panel,
+.ui-tabs {
+    padding: 0;
+}
+
+.ui-corner-all {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/* Tabs */
+#myTab {
+    position: static !important;
+    z-index: 2 !important
+}
+
+.save-continue-options > div,
+#tabs-1,
+#tabs-2,
+#tabs-3,
+#tabs-4 {
+    padding: 0 20px;
+}
+
+.save-continue-options > div,
+#tabs-1,
+#tabs-2,
+#tabs-3 {
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.save-continue-options > div:last-child {
+    border-bottom: none;
+}
+
+.save-continue-options {
+    margin-left: -20px;
+    margin-top: -20px;
+    width: -webkit-calc(100% + 40px);
+    width: calc(100% + 40px);
+}
+
+#email-options #tabs-2 {
+    border: none;
+}
+
+#options p span,
+#form-options p span {
+    margin-left: 20px;
+}
+
+#options p span,
+#email-options p span,
+#form-options p span {
+    font-weight: bold;
+}
+
+/* Tabs navigation */
+.ui-tabs .ui-tabs-nav {
+    border-bottom: 1px solid #f3f3f3 !important;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+    border-bottom: 4px solid #02adea;
+    color: #111;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 15px 20px;
+}
+
+.ui-state-default a, .ui-state-default a:link {
+    color: #555;
+}
+
+.ui-state-default a:hover {
+    color: #111;
+}
+
+.ba-btn#map-location {
+    margin-bottom: 20px;
+}
+
+input#font-size {
+    padding: 4px 6px;
+}
+
+#myTab .ui-corner-top {
+    margin-right: 0;
+    width: 50%;
+}
+
+#myTab .ui-corner-top a {
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+}
+
+/* ========================================================================
+    Modal
+ ========================================================================== */
+
+/*
+/* Modal sizes
+*/
+
+.com_baforms .modal.ba-modal-lg {
+    margin-left: -400px;
+    top: 10%;
+    width: 800px;
+}
+
+.com_baforms .modal.ba-modal-md {
+    margin-left: -307px;
+    top: 10%;
+    width: 615px;
+}
+
+.com_baforms .modal.ba-modal-sm {
+    margin-left: -272px;
+    width: 544px;
+}
+
+.com_baforms .modal.ba-modal-xl {
+    margin-left: -585px;
+    top: 25px;
+    width: 1170px;
+    z-index: 1600 !important;
+}
+
+/*
+/* General modal settings
+*/
+
+.com_baforms #sbox-window {
+    z-index: 1500 !important;
+}
+
+.com_baforms #sbox-overlay {
+    z-index: 1400 !important;
+}
+
+.com_baforms .modal {
+    border-radius: 2px;
+    border: 1px solid #e3e3e3;
+}
+
+.com_baforms .modal-header {
+    background-color: #fafafa;
+    border-bottom: 1px solid #e3e3e3;
+    border-radius: 2px 2px 0 0;
+    padding: 25px 15px;
+}
+
+.com_baforms .modal-header h3 {
+    margin: 0;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.com_baforms .modal-header a.close {
+    display: none;
+}
+
+.com_baforms .modal-footer {
+    background-color: #fafafa;
+    border-radius: 0 0 2px 2px;
+    border-top: 1px solid #e3e3e3;
+    box-shadow: none;
+    padding: 25px 15px 25px;
+}
+
+.com_baforms .modal {
+    top: 30%;
+    z-index: 1050 !important;
+}
+
+.com_baforms #update-dialog.modal {
+    z-index: 1051 !important;
+}
+
+@keyframes backdrop {
+    from {opacity: 0;}
+}
+
+@-webkit-keyframes backdrop {
+    from {opacity: 0;}
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+   opacity: .2;
+   animation: backdrop .3s;
+   -webkit-animation: backdrop .3s;
+}
+
+.com_baforms .modal.in {
+    animation: form-modal .4s cubic-bezier(.25,.98,.26,.99);
+    -webkit-animation: form-modal .4s cubic-bezier(.25,.98,.26,.99);
+}
+
+@keyframes form-modal {
+    0% {-webkit-transform: translateY(100vh);transform: translateY(100vh);}
+    100% {-webkit-transform: translateY(1);transform: translateY(1);}
+}
+
+@-webkit-keyframes form-modal {
+    0% {-webkit-transform: translateY(100vh);transform: translateY(100vh);}
+    100% {-webkit-transform: translateY(1);transform: translateY(1);}
+}
+
+.com_baforms .modal.in.ba-modal-sm {
+    animation: form-modal-scale .4s cubic-bezier(.25,.98,.26,.99);
+    -webkit-animation: form-modal-scale .4s cubic-bezier(.25,.98,.26,.99);
+}
+
+@keyframes form-modal-scale {
+    from{transform: scale(.8);}
+    from{-webkit-transform: scale(.8);}
+}
+
+@-webkit-keyframes form-modal-scale {
+    from{transform: scale(.8);}
+    from{-webkit-transform: scale(.8);}
+}
+
+.com_baforms .modal.in > div:not(.fields-backdrop) {
+    animation: forms-modal-in .3s .2s linear both;
+    -webkit-animation: forms-modal-in .3s .2s linear both;
+    overflow: auto;
+}
+
+@-webkit-keyframes forms-modal-in {
+    from {opacity: 0;}
+    to {opacity: 1; }
+}
+
+@keyframes forms-modal-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.field-media-wrapper {
+    display: inline-block;
+}
+
+#stripe-image-dialog {
+    z-index: 1060 !important;
+}
+
+/*
+ * Select number of columns
+*/
+
+#integration-dialog .modal-body,
+#layout-dialog .modal-body,
+#export-dialog .modal-body {
+    display: table;
+    margin: 75px auto;
+    width: auto;
+}
+
+#integration-dialog label.column > p,
+#export-dialog label.column > p,
+#layout-dialog label.column > p {
+    margin-top: 30px;
+}
+
+label > input {
+    display: none;
+}
+
+label.column {
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 30px 20px;
+}
+
+label.column:hover {
+    border: 1px solid #f3f3f3;
+}
+
+.column {
+    float: left;
+    text-align: center;
+}
+
+/*
+/* Icons Upload Modal
+*/
+
+#icons-upload-modal .modal-body {
+    max-height: -webkit-calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+    overflow-y: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+#icons-upload-modal .modal-body iframe {
+    height: calc(100vh - 200px);
+    height: -webkit-calc(100vh - 200px);
+}
+
+.contentpane.component {
+    background: #fafafa;
+}
+
+.icons-table .search-bar {
+    padding: 20px;
+}
+
+.icons-table  .search-bar input[type="text"] {
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #f3f3f3;
+    box-shadow: none;
+    box-sizing: border-box;
+    height: 42px;
+    margin: 0;
+}
+
+.icons-table .bagrid-table {
+    background: #fff;
+    border: 1px solid #f3f3f3;    
+    margin: 0 20px;
+    padding: 20px 20px 20px 0;    
+}
+
+/* Select icon modal */
+
+.icons-table .bagrid-table {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.icons-table input.ba-icons-search {
+    width: 100%;
+}
+
+.icons-table hr {
+    margin: 50px 0;
+}
+
+.icons-table .ba-icon-item {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 25px 10px;
+    text-align: center;
+    width: 127px;
+}
+
+.icons-table .ba-icon-item:hover {
+    border: 1px solid #f3f3f3;
+}
+
+#slides-upload-modal .ba-column i,
+#add-item-modal .ba-column i,
+.icons-table .ba-icon-item i {
+    color: #666;
+    font-size: 48px;
+}
+
+.icons-table .ba-icon-title {
+    color: #999;
+    font-size: 11px;
+    margin-top: 15px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Upload Image Dialog */
+#item-upload-dialog iframe {
+    min-height: 500px;
+}
+
+#item-upload-dialog .modal-body {
+    max-height: 700px;
+}
+
+/*
+ * Export Modal
+*/
+
+#integration-dialog .modal-body,
+#export-dialog .modal-body {
+    margin: 15px auto;
+}
+
+/*
+ * Map modal
+*/
+
+textarea#mark-description {
+    max-width: 91%;
+    min-height: 260px;
+    max-height: 260px;
+    padding: 10px;
+    width: 91%;
+}
+
+input#place {
+    margin: 10px 0 25px;
+    width: 98%;
+}
+
+.com_baforms .pac-container {
+    margin-top: 138px;
+    position: fixed !important;
+    top: 10% !important;
+    z-index: 1700;
+}
+
+p.modal-text {
+    padding: 30px 10px;
+}
+
+.com_baforms a.ba-btn {
+    color: inherit;
+    text-decoration: none;
+}
+
+#location-dialog .modal-body {
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+/*
+ * Embed modal
+ */
+
+ #add-item-modal textarea,
+ #embed-modal textarea {
+    box-sizing: inherit;
+    max-width: 97%;
+    min-height: 120px;
+    min-width: 97%;
+}
+
+/*
+ * Text editor modal
+ */
+
+#html-editor.modal {
+    margin-left: -360px;
+    width: 720px;
+}
+
+#html-editor .modal-body {
+    padding: 0;
+    width: 100%;
+}
+
+.com_baforms #cke_cke-editor {
+    border-color: transparent;
+    border: 1px transparent;
+    box-shadow: none;
+}
+
+.com_baforms .cke_chrome, 
+.com_baforms .cke_top, 
+.com_baforms .cke_bottom {
+    background-color: #FAFAFA;
+    background-image: none !important;
+    border: none;
+    box-shadow: none;
+}
+
+.com_baforms .cke_top {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.cke iframe {
+    width: 100%!important;
+}
+
+.com_baforms a.cke_button_on:hover, 
+.com_baforms a.cke_button_on:focus, 
+.com_baforms a.cke_button_on:active, 
+.com_baforms .cke_button_on, 
+.com_baforms .cke_toolgroup, 
+.com_baforms .cke_combo_button {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.com_baforms a.cke_button.zmdi {
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font' !important;
+}
+
+.com_baforms a.cke_button {
+    padding: 10px;
+}
+
+.com_baforms a.cke_combo_button {
+    padding: 6px;
+}
+
+.com_baforms .cke_toolgroup,
+.com_baforms .cke .cke_combo_button,
+.com_baforms .cke .cke_toolgroup {
+    background-image: none;
+    background: transparent;
+    border-color: transparent;
+}
+
+.com_baforms .cke a.cke_combo_button:hover,
+.com_baforms .cke a.cke_combo_button:focus, 
+.com_baforms .cke .cke_combo_on a.cke_combo_button,
+.com_baforms .cke_combo_off a.cke_combo_button:hover,
+.com_baforms .cke_combo_off a.cke_combo_button:focus,
+.com_baforms a.cke_button_disabled:hover,
+.com_baforms a.cke_button_disabled:focus,
+.com_baforms a.cke_button_disabled:active,
+.com_baforms .cke a.cke_button_off:hover,
+.com_baforms .cke a.cke_button_off:focus,
+.com_baforms .cke a.cke_button_off:active {
+    background-image: none;
+    background: #f1f1f1;
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.com_baforms .cke_contents .cke_source {
+    white-space: pre-wrap;
+}
+
+.com_baforms a.cke_button {
+    padding: 10px;
+}
+
+.com_baforms a.cke_combo_button {
+    padding: 6px;
+}
+
+.com_baforms a.cke_button_on:hover,
+.com_baforms a.cke_button_on:focus,
+.com_baforms a.cke_button_on:active,
+.com_baforms .cke_button_on,
+.com_baforms .cke_toolgroup,
+.com_baforms .cke_combo_button {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.com_baforms a.cke_button_on {
+    background: #F1F1F1;
+}
+
+.com_baforms .cke-source-button {
+    padding: 12px;
+}
+
+.com_baforms .cke-source-button:hover {
+    box-shadow: 0 0 1px rgba(0,0,0,.3) inset;
+}
+
+/* Email body editors */
+
+#cke_jform_email_body,
+#cke_jform_reply_body {
+    border: 1px solid #E3E3E3;
+    margin-bottom: 30px;
+}
+
+/*
+ * Global settings modal
+*/
+
+#global-options {
+    position: absolute;
+}
+
+#global-options .modal-body {
+    max-height: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#global-options .modal-header,
+#about-dialog .modal-header {
+    margin-bottom: 20px;
+}
+
+#global-options .modal-footer {
+    margin-top: 20px;
+}
+
+#form-about,
+#global-options .ui-tabs-panel {
+    padding: 0 30px 20px;
+}
+
+#telegram-integration-modal .modal-body label, 
+#google-maps-integration-modal label,
+#mailchimp-integration-dialog label,
+#form-about label,
+#global-options label {
+    cursor: auto;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+#global-options select {
+    height: 40px;
+}
+
+textarea#jform_save_continue_email,
+textarea#jform_sent_massage,
+textarea#jform_error_massage {
+    min-height: 55px;
+    width: 206px !important;
+}
+
+input#jform_redirect_url,
+input#jform_button_lable {
+    width: 206px;
+}
+
+textarea#jform_email_body,
+textarea#jform_reply_body {
+    min-height: 120px;
+}
+
+.ba-email-subject {
+    box-sizing: border-box;
+    min-height: 100px; 
+    width: 220px !important;
+}
+
+.subject-link {
+    color: #3071a9 !important;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 30px;
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration: none !important;
+    width: 90%;
+}
+
+.subject-link:hover {
+    color: #1f496e!important;
+}
+
+.reply-body.subject-link {
+    width: 100%;
+}
+
+/* Global Tabs */
+
+#global-tabs .ui-tabs-nav li {
+    margin-right: 0;
+    width: 20%;
+}
+
+#global-tabs .ui-tabs-nav li a {
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+}
+
+/*
+/* Modal color picker
+*/
+
+.com_baforms .minicolors-theme-default .minicolors-input {
+    border: 1px solid #f3f3f3;
+    box-shadow: none;
+    height: 40px;
+    padding: 0 0 0 10px;
+}
+
+.com_baforms .minicolors-swatch {
+    border-radius: 0;
+    cursor: pointer;
+    height: 40px;
+    left: 0;
+    top: 0;
+    width: 40px;
+}
+
+.com_baforms .minicolors-swatch span {
+    box-shadow: none;
+}
+
+.com_baforms .minicolors-panel {
+    border-radius: 5px;
+    border: solid 5px #fff;
+    left: -50%;
+} 
+
+/* Modal About */
+span.update {
+    float: right;
+    line-height: 28px;
+    width: 50%;
+}
+
+/* Modal Update - notofication */
+#update-message {
+    background-color: #fafafa;
+    border-left: 4px solid #02adea;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 10px;
+    overflow: hidden;
+    line-height: 40px;
+}
+
+input.update-link.ba-btn-primary {
+    float: right;
+}
+
+/* Error Modal */
+#language-message-dialog .modal-body p,
+#message-dialog .modal-body p,
+#error-dialog .modal-body p {
+    padding: 30px 10px;
+}
+
+/* Upload Modal */
+#upload-dialog .tab-pane {
+    box-sizing: border-box;
+    padding: 30px 10px;
+}
+
+/* Update Modal */
+.ba-update-message {
+    animation: update-message 1.6s cubic-bezier(.25,.98,.26,.99);
+    -webkit-animation: update-message 1.6s cubic-bezier(.25,.98,.26,.99);
+    background: #fff;
+    border-radius: 3px;
+    bottom: 50px;
+    box-shadow: 0 4px 60px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 4px 60px rgba(0,0,0,.15);
+    padding: 25px;
+    position: fixed;
+    right: 25px;
+    width: 325px;
+    z-index: 1000;
+}
+
+@keyframes update-message {
+    0% {-webkit-transform: -webkit-translateY(400px); transform: translateY(400px);}
+    80% {-webkit-transform: -webkit-translateY(400px); transform: translateY(400px);}
+    100% {-webkit-transform: -webkit-translateY(1); transform: translateY(1);}
+}
+
+@-webkit-keyframes update-message {
+    0% {-webkit-transform: -webkit-translateY(400px); transform: translateY(400px);}
+    80% {-webkit-transform: -webkit-translateY(400px); transform: translateY(400px);}
+    100% {-webkit-transform: -webkit-translateY(1); transform: translateY(1);}
+}
+
+.ba-update-message h3 {
+    color: #000;
+}
+
+.ba-update-message p {
+    color: #b1b1b1;
+}
+
+.ba-update-message .update-link  {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Fields Editor Modal */
+
+#fields-editor {
+    z-index: 1060 !important;
+}
+
+#telegram-integration-modal .modal-body,
+#google-maps-integration-modal .modal-body,
+#mailchimp-integration-dialog .modal-body,
+#fields-editor .modal-body {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
+
+#fields-editor .modal-body {
+    background: #fafafa;
+    max-height: 400px;
+    overflow: auto;
+}
+
+#fields-editor .modal-body .ba-search {
+    box-sizing: border-box;
+    height: 42px;
+    width: 100%;
+}
+
+#fields-editor .modal-footer,
+#fields-editor .modal-header {
+    position: relative;
+}
+
+#fields-editor .forms-table {
+    min-height: 0;
+}
+
+#fields-editor.in + .fields-backdrop {
+    animation: backdrop .3s;
+    -webkit-animation: backdrop .3s;
+    background: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1055;
+}
+
+/* Mailchimp Integration Modal*/
+#mailchimp-integration-dialog .modal-body > div:first-child {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#telegram-integration-modal .modal-body label, 
+#google-maps-integration-modal .modal-body label,
+#mailchimp-integration-dialog .modal-body > div:first-child label {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#mailchimp-integration-dialog .modal-body > div:first-child .mailchimp-message {
+    background-color: #FF776F;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 20px;
+    width: 90%;
+}
+
+#google-maps-integration-modal .modal-body input[type="text"],
+#mailchimp-integration-dialog .modal-body > div:first-child label + input {
+    margin-bottom: 0;
+    width: 75%;
+}
+
+#mailchimp-integration-dialog input,
+#mailchimp-integration-dialog select {
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.mailchimp-fields select { 
+    margin-left: 4px;
+}
+
+/* Telegram Integration */
+#telegram-integration-modal .modal-body input {
+    box-sizing: border-box;
+    height: 40px;
+    margin: 0;
+    width: 100%;
+}
+
+/* Google Map Integration Modal*/
+#telegram-integration-modal .modal-body,
+#google-maps-integration-modal .modal-body {
+    min-height: 260px;
+}
+
+#google-maps-integration-modal .modal-body a.ba-btn-primary {
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+}
+
+/*
+/* Language Dialog Modal
+*/
+
+#language-dialog .modal-body{
+    max-height: 406px !important;
+    padding: 0;
+    width: 100%;
+}
+
+#language-dialog .modal-body iframe {
+    height: 400px;
+}
+
+/* ========================================================================
+    Email Builder
+ ========================================================================== */
+
+/*
+/* Editor 
+*/
+
+/* Drag and Drop element */
+.email-body .droppad_area {
+    cursor: auto;
+    height: 20px;
+}
+
+.email-body {
+    margin-bottom: 20px;
+}
+
+/* ========================================================================
+    Shortcode plugin - modal
+ ========================================================================== */
+
+/* Reset Joomla height 100% */
+.contentpane.component {
+    height: 0;
+}
+
+#modal-filter {
+    margin: 20px 0;
+}
+
+/* Search */
+.modal-shortcode input#filter_search {
+    height: 32px;
+    width: 85%;
+}
+
+/* Button search */
+.modal-shortcode button {
+    margin-left: 5px;
+}
+
+/* Table */
+.forms-table {
+    min-height: 400px;
+    padding-right: 20px;
+}
+
+/* Table list */
+th.form-title {
+    border-left: 4px solid transparent;
+    padding: 15px 20px;
+    text-align: left;
+    width: 100%;
+}
+
+th.form-title:hover a {
+    color: #999;
+    text-decoration: none;
+}
+
+th.form-title:hover {
+    border-left: 4px solid #02adea;
+}
+
+.forms-table tr > th > a {
+    color: #333;
+    font-weight: normal;
+}
+
+/* ========================================================================
+     Forms List
+ ========================================================================== */
+
+/* Reset for search field */
+#filter-bar input#filter_search {
+    margin-bottom: 0;
+}
+
+/* Reset for 2nd row */
+.table-striped tbody > tr:nth-child(odd) > td {
+    background-color: transparent;
+}
+
+/* Filters bar */
+#filter-bar {
+    margin-top: 10px;
+}
+
+#filter-bar select[name="filter_state"],
+#directionTable,
+#limit, 
+#sortTable {
+    height: 40px;
+}
+
+#filter-bar select[name="filter_state"] {
+    width: auto;
+}
+
+.btn-group + .btn-group {
+    margin-right: 5px;
+}
+
+/* Table background */
+table.table.table-striped {
+    background: #fff;
+    border: 1px solid #f3f3f3;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.table.table.table-striped.table th, 
+.table.table.table-striped.table td {
+    border-top: 1px solid #f3f3f3;
+    padding: 15px;
+}
+
+.table.table.table-striped.table td textarea {
+    max-width: 206px;
+}
+
+/* Title links */
+.table.table.table-striped.table td > a {
+    color: #333;
+}
+
+.table.table.table-striped.table td > a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+/* Pagination reset border-radius */
+.pagination ul > li:first-child > a, 
+.pagination ul > li:first-child > span,
+.pagination ul > li:last-child > a, 
+.pagination ul > li:last-child > span {
+    border-radius: 0;
+}
+
+/* ========================================================================
+    Submissions list
+ ========================================================================== */
+
+.span6.submissions-list {
+  margin-left: 0 !important;
+}
+
+tr.ba-default {
+    background-color: #fff;
+}
+
+tr.ba-new {
+    background-color: #f6f6f6;
+}
+
+/* ========================================================================
+    Reset Bootstrap 2 spans to original styles
+ ========================================================================== */
+@media (min-width: 1200px) {
+
+    .row-fluid [class*="span"] {
+        margin-left: 2.564102564102564%;
+    }
+
+    .row-fluid .span12 {
+        width: 100%;
+    }
+
+    .row-fluid .span11 {
+        width: 91.45299145299145%;
+    }
+
+    .row-fluid .span10 {
+        width: 82.90598290598291%;
+    }
+
+    .row-fluid .span9 {
+        width: 74.35897435897436%;
+    }
+
+    .row-fluid .span8 {
+        width: 65.81196581196582%;
+    }
+
+    .row-fluid .span7 {
+        width: 57.26495726495726%;
+    }
+
+    .row-fluid .span6 {
+        width: 48.717948717948715%;
+    }
+
+    .row-fluid .span5 {
+        width: 40.17094017094017%;
+    }
+
+    .row-fluid .span4 {
+        width: 31.623931623931625%;
+    }
+
+    .row-fluid .span3 {
+        width: 23.076923076923077%;
+    }
+
+    .row-fluid .span2 {
+        width: 14.52991452991453%;
+    }
+
+    .row-fluid .span1 {
+        width: 5.982905982905983%;
+    }
+}

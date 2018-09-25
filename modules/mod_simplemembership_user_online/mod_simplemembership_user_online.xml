@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade">
+  <name>Simple membership - Last Online users</name>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <creationDate>March 2018</creationDate>
+    <author>Andrey Kvasnevskiy</author>
+    <authorEmail>support@ordasoft.com</authorEmail>
+    <copyright> @copyright Andrey Kvasnevskiy-OrdaSoft(akbet@mail.ru); All rights reserved. </copyright>
+    <version>4.0.1 Free</version>
+    <description>Simple Membership - last online users module for simple_membership component.</description>
+    <files>
+        <filename module="mod_simplemembership_user_online">mod_simplemembership_user_online.php</filename>
+        <filename module="index">index.html</filename>
+        <filename>mod_simplemembership_user_online.xml</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="max_user" type="text" default="3" label="Show amount of users" description="Show amount of users">
+                </field>  
+                <field name="view" type="list" default="1" label="Show field in horisontal or vertical orientation"
+                       description="Show field in horisontal or vertical orientation">
+                    <option value="0">Vertical</option>
+                    <option value="1">Horisontal</option>
+                </field>
+                <field name="show_users_group" type="showuserslayout" default="" class="inputbox" 
+                label="Groups to show"
+                addfieldpath="/administrator/components/com_simplemembership/elements"
+                extension="com_simplemembership" multiple="true" size="1"
+                description="Choose group of users to show (Default show all)"/>
+                <field name="users_pic" type="radio" default="1" label="Profile images" description="Show users images">
+                        <option value="0">Hide</option>
+                        <option value="1">Show</option>
+                </field>
+                <field name="img_width" type="text" default="60" label="Width of profile image (px)"
+                        description="The width of your profile image (in px)" />
+                <field name="img_height" type="text" default="60" label="Height of profile image (px)"
+                        description="The  height of your profile image (in px)" />
+                <field name="@spacer" type="spacer" default="" label="" description="" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="Item_id" type="text" default="" label="ItemId"
+                       description="ItemId for pages. Enter Id for Menu" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

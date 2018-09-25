@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>Simple Membership User's Profile</name>
+  <authorUrl>http://www.ordasoft.com</authorUrl>
+  <creationDate>October 2017</creationDate>
+  <author>Andrey Kvasnevskiy</author>
+  <authorEmail>support@ordasoft.com</authorEmail>
+  <copyright> @copyright Andrey Kvasnevskiy-OrdaSoft(akbet@mail.ru); All rights reserved. </copyright>
+  <version>4.0.2 Free</version>
+  <description>Simple Membership User's Profile - Displays User's profile, who is onwner in VechicleManager, RealestateManager, Booklibrary, Medialibrary, Advertisement board
+  </description>
+  <files>
+    <filename module="mod_simplemembership_user_profile">mod_simplemembership_user_profile.php</filename>
+    <filename >index.html</filename>
+    <folder>tmpl</folder>
+  </files>
+
+  
+  <!--JOOMLA 2.5.3--> 
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        
+        <field name="rem" type="radio" default="1" label="Show user's profile in Realestate Manager" description="Show/Hide user's profile when show his realestate">
+          <option value="0">Hide</option>
+          <option value="1">Show</option>
+        </field>
+        
+        <field name="vm" type="radio" default="1" label="Show user's profile in Vehicle Manager " description="Show/Hide user's profile when show his vehicles">
+          <option value="0">Hide</option>
+          <option value="1">Show</option>
+        </field>
+        <field name="bl" type="radio" default="1" label="Show user's profile in Book Library" description="Show/Hide user's profile when show his books">
+          <option value="0">Hide</option>
+          <option value="1">Show</option>
+        </field>
+        <field name="ml" type="radio" default="1" label="Show user's profile in Media Library" description="Show/Hide user's profile when show his media">
+          <option value="0">Hide</option>
+          <option value="1">Show</option>
+        </field>
+        <field name="ads" type="radio" default="1" label="Show user's profile in Advertisement Board" description="Show/Hide user's profile when show his ads">
+          <option value="0">Hide</option>
+          <option value="1">Show</option>
+        </field>
+        <field name="view" type="list" label="Show field in horisontal or vertical orientation" description="Show field in horisontal or vertical orientation">
+          <option value="0">Vertical</option>
+          <option value="1">Horisontal</option>
+        </field>
+        
+        <field name="@spacer" type="spacer" default="" label="" description="" />
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Suffix for the css class of the module, to allow individual module styling" />
+        <field name="Item_id" type="text" default="" label="ItemId Suffix"
+               description="ItemId Suffix for pages. Enter Id for Menu" /> 
+      </fieldset>
+    </fields>
+    </config>
+  </extension>
+

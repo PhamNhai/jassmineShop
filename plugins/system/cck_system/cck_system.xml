@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" method="upgrade" group="system">
+    <name>System - CCK</name>
+    <author>www.ordasoft.com /Roman Akoev(akoevroman@gmail.com)</author>
+    <creationDate>Octoder 2017</creationDate>
+    <copyright>Copyright © 2016 ordasoft.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@ordasoft.com</authorEmail>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <version>3.1.0</version>
+    <description>System plugin for OS CCK.</description>
+    <files>
+        <filename plugin="cck_system">cck_system.php</filename>
+    </files>
+    <scriptfile>publish.php</scriptfile>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="bootstrap_version" type="list" default="0" label="Included version of bootstrap:" description="">
+                    <option value="0">Automatic detect</option>
+                    <option value="1">Don`t include</option>
+                    <option value="2">Bootstrap 2</option>
+                    <option value="3">Bootstrap 3</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

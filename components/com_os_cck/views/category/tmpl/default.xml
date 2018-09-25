@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Show Category Layout">
+        <message><![CDATA[Category page]]></message>
+    </layout>
+    <fields name="params">
+        <fieldset name="params" addfieldpath="/administrator/components/com_os_cck/elements" label="Params"
+                  description="">
+            <field name="category_layout" type="categorylayout" default="" class="inputbox" label="СategoryLayout"
+                   extension="com_os_cck" multiple="false" size="1" required="true"
+                   description="Choose layout for show category"/>
+            <field name="category" type="CategoryCck" default="" class="inputbox" label="Сategory" extension="com_os_cck"
+                   multiple="false" size="1" required="true" description="Choose category"/>
+            <field name="back_button" type="list" default="" label="Back Button"
+                   description="Show/Hide a Back Button, that returns you to the previously view page">
+                <option value="">Use Global</option>
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

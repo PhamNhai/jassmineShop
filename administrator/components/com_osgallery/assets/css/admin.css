@@ -1,0 +1,1079 @@
+/**
+* @package OS Gallery
+* @copyright 2016 OrdaSoft
+* @author 2016 Andrey Kvasnevskiy(akbet@mail.ru),Roman Akoev (akoevroman@gmail.com)
+* @license GNU General Public License version 2 or later;
+* @description Ordasoft Image Gallery
+*/
+/*-----------------------------------------------------com_osgallery---------------------------------------------------------*/
+/*---------------------------colors--------------------------*/
+/*---------------------------mixin-------------------------*/
+body.com_osgallery .subhead #toolbar-save .btn, body.com_osgallery .subhead #toolbar-new .btn,
+body.com_osgallery .subhead #toolbar-apply .btn, body.com_osgallery .subhead #toolbar-gallery-update-unavaible .btn,
+body.com_osgallery .subhead #toolbar-gallery-update-avaible .btn,
+body.com_osgallery .subhead #toolbar-bookmark .btn,
+body.com_osgallery .subhead #toolbar-delete .btn,
+body.com_osgallery .subhead #toolbar-unpublish .btn,
+body.com_osgallery .subhead #toolbar-publish .btn,
+body.com_osgallery .subhead #toolbar-copy .btn,
+body.com_osgallery .subhead #toolbar-cancel .btn, body.com_osgallery .subhead #toolbar-options .btn, body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .file-upload button,
+body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .file-upload button, body.com_osgallery #confirm-modal .modal-footer .btn,
+body.com_osgallery #confirm-delete-modal .modal-footer .btn,
+body.com_osgallery #about-modal .modal-footer .btn, body.com_osgallery #confirm-modal .modal-footer .btn-primary,
+body.com_osgallery #confirm-delete-modal .modal-footer .btn-primary,
+body.com_osgallery #about-modal .modal-footer .btn-primary {
+  padding: 5px 25px;
+  color: #354052;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 5px 0;
+  text-align: center; }
+
+/*----------------------------------gallary admin panel-------------------------------------*/
+body.com_osgallery {
+  background: #d5dbe4; }
+  body.com_osgallery .navbar-inner {
+    border: none;
+    background: #212833; }
+  body.com_osgallery .header {
+    background: #354052;
+    border: none; }
+    body.com_osgallery .header .container-title .page-title {
+      line-height: 40px; }
+      body.com_osgallery .header .container-title .page-title #gallery-title {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        border-bottom: 1px solid #788aa8;
+        color: #fff;
+        font-size: 20px; }
+      body.com_osgallery .header .container-title .page-title .icon-osgallery-title-image {
+        background: url(../images/image-gallery-icon.png) no-repeat;
+        background-size: 100%;
+        width: 40px;
+        height: 40px;
+        float: left; }
+      body.com_osgallery .header .container-title .page-title .os-gallery-title-text {
+        font-size: 25px; }
+  body.com_osgallery .subhead-collapse {
+    margin-bottom: 18px !important; }
+  body.com_osgallery .subhead {
+    background: #788aa8;
+    border: none; }
+    body.com_osgallery .subhead #toolbar-save .btn {
+      background-color: #fff; }
+      body.com_osgallery .subhead #toolbar-save .btn:hover {
+        background-color: #e6e6e6;
+        text-decoration: none; }
+    body.com_osgallery .subhead #toolbar-new .btn,
+    body.com_osgallery .subhead #toolbar-apply .btn {
+      background-color: #12BBC5;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      -o-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+      body.com_osgallery .subhead #toolbar-new .btn:hover,
+      body.com_osgallery .subhead #toolbar-apply .btn:hover {
+        background-color: #0e8f96;
+        text-decoration: none; }
+    body.com_osgallery .subhead #toolbar-gallery-update-unavaible .btn,
+    body.com_osgallery .subhead #toolbar-gallery-update-avaible .btn,
+    body.com_osgallery .subhead #toolbar-bookmark .btn,
+    body.com_osgallery .subhead #toolbar-delete .btn,
+    body.com_osgallery .subhead #toolbar-unpublish .btn,
+    body.com_osgallery .subhead #toolbar-publish .btn,
+    body.com_osgallery .subhead #toolbar-copy .btn,
+    body.com_osgallery .subhead #toolbar-cancel .btn {
+      background-color: #fff; }
+      body.com_osgallery .subhead #toolbar-gallery-update-unavaible .btn:hover,
+      body.com_osgallery .subhead #toolbar-gallery-update-avaible .btn:hover,
+      body.com_osgallery .subhead #toolbar-bookmark .btn:hover,
+      body.com_osgallery .subhead #toolbar-delete .btn:hover,
+      body.com_osgallery .subhead #toolbar-unpublish .btn:hover,
+      body.com_osgallery .subhead #toolbar-publish .btn:hover,
+      body.com_osgallery .subhead #toolbar-copy .btn:hover,
+      body.com_osgallery .subhead #toolbar-cancel .btn:hover {
+        background-color: #e6e6e6;
+        text-decoration: none; }
+    body.com_osgallery .subhead #toolbar-gallery-update-avaible .btn {
+      position: relative;
+      padding: 10px 25px 10px 40px; }
+      body.com_osgallery .subhead #toolbar-gallery-update-avaible .btn .icon-gallery-update-avaible {
+        background: url(../images/yes-update.png) no-repeat;
+        position: absolute;
+        left: 11px;
+        top: 9px;
+        width: 20px;
+        height: 20px;
+        background-size: 100%; }
+    body.com_osgallery .subhead #toolbar-gallery-update-unavaible .btn {
+      position: relative;
+      padding: 6px 25px 5px 25px; }
+      body.com_osgallery .subhead #toolbar-gallery-update-unavaible .btn .icon-gallery-update-unavaible {
+        background: url(../images/no-update.png) no-repeat;
+        position: absolute;
+        left: 11px;
+        top: 9px;
+        width: 20px;
+        height: 20px;
+        background-size: 100%; }
+    body.com_osgallery .subhead #toolbar-options .btn {
+      background-color: #3A8BDF;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      -o-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+      body.com_osgallery .subhead #toolbar-options .btn:hover {
+        background-color: #2071c6;
+        text-decoration: none; }
+  body.com_osgallery #content #adminForm #galleries-block .galleries-header {
+    text-align: center;
+    height: 20px;
+    padding: 20px 10px;
+    background: #97a5bc;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -o-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+    body.com_osgallery #content #adminForm #galleries-block .galleries-header .short-code {
+      position: relative; }
+      body.com_osgallery #content #adminForm #galleries-block .galleries-header .short-code:hover .short-code-tooltip {
+        display: block;
+        width: 100%;
+        left: 10%;
+        top: 35px;
+        background: #354052;
+        padding: 5px; }
+      body.com_osgallery #content #adminForm #galleries-block .galleries-header .short-code i {
+        position: absolute;
+        right: 25%;
+        top: -3px;
+        color: #3A8BDF; }
+      body.com_osgallery #content #adminForm #galleries-block .galleries-header .short-code .short-code-tooltip {
+        position: absolute;
+        display: none; }
+  body.com_osgallery #content #adminForm #galleries-block .gallery-block {
+    height: 20px;
+    padding: 20px 10px;
+    text-align: center; }
+    body.com_osgallery #content #adminForm #galleries-block .gallery-block:nth-child(2n) {
+      background: #b6c0d0; }
+  body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .title-block {
+    width: 100%;
+    margin: 0; }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .title-block span {
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 16px;
+      color: #354052;
+      font-weight: 700;
+      margin: 20px 0 10px 0; }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .title-block .input-block {
+      margin: 0; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .title-block .input-block #gallery-title {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        border: none;
+        border: 1px solid #b6c0d0;
+        margin: 5px 0;
+        padding: 5px;
+        color: #354052;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 35px;
+        width: 100%; }
+  body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #fine-uploader {
+    width: 100%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #fine-uploader .qq-uploader-selector {
+      min-height: 135px;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      border: none !important;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 15px;
+      overflow: hidden; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #fine-uploader .qq-uploader-selector:before {
+        font-weight: bold;
+        top: 65%;
+        text-transform: uppercase;
+        font-size: 20px; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #fine-uploader .qq-uploader-selector .qq-upload-button {
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        background: #788aa8;
+        color: #354052;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: none;
+        padding: 17px 10px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #fine-uploader .qq-uploader-selector .qq-upload-button:hover {
+          background: #92bfed; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #fine-uploader .qq-uploader-selector .qq-upload-button p {
+          margin: 6px 0 5px 0; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #fine-uploader .qq-uploader-selector .qq-upload-button input {
+          height: 100%; }
+  body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs {
+    margin: 10px 0;
+    padding: 10px 0; }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li {
+      width: 20%;
+      background: #788aa8;
+      margin: 0 0 5px 0;
+      border-right: 4px solid #d5dbe4;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li:nth-child(5n) {
+        border: none; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .edit-category-name,
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .delete-category {
+        display: inline-block;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #d5dbe4;
+        cursor: pointer;
+        margin: 0;
+        padding: 5px 0;
+        text-align: center;
+        border: none; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .edit-category-name:hover,
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .delete-category:hover {
+          background: #a7b2c6;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -o-border-radius: 0;
+          border-radius: 0; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .edit-category-name i,
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .delete-category i {
+          font-size: 15px;
+          padding: 0; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .edit-category-name {
+        width: 70%;
+        float: left;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        background: #5d7090; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .edit-category-name i {
+          color: #fff; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .delete-category {
+        width: 30%;
+        float: right;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        background: #5d7090; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .delete-category i {
+          color: #fff; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .edit-cat-name {
+        position: relative;
+        z-index: 99;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        border: none;
+        border: 1px solid #b6c0d0;
+        margin: 5px 0;
+        padding: 5px;
+        color: #354052;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 35px;
+        margin: 0;
+        width: 100%; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .save-cat-name {
+        background: #66a5e6;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        color: #354052;
+        font-weight: 700;
+        line-height: 31px;
+        height: 41px; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .save-cat-name:hover {
+          background: #495871;
+          color: #fff; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .ui-sortable-handle,
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li a {
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #354052;
+        cursor: pointer;
+        margin: 0;
+        border: none;
+        height: 30px;
+        overflow: hidden;
+        word-wrap: break-word;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li .ui-sortable-handle:hover,
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs li a:hover {
+          background: #bed9f4; }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs .active {
+      background: white; }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs .add-new-cat {
+      width: 20%;
+      background: #bed9f4;
+      color: #354052;
+      display: inline-block;
+      padding: 15px 0 19px 0;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 700; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs .add-new-cat:hover {
+        background: #92bfed; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #osgalery-cat-tabs .add-new-cat i {
+        display: block; }
+  body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #os-cat-tab-images .img-block {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    border: 3px solid transparent;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+    float: left;
+    display: inline-block;
+    width: 20%; }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #os-cat-tab-images .img-block .delete-image {
+      position: absolute;
+      cursor: pointer;
+      right: 0;
+      top: 0; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #os-cat-tab-images .img-block .delete-image i {
+        background: rgba(58, 139, 223, 0.8);
+        font-size: 35px;
+        opacity: 0.6;
+        @iclude transition(0.2s); }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #os-cat-tab-images .img-block .delete-image i:hover {
+          opacity: 1;
+          @iclude transition(0.2s); }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #os-cat-tab-images .img-block img {
+      max-width: 100%;
+      height: auto;
+      margin: 0px; }
+  body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab #os-cat-tab-images .active-img-block {
+    background: #3A8BDF;
+    opacity: 0.5; }
+  body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block {
+    background: #fff;
+    width: 32%;
+    position: absolute;
+    top: 165px;
+    right: 20px; }
+    @media (max-width: 1099px) {
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block {
+        position: static;
+        width: 50%;
+        margin: 20px 0 0 0;
+        clear: both; } }
+    @media (max-width: 875px) {
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block {
+        width: 75%;
+        margin: 20px 0 0 0;
+        clear: both; } }
+    @media (max-width: 678px) {
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block {
+        width: 100%;
+        margin: 20px 0 0 0;
+        clear: both; } }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block .options-header li {
+      width: 50%; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block .options-header li a {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        border: none;
+        background: #788aa8;
+        margin: 0;
+        text-align: center;
+        color: #d5dbe4;
+        font-weight: 700;
+        text-transform: uppercase; }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block .options-header .active a {
+      background: white;
+      color: #5098e3; }
+    body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block .tab-content .tab-pane {
+      padding: 10px 15px; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block .tab-content .tab-pane .cat-col-1 {
+        float: left;
+        width: 37%;
+        padding: 12px 0;
+        font-weight: 700;
+        color: #536480; }
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block .tab-content .tab-pane .cat-col-2 {
+        width: 60%; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block .tab-content .tab-pane .cat-col-2 select,
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block .tab-content .tab-pane .cat-col-2 input {
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -o-border-radius: 0;
+          border-radius: 0;
+          border: none;
+          border: 1px solid #b6c0d0;
+          margin: 5px 0;
+          padding: 5px;
+          color: #354052;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          height: 35px;
+          width: 230px; }
+        body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block .tab-content .tab-pane .cat-col-2 input[type="checkbox"] {
+          margin: 10px 0;
+          height: 25px;
+          width: 25px; }
+  body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block-message {
+    top: 281px; }
+  body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block-fixed {
+    /*position: fixed;*/
+    top: 115px; }
+    .type_html_code .cat-col-1 {
+      /*float: none !important;*/
+      /*width: 148px !important;*/
+      display: block;
+    }
+    .type_html_code .cat-col-2 textarea {
+      width: 217px !important;
+    }
+    .subhead.subhead-fixed {
+      position: inherit !important;
+    }
+    @media (max-width: 1200px) {
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block-fixed {
+        position: absolute; } }
+    @media (max-width: 1099px) {
+      body.com_osgallery #content #adminForm .gallery-main-content-tab #gallery-main-tab .category-options-block-fixed {
+        position: static; } }
+  @media (max-width: 1099px) {
+    body.com_osgallery #content .gallery-main-content-tab .os-gallery-wrapp {
+      width: 100% !important;
+      float: none; } }
+  body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab {
+    width: 43.5%;
+    background: white; }
+    @media (max-width: 1300px) {
+      body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab {
+        width: 50%; } }
+    @media (max-width: 1050px) {
+      body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab {
+        width: 60%; } }
+    @media (max-width: 860px) {
+      body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab {
+        width: 75%; } }
+    @media (max-width: 735px) {
+      body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab {
+        width: 100%; } }
+    body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab #osgalery-settings-tabs li {
+      width: 25%; }
+      body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab #osgalery-settings-tabs li a {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        border: none;
+        background: #788aa8;
+        margin: 0;
+        text-align: center;
+        color: #d5dbe4;
+        font-weight: 700;
+        text-transform: uppercase; }
+    body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab #osgalery-settings-tabs .active a {
+      background: white;
+      color: #5098e3; }
+    body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane {
+      padding: 10px 15px; }
+      body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-1,
+      body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-1 {
+        float: left;
+        width: 40%;
+        padding: 12px 0;
+        font-weight: 700;
+        color: #536480; }
+      body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2,
+      body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 {
+        width: 60%; }
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .file-upload,
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .file-upload {
+          position: relative;
+          overflow: hidden;
+          font-size: 1em;
+          line-height: 2em; }
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .file-upload button,
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .file-upload button {
+            background-color: #3A8BDF;
+            float: left;
+            color: #fff; }
+            body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .file-upload button:hover,
+            body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .file-upload button:hover {
+              background-color: #2071c6;
+              text-decoration: none; }
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .file-upload .none-upload,
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .file-upload .none-upload {
+            width: 128px;
+            display: inline-block;
+            float: left;
+            font-size: 15px;
+            line-height: 20px;
+            padding: 8px 5px;
+            border: 1px solid #b6c0d0;
+            margin-top: 5px;
+            overflow: hidden; }
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .file-upload input[type="file"],
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .file-upload input[type="file"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transform: scale(20);
+            letter-spacing: 10em;
+            -ms-transform: scale(20);
+            opacity: 0;
+            cursor: pointer; }
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 select,
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 input,
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 select,
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 input {
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -o-border-radius: 0;
+          border-radius: 0;
+          border: none;
+          border: 1px solid #b6c0d0;
+          margin: 5px 0;
+          padding: 5px;
+          color: #354052;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          height: 35px;
+          width: 230px; }
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 input[type="radio"],
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 input[type="checkbox"],
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 input[type="radio"],
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 input[type="checkbox"] {
+          margin: 10px 0;
+          height: 25px;
+          width: 25px; }
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .minicolors-swatch,
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .minicolors-swatch {
+          top: 5px;
+          left: auto;
+          right: auto;
+          width: 33px;
+          height: 33px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -o-border-radius: 0;
+          border-radius: 0; }
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .osgallery-checkboxes-block,
+        body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .osgallery-checkboxes-block {
+          width: 230px;
+          height: 35px;
+          position: relative;
+          margin: 6px 0 0 0;
+          display: inline-block;
+          border: none;
+          background: #fff;
+          text-decoration: none;
+          overflow: hidden;
+          -moz-user-select: -moz-none;
+          -ms-user-select: none;
+          -webkit-user-select: none;
+          user-select: none;
+          -moz-transition-duration: 0.4s;
+          -o-transition-duration: 0.4s;
+          -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+          -moz-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          -o-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          -webkit-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          -webkit-tap-highlight-color: transparent; }
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .osgallery-checkboxes-block input[type="radio"],
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .osgallery-checkboxes-block input[type="radio"] {
+            visibility: hidden;
+            position: absolute; }
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .sett-col-2 .osgallery-checkboxes-block label,
+          body.com_osgallery #content .gallery-main-content-tab #gallery-settings-tab .tab-content .tab-pane .cat-col-2 .osgallery-checkboxes-block label {
+            margin: 0;
+            font-size: 15px;
+            line-height: 24px;
+            background: #788aa8;
+            color: #354052;
+            padding: 6px 0;
+            -moz-transition-duration: 0;
+            -o-transition-duration: 0;
+            -webkit-transition-duration: 0;
+            transition-duration: 0; }
+  body.com_osgallery #status {
+    box-shadow: none;
+    border: none;
+    color: #788aa8;
+    background: #354052; }
+    body.com_osgallery #status a {
+      color: #e4cde4; }
+    body.com_osgallery #status .badge {
+      background: #3A8BDF; }
+  body.com_osgallery #confirm-delete-modal .modal-body {
+    padding: 35px; }
+    body.com_osgallery #confirm-delete-modal .modal-body p {
+      color: #EF4A4A;
+      text-align: center; }
+  body.com_osgallery #confirm-modal,
+  body.com_osgallery #confirm-delete-modal,
+  body.com_osgallery #about-modal {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+    body.com_osgallery #confirm-modal .modal-body,
+    body.com_osgallery #confirm-delete-modal .modal-body,
+    body.com_osgallery #about-modal .modal-body {
+      color: #354052;
+      font-weight: 700; }
+      body.com_osgallery #confirm-modal .modal-body .about-image,
+      body.com_osgallery #confirm-delete-modal .modal-body .about-image,
+      body.com_osgallery #about-modal .modal-body .about-image {
+        text-align: center; }
+        body.com_osgallery #confirm-modal .modal-body .about-image img,
+        body.com_osgallery #confirm-delete-modal .modal-body .about-image img,
+        body.com_osgallery #about-modal .modal-body .about-image img {
+          max-height: 400px; }
+    body.com_osgallery #confirm-modal .modal-footer,
+    body.com_osgallery #confirm-delete-modal .modal-footer,
+    body.com_osgallery #about-modal .modal-footer {
+      background: #b6c0d0;
+      border: none; }
+      body.com_osgallery #confirm-modal .modal-footer label,
+      body.com_osgallery #confirm-delete-modal .modal-footer label,
+      body.com_osgallery #about-modal .modal-footer label {
+        font-weight: 700;
+        color: #3A8BDF;
+        text-align: left; }
+        body.com_osgallery #confirm-modal .modal-footer label .version-osgallery,
+        body.com_osgallery #confirm-delete-modal .modal-footer label .version-osgallery,
+        body.com_osgallery #about-modal .modal-footer label .version-osgallery {
+          color: #EF4A4A;
+          font-weight: 900; }
+      body.com_osgallery #confirm-modal .modal-footer span,
+      body.com_osgallery #confirm-delete-modal .modal-footer span,
+      body.com_osgallery #about-modal .modal-footer span {
+        text-align: left; }
+      body.com_osgallery #confirm-modal .modal-footer .submit-close,
+      body.com_osgallery #confirm-delete-modal .modal-footer .submit-close,
+      body.com_osgallery #about-modal .modal-footer .submit-close {
+        text-align: right; }
+      body.com_osgallery #confirm-modal .modal-footer .btn,
+      body.com_osgallery #confirm-delete-modal .modal-footer .btn,
+      body.com_osgallery #about-modal .modal-footer .btn {
+        background-color: #fff; }
+        body.com_osgallery #confirm-modal .modal-footer .btn:hover,
+        body.com_osgallery #confirm-delete-modal .modal-footer .btn:hover,
+        body.com_osgallery #about-modal .modal-footer .btn:hover {
+          background-color: #e6e6e6;
+          text-decoration: none; }
+      body.com_osgallery #confirm-modal .modal-footer .btn-primary,
+      body.com_osgallery #confirm-delete-modal .modal-footer .btn-primary,
+      body.com_osgallery #about-modal .modal-footer .btn-primary {
+        background-color: #3A8BDF; }
+        body.com_osgallery #confirm-modal .modal-footer .btn-primary:hover,
+        body.com_osgallery #confirm-delete-modal .modal-footer .btn-primary:hover,
+        body.com_osgallery #about-modal .modal-footer .btn-primary:hover {
+          background-color: #2071c6;
+          text-decoration: none; }
+  body.com_osgallery #system-message-container .alert-success {
+    background: #bed9f4;
+    border: none !important;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px auto; }
+    body.com_osgallery #system-message-container .alert-success .alert-heading {
+      color: #788aa8; }
+    body.com_osgallery #system-message-container .alert-success .alert-message {
+      color: #3A8BDF;
+      font-weight: 700; }
+  body.com_osgallery #system-message-container .alert-error {
+    background: #fbd7d7;
+    border: none !important;
+    width: 27.6%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px auto; }
+    body.com_osgallery #system-message-container .alert-error .alert-heading {
+      color: #3A8BDF; }
+    body.com_osgallery #system-message-container .alert-error .alert-message {
+      color: #EF4A4A;
+      font-weight: 700; }
+
+.osgallery-checkboxes-block > input[type="radio"] ~ label {
+  -moz-transition-duration: 0;
+  -o-transition-duration: 0;
+  -webkit-transition-duration: 0;
+  transition-duration: 0; }
+
+.osgallery-checkboxes-block > input[type="radio"] ~ label:before {
+  opacity: 0; }
+
+.osgallery-checkboxes-block > input:disabled:nth-child(1) ~ label:nth-of-type(1) {
+  opacity: 0.3;
+  cursor: not-allowed; }
+
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:nth-of-type(1):after,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:nth-of-type(1):before {
+  opacity: 1; }
+
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1):after,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1):before,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1) ~ label:after,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1) ~ label:before {
+  left: 0%; }
+
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2):after,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2):before,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:after,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:before {
+  left: 0%; }
+
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3):after,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3):before,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:after,
+.osgallery-checkboxes-block > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:before {
+  left: 0%; }
+
+.osgallery-checkboxes-block > input:disabled:nth-child(2) ~ label:nth-of-type(2) {
+  opacity: 0.3;
+  cursor: not-allowed; }
+
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:nth-of-type(2):after,
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:nth-of-type(2):before {
+  opacity: 1; }
+
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2):after,
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2):before,
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:after,
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:before {
+  left: 50%; }
+
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3):after,
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3):before,
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:after,
+.osgallery-checkboxes-block > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:before {
+  left: 33.33333%; }
+
+.osgallery-checkboxes-block > input:disabled:nth-child(3) ~ label:nth-of-type(3) {
+  opacity: 0.3;
+  cursor: not-allowed; }
+
+.osgallery-checkboxes-block > input:nth-child(3):checked ~ label:nth-of-type(3):after,
+.osgallery-checkboxes-block > input:nth-child(3):checked ~ label:nth-of-type(3):before {
+  opacity: 1; }
+
+.osgallery-checkboxes-block > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3):after,
+.osgallery-checkboxes-block > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3):before,
+.osgallery-checkboxes-block > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:after,
+.osgallery-checkboxes-block > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:before {
+  left: 66.66667%; }
+
+.osgallery-checkboxes-block > label {
+  display: inline-block;
+  cursor: pointer;
+  float: left;
+  font-style: inherit;
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  -webkit-transition-property: none;
+  transition-property: none;
+  -moz-transition-duration: inherit;
+  -o-transition-duration: inherit;
+  -webkit-transition-duration: inherit;
+  transition-duration: inherit;
+  -moz-transition-timing-function: inherit;
+  -o-transition-timing-function: inherit;
+  -webkit-transition-timing-function: inherit;
+  transition-timing-function: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px; }
+
+.osgallery-checkboxes-block > label:before, .osgallery-checkboxes-block > label:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; }
+
+.osgallery-checkboxes-block > label:after {
+  content: attr(data-value);
+  color: white;
+  text-align: center;
+  padding: inherit;
+  z-index: 10;
+  font-style: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+  opacity: 0;
+  -moz-transition-property: opacity, left;
+  -o-transition-property: opacity, left;
+  -webkit-transition-property: opacity, left;
+  transition-property: opacity, left;
+  -moz-transition-duration: inherit;
+  -o-transition-duration: inherit;
+  -webkit-transition-duration: inherit;
+  transition-duration: inherit;
+  -moz-transition-timing-function: inherit;
+  -o-transition-timing-function: inherit;
+  -webkit-transition-timing-function: inherit;
+  transition-timing-function: inherit; }
+
+.osgallery-checkboxes-block > label:after, .osgallery-checkboxes-block > label {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.osgallery-checkboxes-block > label:before {
+  content: " ";
+  background: #3A8BDF;
+  -moz-transition-property: left;
+  -o-transition-property: left;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -moz-transition-duration: inherit;
+  -o-transition-duration: inherit;
+  -webkit-transition-duration: inherit;
+  transition-duration: inherit;
+  -moz-transition-timing-function: inherit;
+  -o-transition-timing-function: inherit;
+  -webkit-transition-timing-function: inherit;
+  transition-timing-function: inherit; }
+
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(2),
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(2):after,
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(2):before,
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(2) ~ label,
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(2) ~ label:after,
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(2) ~ label:before {
+  width: 50%; }
+
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(3),
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(3):after,
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(3):before,
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(3) ~ label,
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(3) ~ label:after,
+.osgallery-checkboxes-block > label:first-of-type:nth-last-of-type(3) ~ label:before {
+  width: 33.33333%; }
+
+.os-check-box {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  position: relative;
+  margin: 10px auto;
+  background: #fcfff4;
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5); }
+
+.os-check-box label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #354052 0%, #354052 100%);
+  background: linear-gradient(to bottom, #354052 0%, #354052 100%);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white; }
+
+.os-check-box label:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: -webkit-linear-gradient(top, #12BBC5 0%, #12BBC5 100%);
+  background: linear-gradient(to bottom, #12BBC5 0%, #12BBC5 100%);
+  opacity: 0; }
+
+.os-check-box label:hover::after {
+  opacity: 0.3; }
+
+.os-check-box input[type=checkbox] {
+  visibility: hidden; }
+
+.os-check-box input[type=checkbox]:checked + label:after {
+  opacity: 1; }
+
+#gallery-waiting-spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999999999;
+  background: #354052; }
+
+.gallery-wait-spinner {
+  margin: 45vh auto;
+  width: 120px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff; }
+
+.gallery-wait-spinner > div {
+  width: 30px;
+  height: 5px;
+  background-color: #2071c6;
+  display: inline-block;
+  -webkit-animation: sk-gallery-wait-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-gallery-wait-bouncedelay 1.4s infinite ease-in-out both; }
+
+.gallery-wait-spinner .gallery-wait-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s; }
+
+.gallery-wait-spinner .gallery-wait-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s; }
+
+@-webkit-keyframes sk-gallery-wait-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1); } }
+@keyframes sk-gallery-wait-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+/*# sourceMappingURL=admin.css.map */
+        body.com_osgallery #content .gallery-main-content-tab .category-options-block .tab-content .tab-pane .sett-col-2 .osgallery-checkboxes-block,
+        body.com_osgallery #content .gallery-main-content-tab .category-options-block .tab-content .tab-pane .cat-col-2 .osgallery-checkboxes-block {
+          width: 230px;
+          height: 35px;
+          position: relative;
+          margin: 6px 0 0 0;
+          display: inline-block;
+          border: none;
+          background: #fff;
+          text-decoration: none;
+          overflow: hidden;
+          -moz-user-select: -moz-none;
+          -ms-user-select: none;
+          -webkit-user-select: none;
+          user-select: none;
+          -moz-transition-duration: 0.4s;
+          -o-transition-duration: 0.4s;
+          -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+          -moz-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          -o-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          -webkit-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          -webkit-tap-highlight-color: transparent; }
+          body.com_osgallery #content .gallery-main-content-tab .category-options-block .tab-content .tab-pane .sett-col-2 .osgallery-checkboxes-block input[type="radio"],
+          body.com_osgallery #content .gallery-main-content-tab .category-options-block .tab-content .tab-pane .cat-col-2 .osgallery-checkboxes-block input[type="radio"] {
+            visibility: hidden;
+            position: absolute; }
+          body.com_osgallery #content .gallery-main-content-tab .category-options-block .tab-content .tab-pane .sett-col-2 .osgallery-checkboxes-block label,
+          body.com_osgallery #content .gallery-main-content-tab .category-options-block .tab-content .tab-pane .cat-col-2 .osgallery-checkboxes-block label {
+            margin: 0;
+            font-size: 15px;
+            line-height: 24px;
+            background: #788aa8;
+            color: #354052;
+            padding: 6px 0;
+            -moz-transition-duration: 0;
+            -o-transition-duration: 0;
+            -webkit-transition-duration: 0;
+            transition-duration: 0; }
+            #toolbar [class^="icon-"], #toolbar [class*=" icon-"] {
+              background-color: rgba(18, 187, 197, 0.3) !important;
+              border-radius: 3px 0 0 3px;
+              border-right: none !important; 
+              height: auto;
+              line-height: inherit;
+              margin: 0 6px 0 -10px;
+              opacity: 1;
+              text-shadow: none;
+              width: 28px;
+              z-index: -1;
+            }
+            
+.osg-pro-avaible, .osg-pro-avaible *{
+    color: #942A25!important;
+    background-color: #cccccc!important;
+    cursor: not-allowed!important;
+    border-radius: 3px;
+}
+
+.osg-pro-avaible-string * {
+    color: #942A25!important;
+    cursor: not-allowed!important;
+}
+
+.osg-pro-avaible label,.osg-pro-avaible-string label {
+    color: black!important;
+    background: #A1A1A1!important;
+}
+
+/*.osg-pro-avaible .osgallery-checkboxes-block{
+  border: 1px solid #354052 !important;
+}*/

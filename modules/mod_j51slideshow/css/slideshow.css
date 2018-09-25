@@ -1,0 +1,82 @@
+#slides {
+  display: none
+}
+
+.slideshowcontainer {
+  position: relative;
+  margin:0 auto;
+}
+.slidesjs-container {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* Hide Play Toggle */
+.slidesjs-play.slidesjs-navigation, .slidesjs-stop.slidesjs-navigation {
+  display:none !important;
+}
+
+/* Slide Pagination */
+.slidesjs-pagination {
+  margin: 6px 5px 0;
+  float: right;
+  list-style: none;
+}
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+/* Previous/Next Buttons */
+.slidesjs-previous.slidesjs-navigation, .slidesjs-next.slidesjs-navigation {
+height: 45px;
+margin-top: -25px;
+overflow: hidden;
+position: absolute;
+text-indent: -9999em;
+top: 50%;
+width: 45px;
+z-index: 100;
+opacity: 0.5;
+}
+.slidesjs-previous.slidesjs-navigation {
+background: url("../img/prev.png") no-repeat scroll left top transparent;
+left: 20px;
+}
+.slidesjs-next.slidesjs-navigation {
+background: url("../img/next.png") no-repeat scroll left top transparent;
+right: 20px;
+}
+a:hover.slidesjs-previous.slidesjs-navigation, a:hover.slidesjs-next.slidesjs-navigation {
+  opacity: 1;
+}
+
+/* Template Specific */
+#container_slideshow {
+  padding:25px 0px;
+}
+#container_header {
+  position:relative;
+}
+
+  #container_slideshow {
+    padding-top:160px;
+  }

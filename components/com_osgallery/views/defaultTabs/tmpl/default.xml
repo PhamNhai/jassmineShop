@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_OSGALLERY_VIEW_DEFAULT_TITLE">
+        <message>COM_OSGALLERY_VIEW_DEFAULT_DESC</message>
+    </layout>
+    <fields name="params">
+        <fieldset name="params" label="Params" addfieldpath="/administrator/components/com_osgallery/fields">
+            <field name="gallery_list" type="gallerylist" default="0" class="inputbox" label="COM_OSGALLERY_MENU_SELECT_GALLERY_LABEL"
+                extension="com_osgallery" required="true" multiple="true" size="5" description="COM_OSGALLERY_MENU_SELECT_GALLERY_DESC"/>
+        </fieldset>
+    </fields>
+</metadata>

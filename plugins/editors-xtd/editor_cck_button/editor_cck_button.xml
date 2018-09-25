@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" method="upgrade" group="editors-xtd">
+    <name>CCK Editor Button</name>
+    <author>www.ordasoft.com /Roman Akoev(akoevroman@gmail.com)</author>
+    <creationDate>September 2016</creationDate>
+    <copyright>Copyright © 2016 ordasoft.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@ordasoft.com</authorEmail>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <version>2.0.0</version>
+    <description>Plugin for OS CCK short code button.</description>
+    <files>
+        <filename plugin="editor_cck_button">editor_cck_button.php</filename>
+    </files>
+    <scriptfile>publish.php</scriptfile>
+</extension>

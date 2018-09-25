@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" method="upgrade" group="ajax">
+    <name>Ajax Os TouchSlider</name>
+    <author>www.ordasoft.com /Roman Akoev(akoevroman@gmail.com),Andrey Kvasnevskiy(akbet@mail.ru)</author>
+    <creationDate>October 2016</creationDate>
+    <copyright>Copyright © 2016 ordasoft.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@ordasoft.com</authorEmail>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <version>2.0.0</version>
+    <description>Ajax plugin for OS TouchSlider</description>
+    <files>
+        <filename plugin="plg_os_touchslider">plg_os_touchslider.php</filename>
+        <filename>publish.php</filename>
+    </files>
+    <scriptfile>publish.php</scriptfile>
+</extension>

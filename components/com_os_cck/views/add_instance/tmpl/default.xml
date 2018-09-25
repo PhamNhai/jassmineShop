@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Add Instance / Add Request Instance Layout">
+        <message><![CDATA[Add instance layout or Request layout]]></message>
+    </layout>
+    <fields name="params">
+        <fieldset name="params" addfieldpath="/administrator/components/com_os_cck/elements" label="Params"
+                  description="">
+            <field name="request_layout" type="requestlayout" default="" class="inputbox" label="Request Layout"
+                   extension="com_os_cck" multiple="false" size="1" required="true"
+                   description="Choose layout for show"/>
+            <field name="show_type" type="list" default="1" label="Show type"
+                    description="Choose show type">
+                <option value="1">Submit Form</option>
+                <option value="2">Show/Hide effect</option>
+                <option value="3">Redirect</option>
+            </field>
+            <field name="back_button" type="list" default="" label="Back Button"
+                   description="Show/Hide a Back Button, that returns you to the previously view page">
+                <option value="">Use Global</option>
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

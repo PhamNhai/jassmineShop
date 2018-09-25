@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+.books_button{
+	padding:5px;
+	padding-left:2px;
+	-moz-border-radius:4px;
+}
+
+.edit_button, .books_button{
+	padding:5px;
+	padding-left:2px;
+	-moz-border-radius:4px;
+}
+
+#cb_tabid_28 .button_margin{
+	text-align:right;
+}
+.edit_button a:hover, .books_button a:hover {
+    -moz-transition: background-position 0.1s linear 0s !important;
+    background-color: #0044CC !important;
+    background-position: 0 -15px !important;
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+.edit_button a, .books_button a  {
+    background: -moz-linear-gradient(center top , #0088CC, #0044CC) repeat-x scroll 0 0 #006DCC !important;
+    border: 1px solid !important;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    color: #FFFFFF !important;
+    cursor: pointer !important;
+    font-family: arial !important;
+    font-size: 13px;
+    font-weight: normal !important;
+    letter-spacing: 1px;
+    padding: 7px 14px !important;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+}
+#cb_tabid_28 .button_margin .books_button {
+    margin: 0;
+}
+#cb_tabid_28 .button_margin .books_button, #cb_tabid_28 .button_margin .edit_button {
+border:none;
+background:none;
+display:block;
+float:left;
+}
+.componentheading{
+clear:both;
+}
+.bl_bl_books_orderby_table #ShowOrderBy {
+float:none;
+}
+#gallery .okno .textmedia {
+	position:static;
+}
+#gallery .okno {
+height:220px;
+}
+#country_s5 .button_margin {
+    text-align: left;
+}
+

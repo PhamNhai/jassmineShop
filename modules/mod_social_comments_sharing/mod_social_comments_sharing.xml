@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade">
+  <name>Ordasoft Social Comments and Sharing Free</name> 
+  <author>Andrey Kvasnevskiy, Roman Akoev</author>
+  <creationDate>May 2017</creationDate>
+  <copyright>(C) 2012 OrdaSoft - Andrey Kvasnevskiy</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>akbet@mail.ru, akoevroman@gmail.com</authorEmail>
+  <authorUrl>www.ordasoft.com</authorUrl>
+  <version>2.2.5 FREE</version>
+  <description>
+  Joomla Social Comments and Sharing is an unbelievable module for share your website content on the most popular social networks: Facebook, Twitter, LinkedIn, Google+, Vk, Ok, Tumblr, Pinterest, Instagram and extraordinary solution for comments. Free OS Joomla social share module includes Facebook Comments Box. Disqus, VK, Google+ Comments Boxes; 8+ awesome layouts; 3 Fantastic Icon Types (Round, Square, Tongue) available in pro version. 
+ </description>
+
+  <files>
+    <filename module="mod_social_comments_sharing">mod_social_comments_sharing.php</filename>
+    <folder>images</folder>
+    <folder>tmpl</folder>
+    <folder>helpers</folder>
+    <filename>mod_social_comments_sharing.xml</filename>
+    <filename>index.html</filename>
+  </files>
+
+  <config>
+    <fields name="params"  >
+     <fieldset name="basic" label="Module Options">
+      <field name="general" type="spacer" default="General Module Settings" label="&lt;b&gt;Module Settings&lt;/b&gt;" description="General Module Settings" />
+      <field name="module_syle" type="list" default="horizontal" label="Select module syle" description="Set the module style">
+        <option value="horizontal">Horizontal(default)</option>
+        <option value="vertical">Vertical(default)</option>
+      </field>
+      <field showon="module_syle:left,right,top,bottom,horizontal_icon,vertical_icon" name="show_com_box" type="list" default="1" label="Show comments" description="Hide or show comment box">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+      </field>
+      <field showon="module_syle:left,right,top,bottom,horizontal_icon,vertical_icon" name="icon_size" type="number" default="40" label="Icon size" description="Set icon size in pixels" />
+      <field name="module_language" type="list" default="en_US" label="Select language" description="Set the language for the like and send button">
+        <option value="ca_ES">Catalan</option>
+        <option value="cs_CZ">Czech</option>
+        <option value="cy_GB">Welsh</option>
+        <option value="da_DK">Danish</option>
+        <option value="de_DE">German</option>
+        <option value="eu_ES">Basque</option>
+        <option value="ck_US">Cherokee</option>
+        <option value="en_US">English (US)</option>
+        <option value="es_LA">Spanish</option>
+        <option value="es_CL">Spanish (Chile)</option>
+        <option value="es_CO">Spanish (Colombia)</option>
+        <option value="es_ES">Spanish (Spain)</option>
+        <option value="es_MX">Spanish (Mexico)</option>
+        <option value="es_VE">Spanish (Venezuela)</option>
+        <option value="fb_FI">Finnish (test)</option>
+        <option value="fi_FI">Finnish</option>
+        <option value="fr_FR">French (France)</option>
+        <option value="gl_ES">Galician</option>
+        <option value="hu_HU">Hungarian</option>
+        <option value="it_IT">Italian</option>
+        <option value="ja_JP">Japanese</option>
+        <option value="ko_KR">Korean</option>
+        <option value="nb_NO">Norwegian (bokmal)</option>
+        <option value="nn_NO">Norwegian (nynorsk)</option>
+        <option value="nl_NL">Dutch</option>
+        <option value="pl_PL">Polish</option>
+        <option value="pt_BR">Portuguese (Brazil)</option>
+        <option value="pt_PT">Portuguese (Portugal)</option>
+        <option value="ro_RO">Romanian</option>
+        <option value="ru_RU">Russian</option>
+        <option value="sk_SK">Slovak</option>
+        <option value="sl_SI">Slovenian</option>
+        <option value="sv_SE">Swedish</option>
+        <option value="th_TH">Thai</option>
+        <option value="tr_TR">Turkish</option>
+        <option value="ku_TR">Kurdish</option>
+        <option value="zh_CN">Simplified Chinese (China)</option>
+        <option value="zh_HK">Traditional Chinese (Hong Kong)</option>
+        <option value="zh_TW">Traditional Chinese (Taiwan)</option>
+        <option value="fb_LT">Leet Speak</option>
+        <option value="af_ZA">Afrikaans</option>
+        <option value="sq_AL">Albanian</option>
+        <option value="hy_AM">Armenian</option>
+        <option value="az_AZ">Azeri</option>
+        <option value="be_BY">Belarusian</option>
+        <option value="bn_IN">Bengali</option>
+        <option value="bs_BA">Bosnian</option>
+        <option value="bg_BG">Bulgarian</option>
+        <option value="hr_HR">Croatian</option>
+        <option value="nl_BE">Dutch (Belgium)</option>
+        <option value="en_GB">English (UK)</option>
+        <option value="eo_EO">Esperanto</option>
+        <option value="et_EE">Estonian</option>
+        <option value="fo_FO">Faroese</option>
+        <option value="fr_CA">French (Canada)</option>
+        <option value="ka_GE">Georgian</option>
+        <option value="el_GR">Greek</option>
+        <option value="gu_IN">Gujarati</option>
+        <option value="hi_IN">Hindi</option>
+        <option value="is_IS">Icelandic</option>
+        <option value="id_ID">Indonesian</option>
+        <option value="ga_IE">Irish</option>
+        <option value="jv_ID">Javanese</option>
+        <option value="kn_IN">Kannada</option>
+        <option value="kk_KZ">Kazakh</option>
+        <option value="la_VA">Latin</option>
+        <option value="lv_LV">Latvian</option>
+        <option value="li_NL">Limburgish</option>
+        <option value="lt_LT">Lithuanian</option>
+        <option value="mk_MK">Macedonian</option>
+        <option value="mg_MG">Malagasy</option>
+        <option value="ms_MY">Malay</option>
+        <option value="mt_MT">Maltese</option>>
+        <option value="mr_IN">Marathi</option>
+        <option value="mn_MN">Mongolian</option>
+        <option value="ne_NP">Nepali</option>
+        <option value="pa_IN">Punjabi</option>
+        <option value="rm_CH">Romansh</option>
+        <option value="sa_IN">Sanskrit</option>
+        <option value="sr_RS">Serbian</option>
+        <option value="so_SO">Somali</option>
+        <option value="sw_KE">Swahili</option>
+        <option value="tl_PH">Filipino</option>
+        <option value="ta_IN">Tamil</option>
+        <option value="tt_RU">Tatar</option>
+        <option value="te_IN">Telugu</option>
+        <option value="ml_IN">Malayalam</option>
+        <option value="uk_UA">Ukrainian</option>
+        <option value="uz_UZ">Uzbek</option>
+        <option value="vi_VN">Vietnamese</option>
+        <option value="xh_ZA">Xhosa</option>>
+        <option value="zu_ZA">Zulu</option>
+        <option value="km_KH">Khmer</option>
+        <option value="tg_TJ">Tajik</option>
+        <option value="ar_AR">Arabic</option>
+        <option value="he_IL">Hebrew</option>
+        <option value="ur_PK">Urdu</option>
+        <option value="fa_IR">Persian</option>
+        <option value="sy_SY">Syriac</option>
+        <option value="yi_DE">Yiddish</option>
+        <option value="gn_PY">Guarani</option>
+        <option value="qu_PE">Quechua</option>
+        <option value="ay_BO">Aymara</option>
+        <option value="se_NO">Northern Sami</option>
+        <option value="ps_AF">Pashto</option>
+        <option value="tl_ST">Klingon</option>
+      </field>
+    </fieldset>
+
+<!-- ////////////////////////////////////FACEBOOK OPTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <fieldset name="facebook" label="Facebook Options">
+      <field name="advanced_fb" type="spacer" default="" label="&lt;b&gt;General Facebook Settings&lt;/b&gt;" description="" />
+      <field name="fb_api_id" type="text" default="" label="App ID" description="Enter your App ID" />
+      <field type="spacer" label="Getting App ID: &lt;a target='_blank' href='https://developers.facebook.com/apps'&gt;Apps manager&lt;/a&gt;" />
+
+      <field name="advanced_fb_sare" type="spacer" default="" label="&lt;b&gt;Setting For Facebook Share Button&lt;/b&gt;" description="" />
+      <field name="fb_enable_share" type="radio" class="btn-group btn-group-yesno" default="1" label="Enable Share Button" description="Enable Facebook Share Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical"  name="fb_share_layout_style" type="list" default="button_count" label="Style" description="Style of the button to be displayed">
+        <option value="icon_link">Icon link</option>
+        <option value="button_count">Button count</option>
+        <option value="box_count">Box count</option>
+        <option value="link">Link</option>
+        <option value="icon">Icon</option>
+      </field>
+
+      <field showon="module_syle:horizontal,vertical" name="advanced_fb_like" type="spacer" default="Settings For Facebook Like Button" label="&lt;b&gt;Settings For Facebook Like Button&lt;/b&gt;" description="Settings For Facebook Like Button" />
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="fb_enable_like" type="radio" default="1" label="Enable Like Button" description="Enable Facebook Like Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="fb_like_verb_to_display" type="radio" default="like" label="Verb to Display" description="Verb to Display">
+        <option value="like">like</option>
+        <option value="recommend">recommend</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="fb_like_show_faces" type="radio" default="false" label="Show faces" description="Specifies whether to display Freefile photos below the button">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </field>  
+      <field showon="module_syle:horizontal,vertical" name="fb_like_layout_style" type="list" default="button_count" label="Style" description="Style of the button to be displayed">
+        <option value="standard">Standard</option>
+        <option value="button_count">Button count</option>
+        <option value="box_count">Box count</option>
+        <option value="button">Button</option>
+      </field>  
+      <field showon="module_syle:horizontal,vertical" name="fb_like_color_scheme" type="list" default="light" label="Color Scheme" description="Color Scheme">
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+      </field>
+
+      <field showon="module_syle:horizontal,vertical" name="enable_comments" type="spacer" default="Settings For Facebook Comment Box" label="&lt;b&gt;Settings For Facebook Comments Box&lt;/b&gt;" description="Advanced Settings For Facebook Comments Box" />
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="fb_enable_comments" type="radio" default="1" label="Enable Comments Box" description="Enable Facebook Comments Box">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" name="fb_comments_width" type="text" default="530" label="Width" description="The width of comments box, in pixels"/>
+      <field showon="module_syle:horizontal,vertical" name="fb_number_comments" type="text" default="3" label="Number visible posts" description="The number of comments to show" />
+      <field showon="module_syle:horizontal,vertical" name="fb_comments_box_color" type="list" default="light" label="Comments box colors scheme" description="Comments box colors scheme">
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+      </field>
+
+      <field name="enable_send" type="spacer" default="Settings For Facebook Send Button" label="&lt;b&gt;Settings For Facebook Send Button&lt;/b&gt;" description="Advanced Settings For Facebook Sent Button" />
+      <field name="fb_enable_send" type="radio" class="btn-group btn-group-yesno" default="0" label="Enable Send Button" description="Enable Facebook Send button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" name="fb_width_send_but" type="text" default="450" label="Width" description="The width , in pixels"/>
+      <field showon="module_syle:horizontal,vertical" name="fb_height_send_but" type="text" default="450" label="Height" description="The height, in pixels"/>
+      <field showon="module_syle:horizontal,vertical" name="fb_color_sent_but" type="list" default="light" label="Send button colors scheme" description="Send button colors scheme">
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+      </field>
+    </fieldset>
+  
+<!-- ///////////////////////////////////////////GOOGLE OPTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <fieldset name="google" label="Google Options">
+      <field type="spacer" />
+      <field type="spacer" default="Setting For Google Plus One Button" label="&lt;b&gt;Setting For Google Plus One Button&lt;/b&gt;" description="Advanced Setting For Google Plus One Button" />
+      <field name="enable_google" type="radio" class="btn-group btn-group-yesno" default="1" label="Google +1 Button" description="Enable Google +1 Share Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" name="size_google" type="list" default="medium" label="Style" description="Style of the button to be displayed">
+         <option value="small">Small</option>
+         <option value="medium">Medium</option>
+         <option value="standard">Standard</option>
+         <option value="tall">Tall</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" name="annotation_google" type="list" default="bubble" label="Show counter" description="Show counter annotation">
+         <option value="bubble">Bubble</option>
+         <option value="inline">Inline</option>
+         <option value="none">None</option>
+      </field>
+    </fieldset>
+
+<!-- /////////////////////////////////////////TWITER OPTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <fieldset name="twitter" label="Twitter Options">
+      <field type="spacer" />
+      <field type="spacer" default="Setting For Twitter Button" label="&lt;b&gt;Setting For Twitter Button&lt;/b&gt;" description="Advanced Setting For Twitter Button" />
+      <field type="spacer" label="&lt;b&gt;Note that you must run your URL via the &lt;a target='_blank' href='https://cards-dev.twitter.com/validator'&gt; validator tool&lt;/a&gt; to apFreeved your domain name.&lt;/b&gt;" description="It is need to share image and others data from your web-site." />
+      <field name="enable_twitter" type="radio" class="btn-group btn-group-yesno" default="1" label="Twitter Button" description="Enable Twitter Share Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="show_count_twitter" type="radio" default="horizontal" label="Show counter" description="Show counter">
+         <option value="vertical">Vertical</option>
+         <option value="horizontal">Horizontal</option>
+         <option value="none">None</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" name="data_via_twitter" type="text" default="" label="Via" description="Insert the screen name of the user to attribute the Tweet to. This tells twitter who was the original tweeter. Make sure you change it to your twitter account!!" />
+      <field showon="module_syle:horizontal,vertical" name="data_related_twitter" type="text" default="" label="Related" description="Insert the related accounts. This adds recommended users to follow. You are allowed up to two Twitter accounts for users to follow after they share content from your website. These accounts could include your own, or that of a contributor or a partner. The first account is the one that is shared in data-via Freeperty. (Make sure you change it to one of your other twitter accounts, or remove it). The correct format to enter data in this variable is twitterusername:Description of the User." />
+      <field showon="module_syle:horizontal,vertical" name="hashtags_twitter" type="text" default="" label="Hashtags" description="Comma separated hashtags appended to the tweet text" />
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="datasize_twitter" type="radio" default="medium" label="Size" description="Set the size of the Twitter button. Default is medium">
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </field>    
+    </fieldset>
+
+<!-- ////////////////////////////////////////////LIKEDIN OPTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <fieldset name="linkedin" label="Linked In Options">
+      <field type="spacer" />
+      <field type="spacer" default="Setting For LinkedIn Button" label="&lt;b&gt;Setting For LinkedIn Button&lt;/b&gt;" description="Advanced Setting For LinkedIn Button" />
+      <field name="enable_in" type="radio" class="btn-group btn-group-yesno" default="1" label="LinkedIn Button" description="Enable LinkedIn Share Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="data_counter_in" type="radio" default="right" label="Counter position" description="Whether or not to show the the share count and where it gets displayed.">
+         <option value="none">None</option>
+         <option value="right">Right</option>
+         <option value="top">Top</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="data_showzero_in" type="radio" default="0" label="Show zero count" description="Whether to show a zero or a placeholder in the counter if there are no shares.">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>  
+    </fieldset>
+<!-- ////////////////////////////////////////////end\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<!-- ///////////////////////////////////////////VK OPTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <fieldset name="vk" label="Vk Options">
+      <field type="spacer" />
+      <field type="spacer" default="Setting For VK Button" label="&lt;b&gt;Setting For VK Button&lt;/b&gt;" description="Advanced Setting For VK Button" />
+      <field name="enable_vk" type="radio" class="btn-group btn-group-yesno" default="1" label="VK Button" description="Enable VK Share Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="vk_button_style" type="radio" default="round" label="Style" description="Style of the VK button.">
+         <option value="round">Round</option>
+         <option value="round_nocount">Round no count</option>
+         <option value="link">Link</option>
+         <option value="link_noicon">Link no icon</option>
+         <option value="custom">Icon</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" name="vk_button_text" type="text" default="Share" label="Button text" description=""/>
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="vk_logo_type" type="radio" default="1" label="VK logo type" description="">
+        <option value="0">B</option>
+        <option value="1">VK</option>
+      </field>  
+    </fieldset>
+<!-- //////////////////////////////////////////End\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<!-- ///////////////////////////////////////////add_this options\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <fieldset name="add_this" label="AddThis Options">
+      <field type="spacer" />
+      <field type="spacer" default="Setting For AddThis Button" label="&lt;b&gt;Setting For AddThis Button&lt;/b&gt;" description="Advanced Setting For AddThis Button" />
+      <field name="enable_add_this" class="btn-group btn-group-yesno" type="radio" default="1" label="AddThis Button" description="Enable AddThis Share Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+    </fieldset>
+<!-- ///////////////////////////////////////////END\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<!-- ///////////////////////////////////////////OK options\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <fieldset name="ok" label="OK Options">
+      <field type="spacer" />
+      <field type="spacer" default="Setting For OK Button" label="&lt;b&gt;Setting For OK Button&lt;/b&gt;" description="Advanced Setting For Odnoklassniki Button" />
+      <field class="btn-group btn-group-yesno" name="enable_ok" type="radio" default="1" label="OK Button" description="Enable Odnoklassniki Share Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_syle:horizontal,vertical" class="btn-group btn-group-yesno" name="ok_comment_style" type="radio" default="0" label="OK Button" description="Enable Odnoklassniki Share Button">
+        <option value="1">Top</option>
+        <option value="0">Right</option>
+      </field>
+    </fieldset>
+<!-- ///////////////////////////////////////////END\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<!-- ///////////////////////////////////////////tumblr options\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->    
+    <fieldset name="tumblr" label="Tumblr">
+      <field type="spacer" />
+      <field type="spacer" default="Setting For Tumblr Button" label="&lt;legend&gt;Setting For Tumblr Button&lt;/legend&gt;" description="Advanced Setting For Tumblr Button" />
+      <field  class="btn-group btn-group-yesno" name="enable_tumblr" type="radio" default="1" label="Tumblr Button" description="Enable Tumblr Share Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+    </fieldset>
+<!-- ///////////////////////////////////////////END\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<!-- ///////////////////////////////////////////Instagram options\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->    
+    <fieldset name="instagram" label="Instagram">
+      <field type="spacer" />
+      <field type="spacer" default="Setting For Instagram Button" label="&lt;legend&gt;Setting For Instagram Button&lt;/legend&gt;" description="Advanced Setting For Instagram Button" />
+      <field  class="btn-group btn-group-yesno" name="enable_instagram" type="radio" default="1" label="Instagram Follow" description="Enable Instagram Follow Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field name="instagram_user" type="text" default="" label="Instagram profile" description="@akoevroman" />
+    </fieldset>
+<!-- ///////////////////////////////////////////END\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<!-- ///////////////////////////////////////////Pinterest options\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->    
+    <fieldset name="pinterest" label="Pinterest">
+      <field type="spacer" />
+      <field type="spacer" default="Setting For Pinterest Button" label="&lt;legend&gt;Setting For Pinterest Button&lt;/legend&gt;" description="Advanced Setting For Pinterest Button" />
+      <field  class="btn-group btn-group-yesno" name="enable_pinterest" type="radio" default="1" label="Pinterest Button" description="Enable Pinterest Share Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_style:horizontal,vertical" name="pinterest_label_image" type="text" default="" label="Custom Image path" description="https://example.com/image.png" />
+      <field showon="module_style:horizontal,vertical"  class="btn-group btn-group-yesno" name="pinterest_round" type="radio" default="0" label="Round Pinterest Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field showon="module_style:horizontal,vertical" class="btn-group btn-group-yesno" name="pinterest_large" type="radio" default="0" label="Large Pinterest Button">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field default="Red" showon="module_style:horizontal,vertical" name="pinterest_color" type="radio" label="Button color">
+        <option value="red">Red</option>
+        <option value="gray">Gray</option>
+      </field>
+      <field showon="module_style:horizontal,vertical" name="pinterest_count" type="list" default="0" label="Show counter">
+       <option value="0">Not shown</option>
+       <option value="above">Above</option>
+       <option value="beside">Beside</option>
+      </field>
+    </fieldset>
+<!-- ///////////////////////////////////////////END\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+    <fieldset name="advanced">
+      <field
+        name="layout"
+        type="modulelayout"
+        label="JFIELD_ALT_LAYOUT_LABEL"
+        description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+    </fieldset>
+
+   </fields>
+  </config>
+</extension>
+
+
+
+
+

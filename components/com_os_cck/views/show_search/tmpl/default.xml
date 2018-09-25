@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Show Search Layout">
+        <message><![CDATA[Search page]]></message>
+    </layout>
+    <fields name="params">
+        <fieldset name="params" addfieldpath="/administrator/components/com_os_cck/elements" label="Params"
+                  description="">
+            <field name="search_layout" type="searchlayout" default="" class="inputbox" required="true" label="SearchLayout"
+               extension="com_os_cck" multiple="false" size="1"
+               description="Choose layout for show search"/>
+        </fieldset>
+    </fields>
+</metadata>

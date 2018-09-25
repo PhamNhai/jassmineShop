@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+<name>OS CCK display layout</name> 
+<author>OrdaSoft - Andrey Kvasnevskiy</author> 
+<creationDate>February 2017</creationDate>
+<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+<copyright>(C) 2011 OrdaSoft, Andrey Kvasnevskiy</copyright>
+<authorEmail>Andrey Kvasnevskiy(akbet@mail.ru);Roman Akoev(akoevroman@gmail.com)</authorEmail>
+<authorUrl>www.ordasoft.com</authorUrl>
+<version>2.0.3</version>
+<description>Displays selected layout  from OS CCK.</description> 
+  <files> 
+    <filename module="mod_os_cck_layout">mod_os_cck_layout.php</filename>
+    <filename module="mod_os_cck_layout">index.html</filename>
+    <filename module="mod_os_cck_layout">elements/layouttype.php</filename>
+    <filename module="mod_os_cck_layout">elements/index.html</filename>
+  </files> 
+<!-- joomla 2.5-->
+  <params addpath="/modules/mod_os_cck_layout/elements">
+    <param name="layout_type" type="layouttype" default="0" class="inputbox" label="Select Layout type" extension="com_os_cck" multiple ="false" size="1" required="true" description="Choose Layout type" />
+    <param name="layout" type="layout" default="0" class="inputbox" label="Select Layout" extension="com_os_cck" multiple ="false" size="1" required="true" description="Choose Layout" />
+    <param name="instance" type="instance" default="" class="inputbox" label="Select Instance(Instance or Category)" extension="com_os_cck" multiple ="false" size="1" required="true" description="Choose Instance" />
+    <param name="show_type" type="list" default="1" label="Show type"
+           description="Choose show type">
+        <option value="1">Submit Form</option>
+        <option value="2">Show/Hide effect</option>
+        <option value="3">Redirect</option>
+    </param>
+    <param name="ItemId" type="text" label="ItemId" description="You can enter here the menu ID, which will be displayed this layout">
+    </param>
+  </params>
+<!-- joomla 3.0-->
+  <config>
+  <fields name="params" >
+      <fieldset name="basic"  addfieldpath="/modules/mod_os_cck_layout/elements">
+        <field name="layout_type" type="layouttype" default="1" class="inputbox" label="Select Layout type" extension="com_os_cck" multiple ="false" size="1" required="true" description="Choose Layout type" />
+      <field name="layout" type="layout" default="1" class="inputbox" label="Select Layout" extension="com_os_cck" multiple ="false" size="1" required="true" description="Choose Layout" />
+      <field name="instance" type="instance" default="" class="inputbox" label="Select Instance" extension="com_os_cck" multiple ="false" size="1" required="false" description="Choose Instance" />
+            <field name="show_type" type="list" default="1" label="Show type"
+                   description="Choose show type">
+                <option value="1">Submit Form</option>
+                <option value="2">Show/Hide effect</option>
+                <option value="3">Redirect</option>
+            </field>
+        <field name="button_name" type="text" label="Button name:" description="You can enter here the show/hide or redirect button name">
+          </field>
+        <field name="ItemId" type="text" label="ItemId" description="You can enter here the menu ID, which will be displayed this layout">
+        </field>
+      </fieldset>
+      <fieldset name="advanced">
+      <field name="moduleclass_sfx" type="textarea" rows="3"
+             label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+      </fieldset>
+  </fields>
+  </config>
+</extension>

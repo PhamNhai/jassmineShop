@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2.0" method="upgrade">
+
+    <name>COM_OSGALLERY</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>January 2018</creationDate>
+    <author>Andrey Kvasnevskiy, Roman Akoev, Dmitriy Smirnov</author>
+    <authorEmail>akbet@mail.ru,akoevroman@gmail.com, dmitriiua21@gmail.com</authorEmail>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <copyright>Ordasoft - Andrey Kvasnevskiy</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <!--  The version string is recorded in the components table -->
+    <version>3.2.7 Light</version>
+    <!-- The description is optional and defaults to the name -->
+    <description><![CDATA[<img style="width:515px; display: block; margin: 0 auto;" src="../administrator/components/com_osgallery/assets/images/os-image-gallery.png">]]></description>
+
+    <scriptfile>script.php</scriptfile>
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <update> <!-- Runs on update; New since J2.5 -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <!-- Frontend Main Language File Copy Section -->
+    <languages folder="../admin/language">
+        <language tag="en-GB">en-GB/en-GB.com_osgallery.ini</language>
+        <language tag="en-GB">en-GB/en-GB.com_osgallery.sys.ini</language>
+    </languages>
+
+    <files folder="../site">
+        <folder>assets</folder>
+        <folder>helpers</folder>
+        <folder>views</folder>
+        <filename>index.html</filename>
+        <filename>osgallery.php</filename>
+    </files>
+
+    <administration>
+        <!-- Administration Menu Section -->
+        <menu>COM_OSGALLERY_MENU</menu>
+
+        <!-- Administration Main Language File Copy Section -->
+        <languages folder="/language">
+            <language tag="en-GB">en-GB/en-GB.com_osgallery.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_osgallery.sys.ini</language>
+        </languages>
+
+        <files folder="../admin">
+            <folder>assets</folder>
+            <folder>fields</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>sql</folder>
+            <folder>views</folder>
+            <filename>index.html</filename>
+            <filename>osgallery.php</filename>
+            <filename>script.php</filename>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>osgallery.xml</filename>
+        </files>
+    </administration>
+
+</extension>
