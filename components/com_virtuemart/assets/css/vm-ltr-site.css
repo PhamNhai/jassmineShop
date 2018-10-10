@@ -95,6 +95,7 @@ span.vm-price-desc {
 
 .vm3pr-0 .addtocart-area {
   min-height: 36px;
+  display: none;
 }
 
 .vm3pr-1 .addtocart-area {
@@ -238,6 +239,7 @@ span.quantity-controls input.quantity-minus{
   position: static;
   text-align: center;
   line-height: 14px;
+  display: none;
 }
 
 .productdetails-view .addtocart-bar{
@@ -290,6 +292,7 @@ span.addtocart-button span.addtocart-button, span.addtocart-button input.addtoca
 
 div.vm-details-button {
   text-align: center;
+  display: none;
 }
 
 div.vm-details-button a {

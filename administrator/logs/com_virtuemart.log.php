@@ -902,3 +902,51 @@
 &lt;hr&gt;&lt;center&gt;Myra&lt;/center&gt;
 &lt;/body&gt;
 &lt;/html&gt;
+
+2018-10-06 15:12:25 ERROR vmError: Save failed with the following error: Username in use.
+2018-10-06 15:13:22 ERROR vmError: Save failed with the following error: This email address is already registered.
+2018-10-06 15:16:21 ERROR vmError: Save failed with the following error: This email address is already registered.
+2018-10-06 15:17:24 ERROR vmError: Save failed with the following error: This email address is already registered.
+2018-10-07 10:25:19 ERROR vmError: Failed to parse the Currency Converter XML document.
+2018-10-07 10:25:19 ERROR vmError: The content: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;
+&lt;body bgcolor=&quot;white&quot;&gt;
+&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;Myra&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+2018-10-07 10:38:53 ERROR vmError: Couldnt create thumb, file not found C:\xampp\htdocs\qs\images\virtuemart\product\galery_9.png
+2018-10-07 10:38:53 ERROR vmError: Couldnt create thumb, file not found C:\xampp\htdocs\qs\images\virtuemart\product\galery_1.png
+2018-10-07 10:38:53 ERROR vmError: Couldnt create thumb, file not found C:\xampp\htdocs\qs\images\virtuemart\product\galery_6.png
+2018-10-07 14:47:36 ERROR vmError: Failed to parse the Currency Converter XML document.
+2018-10-07 14:47:36 ERROR vmError: The content: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;
+&lt;body bgcolor=&quot;white&quot;&gt;
+&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;Myra&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+2018-10-07 15:50:16 NO LANGUAGE LOADED  COM_VIRTUEMART &lt;pre&gt;#0  vmTrace() called at [C:\xampp\htdocs\qs\administrator\components\com_virtuemart\helpers\vmlanguage.php:268]
+#1  vmLanguage::loadJLang() called at [C:\xampp\htdocs\qs\administrator\components\com_virtuemart\fields\vmloadlang.php:39]
+#2  JFormFieldVmLoadLang-&gt;getInput() called at [C:\xampp\htdocs\qs\libraries\src\Form\FormField.php:975]
+#3  Joomla\CMS\Form\FormField-&gt;renderField() called at [C:\xampp\htdocs\qs\layouts\joomla\edit\fieldset.php:47]
+#4  include(C:\xampp\htdocs\qs\layouts\joomla\edit\fieldset.php) called at [C:\xampp\htdocs\qs\libraries\src\Layout\FileLayout.php:125]
+#5  Joomla\CMS\Layout\FileLayout-&gt;render() called at [C:\xampp\htdocs\qs\libraries\src\Layout\LayoutHelper.php:73]
+#6  Joomla\CMS\Layout\LayoutHelper::render() called at [C:\xampp\htdocs\qs\administrator\components\com_modules\views\module\tmpl\edit.php:231]
+#7  include(C:\xampp\htdocs\qs\administrator\components\com_modules\views\module\tmpl\edit.php) called at [C:\xampp\htdocs\qs\libraries\src\MVC\View\HtmlView.php:695]
+#8  Joomla\CMS\MVC\View\HtmlView-&gt;loadTemplate() called at [C:\xampp\htdocs\qs\libraries\src\MVC\View\HtmlView.php:230]
+#9  Joomla\CMS\MVC\View\HtmlView-&gt;display() called at [C:\xampp\htdocs\qs\administrator\components\com_modules\views\module\view.html.php:46]
+&lt;/pre&gt;
+2018-10-07 15:50:16 NO LANGUAGE LOADED  COM_VIRTUEMART_CONFIG &lt;pre&gt;#0  vmTrace() called at [C:\xampp\htdocs\qs\administrator\components\com_virtuemart\helpers\vmlanguage.php:268]
+#1  vmLanguage::loadJLang() called at [C:\xampp\htdocs\qs\administrator\components\com_virtuemart\fields\vmloadlang.php:39]
+#2  JFormFieldVmLoadLang-&gt;getInput() called at [C:\xampp\htdocs\qs\libraries\src\Form\FormField.php:975]
+#3  Joomla\CMS\Form\FormField-&gt;renderField() called at [C:\xampp\htdocs\qs\layouts\joomla\edit\fieldset.php:47]
+#4  include(C:\xampp\htdocs\qs\layouts\joomla\edit\fieldset.php) called at [C:\xampp\htdocs\qs\libraries\src\Layout\FileLayout.php:125]
+#5  Joomla\CMS\Layout\FileLayout-&gt;render() called at [C:\xampp\htdocs\qs\libraries\src\Layout\LayoutHelper.php:73]
+#6  Joomla\CMS\Layout\LayoutHelper::render() called at [C:\xampp\htdocs\qs\administrator\components\com_modules\views\module\tmpl\edit.php:231]
+#7  include(C:\xampp\htdocs\qs\administrator\components\com_modules\views\module\tmpl\edit.php) called at [C:\xampp\htdocs\qs\libraries\src\MVC\View\HtmlView.php:695]
+#8  Joomla\CMS\MVC\View\HtmlView-&gt;loadTemplate() called at [C:\xampp\htdocs\qs\libraries\src\MVC\View\HtmlView.php:230]
+#9  Joomla\CMS\MVC\View\HtmlView-&gt;display() called at [C:\xampp\htdocs\qs\administrator\components\com_modules\views\module\view.html.php:46]
+&lt;/pre&gt;

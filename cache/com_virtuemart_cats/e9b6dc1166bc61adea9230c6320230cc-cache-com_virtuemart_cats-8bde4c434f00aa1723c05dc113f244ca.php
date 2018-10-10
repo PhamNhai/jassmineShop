@@ -1,0 +1,1 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"result";s:121:"<option   value="4">xăng đan</option><option   value="6">túi xách</option><option   value="5">Giày búp bê</option>";s:6:"output";s:0:"";}

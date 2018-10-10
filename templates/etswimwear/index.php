@@ -211,6 +211,5 @@ $doc->addScriptdeclaration("\nvar sp_offanimation = '" . $this->params->get('off
                     <?php if ($this->params->get('goto_top')) { ?>
                         <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
                     <?php } ?>
-                    <div align="center"><a target="_blank" href="http://enginetemplates.com/" title="Free Joomla! templates by Engine Templates">Free Joomla! templates by Engine Templates</a></div>
                 </body>
                 </html>

@@ -47,7 +47,9 @@ class  plgSystemHelix3 extends JPlugin
         if ($form->getName()=='com_menus.item') { //Add Helix menu params to the menu item
 
             JHtml::_('jquery.framework');
-
+            if (is_object($data)) {
+                $data = (array)$data;
+            }
             if($data['id'] && $data['parent_id'] == 1) {
 
                 JHtml::_('jquery.ui', array('core', 'more', 'sortable'));

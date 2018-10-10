@@ -1,23 +1,23 @@
 a {
-  color: #13fffc;
+  color: ;
 }
 .sp-megamenu-parent >li.active>a,
 .sp-megamenu-parent >li:hover>a {
-  color: #13fffc;
+  /*color: ;*/
 }
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item >a:hover {
-  background: #13fffc;
+  background: ;
 }
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item.active>a {
-  color: #13fffc;
+  color: ;
 }
 #offcanvas-toggler >i:hover {
-  color: #13fffc;
+  color: ;
 }
 .btn-primary,
 .sppb-btn-primary {
   border-color: #0faae4;
-  background-color: #13fffc;
+  background-color: ;
 }
 .btn-primary:hover,
 .sppb-btn-primary:hover {
@@ -25,10 +25,10 @@ a {
   background-color: #0e9cd1;
 }
 ul.social-icons >li a:hover {
-  color: #13fffc;
+  color: ;
 }
 .sp-page-title {
-  background: #13fffc;
+  background: ;
 }
 .layout-boxed .body-innerwrapper {
   background: #ffffff;
@@ -37,29 +37,29 @@ ul.social-icons >li a:hover {
   color: #000000;
 }
 .sp-module ul >li >a:hover {
-  color: #13fffc;
+  color: ;
 }
 .sp-module .letestnews >div >a {
   color: #000000;
 }
 .sp-module .letestnews >div >a:hover {
-  color: #13fffc;
+  color: ;
 }
 .sp-module .tagscloud .tag-name:hover {
-  background: #13fffc;
+  background: ;
 }
 .sp-simpleportfolio .sp-simpleportfolio-fieter > ul > li.active > a,
 .sp-simpleportfolio .sp-simpleportfolio-fieter > ul > li > a:hover {
-  background: #13fffc;
+  background: ;
 }
 .search .btn-toolbar button {
-  background: #13fffc;
+  background: ;
 }
 .post-formet {
-  background: #13fffc;
+  background: ;
 }
 .voting-symbol span.star.active:before {
-  color: #13fffc;
+  color: ;
 }
 .sp-reting span.star:hover:before,
 .sp-reting span.star:hover ~ span.star:before {
@@ -67,20 +67,20 @@ ul.social-icons >li a:hover {
 }
 .entry-link,
 .entry-quote {
-  background: #13fffc;
+  background: ;
 }
 blockquote {
-  border-color: #13fffc;
+  border-color: ;
 }
 .carousel-left:hover,
 .carousel-right:hover {
-  background: #13fffc;
+  background: ;
 }
 #sp-footer {
-  background: #13fffc;
+  background: #e5e5e5;
 }
 .sp-comingsoon body {
-  background-color: #13fffc;
+  background-color: ;
 }
 .paginetion>li>a,
 .paginetion>li>span {
@@ -94,15 +94,15 @@ blockquote {
 }
 .paginetion>.active>a,
 .paginetion>.active>span {
-  border-color: #13fffc;
-  background-color: #13fffc;
+  border-color: ;
+  background-color: ;
 }
 .paginetion>.active>a:hover,
 .paginetion>.active>a:focus,
 .paginetion>.active>span:hover,
 .paginetion>.active>span:focus {
-  border-color: #13fffc;
-  background-color: #13fffc;
+  border-color: ;
+  background-color: ;
 }
 .et-title h6,
 .et-slider .tp-caption a,
@@ -113,7 +113,7 @@ blockquote {
 .et-action-button:hover,
 .et-table-item:hover button,
 .et-team-item .qx-person-img:before {
-  background: #13fffc;
+  background: ;
 }
 .et-intro-item i,
 .et-feeture-item h4,
@@ -126,7 +126,7 @@ blockquote {
 .et-testimonial p.qx-designetion,
 .et-testimonial button,
 .et-team-item h4 {
-  color: #13fffc!important; 
+  color: !important; 
 }
 .et-feeture-item:hover i,
 .et-portfolio-button:hover,
@@ -135,7 +135,7 @@ blockquote {
 .et-service-item .button-service,
 .et-table-item button,
 .et-subscribe-content table .button:hover {
-  border-color: #13fffc;
+  border-color: ;
 }
 /* Important */
  #et-menu a,
@@ -147,7 +147,7 @@ blockquote {
 .product-title a,
 .et-intro-item-button:hover,
 .et-services-item:hover h4 {
-  color: #13fffc!important; 
+  color: !important; 
 }
 .et-intro-item-time,
 .et-contact #sp-quickcontact-form .button:hover,
@@ -167,16 +167,16 @@ blockquote {
 .et-contact-form button,
 .et-offer-item .qx-blurb-content,
 .et-subscribe-content table .button:hover {
-  background: #13fffc!important;  
+  background: !important;  
 }
 .et-contact #sp-quickcontact-form .button:hover,
 .social-links > a,
 .et-intro-item-button:hover,
 .et-we-do-item i {
-  border-color: #13fffc!important; 
+  border-color: !important; 
 }
 .et-service-item:hover {
-  border: 4px solid #13fffc;
+  border: 4px solid ;
 }
 .et-newsletter-content table input {
     background: #333!important;
@@ -185,10 +185,10 @@ blockquote {
     background-image: -webkit-linear-gradient(top , rgba(19, 255, 252, 0.56) 0%, rgba(19, 255, 252, 0.56) 100%)!important;
 }
 .pagination>.active>a {
-  background: #13fffc;
+  background: ;
   color: #fff;
   border-color: #ddd!important;
 }
 .pagination>li>a, .pagination>li>span {
- color: #13fffc; 
+ color: ; 
 }

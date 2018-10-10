@@ -18,10 +18,10 @@
 
     <positions>
         <position>title</position>
-        <position>top1</position>
         <position>top2</position>
         <position>top3</position>
         <position>logo</position>
+        <position>top1</position>
         <position>menu</position>
         <position>search</position>
         <position>slide</position>
